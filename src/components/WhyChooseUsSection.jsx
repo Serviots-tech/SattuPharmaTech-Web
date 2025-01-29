@@ -2,18 +2,17 @@ import React from "react";
 
 const WhyChooseUs = () => {
   return (
-    <div className="container mx-auto px-6 py-12">
-      <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us?</h2>
+    <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
+      <h2 className="text-3xl font-bold text-right text-center mb-8">Why Choose Us?</h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-[70%_30%] gap-6">
-        {/* Left Column - 70% on large screens, full-width on small screens */}
         <div className="grid gap-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 border rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <span className="text-2xl">📊</span>
-                <h3 className="text-xl font-semibold ml-3">Deep Market Insights</h3>
+              <div class="inline-block p-2 rounded-2xl border-2 border-[#E0E0E0]"><span className="text-3xl">📊</span></div>
               </div>
+                <h3 className="text-xl font-semibold">Deep Market Insights</h3>
               <p>
                 Showcase the IT company’s expertise in developing mobile applications for both
                 Android and iOS platforms.
@@ -22,9 +21,9 @@ const WhyChooseUs = () => {
 
             <div className="p-6 border rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <span className="text-2xl">🏅</span>
-                <h3 className="text-xl font-semibold ml-3">Proven Track Record</h3>
+              <div class="inline-block p-2 rounded-2xl border-2 border-[#E0E0E0]"><span className="text-3xl">🏅</span></div>
               </div>
+                <h3 className="text-xl font-semibold">Proven Track Record</h3>
               <p>
                 With a history of successful projects, we have established ourselves as a trusted
                 partner for businesses aiming to bridge the gap between India and Africa.
@@ -35,8 +34,8 @@ const WhyChooseUs = () => {
           <div className="p-6 border rounded-lg shadow-md bg-white">
             <div className="flex items-center mb-4">
             <div class="inline-block p-2 rounded-2xl border-2 border-[#E0E0E0]"><span className="text-3xl">📊</span> </div>
-              <h3 className="text-xl font-semibold ml-3">Deep Market Insights</h3>
             </div>
+              <h3 className="text-xl font-semibold">Deep Market Insights</h3>
             <p>
               Showcase the IT company’s expertise in developing mobile applications for both Android
               and iOS platforms.

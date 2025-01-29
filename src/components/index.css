@@ -6,9 +6,3 @@
   background-size:cover;
   height: 90vh;
 }
-
-@media (min-width: 640px) {
-  .main-image {
-    background-position: center;
-  }
-}

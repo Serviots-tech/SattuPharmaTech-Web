@@ -3,7 +3,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 // import { CardWithImage } from "../../components/Cards";
 // import TeamMembers from "../../components/TeamMembers";
 import AboutUs from "../../components/AboutUs";
-import FounderCard from "src/components/Founder";
+import FounderCard from "src/components/WhyChooseUsSection";
 
 const About = () => {
   const cardImg = "/assets/abtUsPageImg1.jpg";

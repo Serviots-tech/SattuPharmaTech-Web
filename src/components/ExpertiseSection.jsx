@@ -12,8 +12,9 @@ const expertiseData = [
 const ExpertiseSection = () => {
   return (
     <section className="py-20">
-      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full ">
-      <div className="max-w-6xl mx-auto text-left">
+      {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full "> */}
+      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
+      <div className="mx-auto text-left">
         <h2 className="text-3xl font-bold text-black">Our Expertise</h2>
         <p className="mt-4 text-gray-600">
           Bridging India & Africa with Strategic Solutions in Pharmaceuticals & IT
@@ -22,10 +23,10 @@ const ExpertiseSection = () => {
           At Satupharmtech, we specialise in connecting businesses across India and Africa, providing innovative solutions in Pharmaceuticals and IT. Our expertise lies in market entry strategies, regulatory compliance, digital transformation, and business expansion to help you thrive in these dynamic regions.
         </p>
       </div>
-      <div className="max-w-6xl mx-auto text-left">
+      <div className="mx-auto text-left">
       <div className="text-xl mt-10 text-[#4FB5B9] font-poppins font-bold">Pharma Expertise</div>
       </div>
-      <div className="max-w-6xl mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {expertiseData.map((item, index) => (
           <div
             key={index}
