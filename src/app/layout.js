@@ -1,5 +1,4 @@
 import "./globals.css";
-import { ThemeProvider } from "../components/theme-provider";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Inter, Poppins } from "next/font/google";
@@ -33,16 +32,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
           <Navbar/>
           {children}
           <Footer/>
-        </ThemeProvider></body>
+        </body>
     </html>
   );
 }
