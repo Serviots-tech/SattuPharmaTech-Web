@@ -4,14 +4,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Inter, Poppins } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-poppins" });
+const inter = Inter({ subsets: ["latin"], weight: ["100","200","300", "400","500","600","700", "800", "900"], variable: "--font-inter" });
+const poppins = Poppins({ subsets: ["latin"], weight: ["100","200","300", "400","500","600","700", "800", "900"], variable: "--font-poppins" });
 
 
 export const metadata = {
   title: "SPT - Best Pharma/IT Solutions",
   description: "Satu Pharama Tech - Your trusted IT consultant.",
-  keywords: "consulting, IT services, software development",
+  keywords: "Pharma Network Development Company, Custom software development company, Pharma network, Web development agency, Mobile app development company, Ai software development",
   openGraph: {
     title: "SPT - Best Pharma/IT Solutions",
     description: "Helping businesses start pharmaceutical, hospital, clinics in India/Africa and build software applications for web & mobile.",
