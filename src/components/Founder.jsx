@@ -1,61 +1,69 @@
-/* eslint-disable react/no-unescaped-entities */
-"use client";
-import Image from "next/image";
-import { Slide } from "react-awesome-reveal";
-import { Card, CardContent } from "../components/ui/card";
+import React from "react";
 
-export default function FounderCard() {
+const WhyChooseUs = () => {
   return (
-    <Card className="w-full pb-10 dark:border dark:border-gray-800">
-      <CardContent className="h-full">
-        <div className="grid lg:grid-cols-[1fr_1.5fr] md:grid-cols-1 grid-cols-1 w-full h-full gap-6">
-          {/* Founder Image */}
-          <Slide direction="up" duration={800} triggerOnce={true}>
-            <div className="relative w-full h-[50vh] md:h-[40vh] mt-5 md:mt-7 lg:ps-10 md:ps-8 sm:ps-5">
-              <Image
-                className="rounded-lg object-cover"
-                alt="Portrait of Nilesh Pal, Founder & CEO"
-                src="/assets/nilesh.jpg" // Replace with the actual path
-                // fill
-                width ={350}
-                height={350}
-                quality={100}
-                // sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+    <div className="container mx-auto px-6 py-12">
+      <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us?</h2>
 
-                priority
-                unoptimized
-              />
+      <div className="grid grid-cols-1 lg:grid-cols-[70%_30%] gap-6">
+        {/* Left Column - 70% on large screens, full-width on small screens */}
+        <div className="grid gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-6 border rounded-lg shadow-md">
+              <div className="flex items-center mb-4">
+                <span className="text-2xl">📊</span>
+                <h3 className="text-xl font-semibold ml-3">Deep Market Insights</h3>
+              </div>
+              <p>
+                Showcase the IT company’s expertise in developing mobile applications for both
+                Android and iOS platforms.
+              </p>
             </div>
-          </Slide>
 
-          {/* Founder Information */}
-          <div className="p-4">
-            <Slide direction="up" duration={800}>
-              <p className="text-xl md:text-3xl lg:text-4xl font-bold font-serif mt-5 md:mt-7 sm:mt-4 leading-tight md:leading-10">
-                Meet Our Founder & CEO
+            <div className="p-6 border rounded-lg shadow-md">
+              <div className="flex items-center mb-4">
+                <span className="text-2xl">🏅</span>
+                <h3 className="text-xl font-semibold ml-3">Proven Track Record</h3>
+              </div>
+              <p>
+                With a history of successful projects, we have established ourselves as a trusted
+                partner for businesses aiming to bridge the gap between India and Africa.
               </p>
-              <p className="text-xl md:text-3xl lg:text-4xl font-bold font-serif leading-4 text-orange-800">
-                Nilesh Pal
-              </p>
-            </Slide>
-            <Slide direction="up" duration={800}>
-              <p className="mt-6 md:mt-9 text-lg md:text-xl font-serif">
-                With over 5+ years of experience in  IoT solutions, software development and product innovation. 
-                Nilesh Pal is the driving force behind Pal Consultancy Services. His visionary leadership and technical 
-                expertise have been instrumental in launching our company as a fresh, innovative player in the tech consultancy space in 2023.
-                <span className="font-bold"> Throughout his career, he has successfully led numerous high-profile projects, consistently delivering exceptional results that drive business growth and digital transformation.</span>
-              </p>
-            </Slide>
+            </div>
+          </div>
+
+          <div className="p-6 border rounded-lg shadow-md bg-white">
+            <div className="flex items-center mb-4">
+            <div class="inline-block p-2 rounded-2xl border-2 border-[#E0E0E0]"><span className="text-3xl">📊</span> </div>
+              <h3 className="text-xl font-semibold ml-3">Deep Market Insights</h3>
+            </div>
+            <p>
+              Showcase the IT company’s expertise in developing mobile applications for both Android
+              and iOS platforms.
+            </p>
           </div>
         </div>
 
-        {/* Quotation Section */}
-        <Slide direction="up" duration={800}>
-          <blockquote className="mt-10 px-4 md:px-6 py-4 text-center border-l-4 border-orange-600 text-lg md:text-xl font-serif italic text-gray-700 bg-gray-100 rounded-lg">
-            "As a new entrant in the tech consultancy arena, we're bringing fresh perspectives and innovative approaches to the table. Our mission at Pal Consultancy Services is to leverage my years of industry experience, our team's agility, and cutting-edge technological expertise to empower businesses in this exciting era of digital transformation."
-          </blockquote>
-        </Slide>
-      </CardContent>
-    </Card>
+        {/* Right Column - 30% on large screens, full-width on small screens */}
+        {/* <div className="p-6 bg-[#FFF7E3] border-w-1 border-[#FDC446] rounded-lg text-center flex flex-col justify-center"> */}
+        <div className="p-6 bg-[#FFF7E3] border border-[#FDC446] border-1 rounded-lg text-center flex flex-col justify-center">
+          <div className="flex flex-col items-center">
+            <div class="inline-block p-2 rounded-2xl border-2 bg-white border-[#FDC446]">
+              <span class="text-4xl">🤝</span>
+            </div>
+            <h3 className="text-2xl font-semibold text-[#FDC446] mt-3">
+              Let’s Connect & Grow Together
+            </h3>
+          </div>
+          <p className="mt-3">Have questions or looking for strategic solutions in Pharmaceuticals & IT?</p>
+          <p className="font-bold">We’re here to help!</p>
+          <button className="mt-4 px-6 py-2 bg-[#FFD059] text-white font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition duration-300">
+            Get in Touch
+          </button>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default WhyChooseUs;

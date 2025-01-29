@@ -2,9 +2,9 @@
 import { CardWithImage } from "../components/Cards"
 import CarouselSlider from "../components/CarouselSlider";
 import MainImage from "../components/MainImage"
-import ServicesCards from "../components/ServicesCards";
+import ExpertiseSection from "../components/ExpertiseSection";
 import RequestCall from "../components/RequestCall";
-import FounderCard from "src/components/Founder";
+import WhyChooseUs from "src/components/Founder";
 
 export default function Home() {
 
@@ -14,15 +14,15 @@ export default function Home() {
     <div className="w-full">
       < MainImage />
 
-      <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
+      {/* <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
         <CardWithImage cardImg={cardImg} />
-      </div>
+      </div> */}
 
-      <ServicesCards />
+      <ExpertiseSection />
 
-      <div className="">
+      {/* <div className="">
         <CarouselSlider />
-      </div>
+      </div> */}
 
 
       {/* Our case history */}
@@ -35,7 +35,7 @@ export default function Home() {
         <TeamMembers />
       </div> */}
       <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
-        <FounderCard />
+        <WhyChooseUs />
       </div>
 
       {/* Request Call */}
