@@ -1,12 +1,11 @@
 "use client";
-import { Mail, MapPin } from "lucide-react";
+import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Slide } from "react-awesome-reveal";
 import { ThemeToggle } from "./theme-toggle";
-import { Phone } from "lucide-react";
 
 const Navbar = () => {
   let toggle;
@@ -30,84 +29,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Upper line */}
-      {/* <Slide direction="up" duration={800}> */}
-        <div>
-          <div className="relative z-10 sm:flex  hidden justify-between">
-            <div
-              className="triangle1 w-52 "
-              style={{
-                borderRight: "3.5rem solid transparent",
-                borderBottom: "3.5rem solid #9A3412",
-              }}
-            ></div>
-
-            <div
-              className="triangle w-52 "
-              style={{
-                borderLeft: "3.5rem solid transparent",
-                borderBottom: "3.5rem solid #9A3412",
-              }}
-            ></div>
-          </div>
-
-          <div
-            className="font-serif h-[3.5rem] flex justify-center  "
-            style={{ marginTop: "-3.5rem", backgroundColor: "#292929" }}
-          >
-            <div className=" z-20 w-[35vw] md:flex hidden text-white font-serif  text-center justify-between m-auto">
-              <p
-                className=" cursor-pointer"
-                onClick={(e) => {
-                  window.location.href = "mailto:contact@pcssolution.co";
-                }}
-              >
-                <Mail className=" inline " />
-                &nbsp;&nbsp; contact@pcssolution.co
-              </p>
-              <p className=" cursor-pointer">
-                <MapPin className="inline" />
-                &nbsp;&nbsp; Ahmedabad Gujrat, India
-              </p>
-            </div>
-          </div>
-
-          <style jsx>{`
-            .triangle1 {
-              position: relative;
-            }
-            .triangle1:before {
-              content: "";
-              position: absolute;
-              top: -3px;
-              right: -3.7rem;
-              width: 0;
-              height: 0;
-              border-top: 3.5rem solid transparent;
-              border-left: 3.5rem solid #ffeae352;
-              box-shadow: inset -10px 0 10px -5px #9a3412;
-              z-index: -1;
-            }
-            .triangle {
-              position: relative;
-            }
-            .triangle:before {
-              content: "";
-              position: absolute;
-              top: -3px;
-              left: -3.7rem;
-              width: 0;
-              height: 0;
-              border-top: 3.5rem solid transparent;
-
-              border-right: 3.5rem solid #ffeae352;
-
-              box-shadow: inset -10px 0 10px -5px #9a3412;
-              z-index: -1;
-            }
-          `}</style>
-        </div>
-      {/* </Slide> */}
 
       {/* <Slide direction="up" duration={1000}> */}
         <nav className="bg-white dark:bg-gray-900 text-xl w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 font-serif font-bold">
