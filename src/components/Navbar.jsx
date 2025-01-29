@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       {/* Upper line */}
-      <Slide direction="up" duration={800}>
+      {/* <Slide direction="up" duration={800}> */}
         <div>
           <div className="relative z-10 sm:flex  hidden justify-between">
             <div
@@ -107,9 +107,9 @@ const Navbar = () => {
             }
           `}</style>
         </div>
-      </Slide>
+      {/* </Slide> */}
 
-      <Slide direction="up" duration={1000}>
+      {/* <Slide direction="up" duration={1000}> */}
         <nav className="bg-white dark:bg-gray-900 text-xl w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 font-serif font-bold">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <Link
@@ -117,10 +117,10 @@ const Navbar = () => {
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <Image
-                src="/assets/Pcs.png"
+                src="/assets/BrandLogo.png"
                 className="mr-2 h-12"
-                width={70}
-                height={70}
+                width={150}
+                height={100}
                 alt="Logo"
                 unoptimized={true}
               />
@@ -137,7 +137,7 @@ const Navbar = () => {
                 &nbsp; +91 9510573174 &nbsp;&nbsp;
               </Link>
 
-              <ThemeToggle />
+              {/* <ThemeToggle /> */}
               <button
                 onClick={toggleMenu}
                 data-collapse-toggle="navbar-sticky"
@@ -216,7 +216,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-      </Slide>
+      {/* </Slide> */}
     </>
   );
 };
