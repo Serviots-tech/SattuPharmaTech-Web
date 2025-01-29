@@ -32,12 +32,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
           <Navbar/>
           {children}
           <Footer/>
