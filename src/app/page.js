@@ -1,31 +1,29 @@
 'use client'
-import { CardWithImage } from "../components/Cards"
-import CarouselSlider from "../components/CarouselSlider";
 import MainImage from "../components/MainImage"
-import ServicesCards from "../components/ServicesCards";
+import ExpertiseSection from "../components/ExpertiseSection";
 import RequestCall from "../components/RequestCall";
-import FounderCard from "../components/Founder";
+import WhyChooseUs from "../components/WhyChooseUsSection";
+import ContactForm from 'src/components/ContactForm'
+import CarouselSlider from 'src/components/CarouselSlider'
 import AnimatedCard from "../components/AnimatedCard";
 
 export default function Home() {
 
-
-  const cardImg = "/assets/Graph.jpg"
   return (
     <div className="w-full">
       < MainImage />
 
-      <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
+      {/* <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
         <CardWithImage cardImg={cardImg} />
       </div>
 
       <AnimatedCard/>
 
-      <ServicesCards />
+      <ExpertiseSection />
 
-      <div className="">
+      {/* <div className="">
         <CarouselSlider />
-      </div>
+      </div> */}
 
 
       {/* Our case history */}
@@ -37,9 +35,10 @@ export default function Home() {
       {/* <div className="pb-24 pt-10">
         <TeamMembers />
       </div> */}
-      <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
-        <FounderCard />
+      <div className="mt-20 mb-20">
+        <WhyChooseUs />
       </div>
+      <ContactForm/>
 
       {/* Request Call */}
       <div>
