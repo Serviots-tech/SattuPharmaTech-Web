@@ -1,11 +1,11 @@
 "use client";
-import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
+
   let toggle;
   const [isMenuOpen, setIsMenuOpen] = useState(toggle);
   const pathname = usePathname();
@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse sm:mt-0 mt-4">
             <button className="bg-[#4FB5B9] font-normal font-poppins text-white max-md:hidden  py-2 px-4 rounded hover:bg-[#44ABB6]">
-              Contact Us
+            <Link href="/contact"> Contact Us</Link>
             </button>
 
             {/* <ThemeToggle /> */}
@@ -92,9 +92,9 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/aboutPage"
+                  href="/about"
                   className={`block py-2 px-3 rounded md:bg-transparent md:p-0  font-poppins font-normal ${getLinkClass(
-                    "/aboutPage"
+                    "/about"
                   )}`}
                 >
                   About
@@ -102,9 +102,9 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/servicesPage"
+                  href="/pharmaservices"
                   className={`block py-2 px-3 rounded md:bg-transparent md:p-0 font-poppins font-normal ${getLinkClass(
-                    "/servicesPage"
+                    "/services"
                   )}`}
                 >
                   Services
