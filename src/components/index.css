@@ -6,3 +6,10 @@
   background-size:cover;
   height: 90vh;
 }
+
+.service-image {
+
+  background: url("/assets/PharmaServiceImage.png");
+  background-size:cover;
+  height: 90vh;
+}

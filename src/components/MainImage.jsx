@@ -2,11 +2,10 @@
 import React from "react";
 import "./index.css";
 
-const MainImage = ({ title1, title2, description, ctaText }) => {
-  console.log("🚀 ~ MainImage ~ title1:", title1);
+const MainImage = ({title1,title2, description,ctaText,isService=false}) => {
   return (
     <>
-      <div className="main-image relative flex flex-col items-center justify-center w-full">
+      <div className={`${isService? 'service-image' :'main-image'} relative flex flex-col items-center justify-center w-full`}>
         {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full max-w-screen-xl"> */}
         <div className="pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
           <div className="text-center md:text-left">
