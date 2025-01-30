@@ -1,10 +1,6 @@
 import React from 'react';
 
 const ContactForm = ({title,description1,description2,align}) => {
-  console.log("🚀 ~ ContactForm ~ title:", title)
-  console.log("🚀 ~ ContactForm ~ description1:", description1)
-  console.log("🚀 ~ ContactForm ~ description2:", description2)
-  console.log("🚀 ~ ContactForm ~ align:", align)
   return (
     <div className="pt-10 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
       <h1 className={`text-4xl mb-4 text-${align ?? "right"} font-semibold font-poppins`}>{title ??  "Get in Touch"}</h1>
