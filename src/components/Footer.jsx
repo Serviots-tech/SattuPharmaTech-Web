@@ -11,7 +11,7 @@ export default function Footer() {
             <Image
               src="/assets/BrandLogo.png"
               className="mr-2 h-12"
-              width={150}
+              width={180}
               height={100}
               alt="Logo"
               unoptimized={true}

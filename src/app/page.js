@@ -35,7 +35,7 @@ export default function Home() {
       <div className="mt-20 mb-20">
         <WhyChooseUs  align={'left'}/>
       </div>
-      <ContactForm/>
+      <ContactForm align={'right'}/>
 
       {/* Request Call */}
       {/* <div>

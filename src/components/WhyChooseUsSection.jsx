@@ -15,7 +15,7 @@ const WhyChooseUs = ({align}) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
           <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
             <div className="flex items-center mb-4">
-              <div class="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><SpecialisedExpertsIcon /></span></div>
+              <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><SpecialisedExpertsIcon /></span></div>
             </div>
             <h3 className="text-xl font-semibold">Specialised Experts</h3>
             <p className="pt-4">
@@ -25,7 +25,7 @@ const WhyChooseUs = ({align}) => {
 
           <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
             <div className="flex items-center mb-4">
-              <div class="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><FreshPerspectiveIcon /></span></div>
+              <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><FreshPerspectiveIcon /></span></div>
             </div>
             <h3 className="text-xl font-semibold">Fresh Perspective</h3>
             <p className="pt-4">
@@ -36,7 +36,7 @@ const WhyChooseUs = ({align}) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
             <div className="flex items-center mb-4">
-              <div class="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><StrategicGuidanceIcon /></span></div>
+              <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><StrategicGuidanceIcon /></span></div>
             </div>
             <h3 className="text-xl font-semibold">Implementation Support</h3>
             <p className="pt-4">
@@ -46,7 +46,7 @@ const WhyChooseUs = ({align}) => {
 
           <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
             <div className="flex items-center mb-4">
-              <div class="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><ImplementationSupportIcon /></span></div>
+              <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><ImplementationSupportIcon /></span></div>
             </div>
             <h3 className="text-xl font-semibold">Strategic Guidance</h3>
             <p className="pt-4">
