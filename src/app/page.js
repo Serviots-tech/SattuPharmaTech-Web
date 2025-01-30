@@ -4,7 +4,8 @@ import CarouselSlider from "../components/CarouselSlider";
 import MainImage from "../components/MainImage"
 import ServicesCards from "../components/ServicesCards";
 import RequestCall from "../components/RequestCall";
-import FounderCard from "src/components/Founder";
+import FounderCard from "../components/Founder";
+import AnimatedCard from "../components/AnimatedCard";
 
 export default function Home() {
 
@@ -17,6 +18,8 @@ export default function Home() {
       <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
         <CardWithImage cardImg={cardImg} />
       </div>
+
+      <AnimatedCard/>
 
       <ServicesCards />
 
