@@ -51,7 +51,7 @@ const ExpertiseSection = ({align}) => {
         <div className="mx-auto text-left">
           <div className="text-xl mt-10 text-[#4FB5B9] font-poppins font-semibold">Pharma Network Development Services</div>
         </div>
-        <div className="mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="mx-auto mt-10 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  gap-6">
           {PharmaNetworkDevelopmentServicesData.map((item, index) => (
             <AnimatedCard title={item?.title} description={item?.description} />
           ))}
@@ -60,7 +60,7 @@ const ExpertiseSection = ({align}) => {
         <div className="mx-auto text-left">
           <div className="text-xl mt-10 text-[#4FB5B9] font-poppins font-semibold">Software Development Services</div>
         </div>
-        <div className="mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="mx-auto mt-10 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
           {SoftwareDevelopmentServicesData.map((item, index) => (
             <AnimatedCard title={item?.title} description={item?.description} />
           ))}

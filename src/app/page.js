@@ -16,13 +16,15 @@ export default function Home() {
 
 			<ExpertiseSection />
 
-			<div className="flex ">
-				<div>
-
+			<div className="max-w-screen-xl mx-auto w-full flex justify-end px-6 md:px-[64px] xl:px-0">
+				<div className="text-end font-bold text-2xl">
+				Who We Are 
 				</div>
 			</div>
-			<CardWithImage cardImg={docImg?.src} cardValue={cardWithFirstImgValue} isReversed={false} />
 
+			<div className='mt-10'>
+				<CardWithImage cardImg={docImg?.src} cardValue={cardWithFirstImgValue} isReversed={false} />
+			</div>
 			<div className='mt-10'>
 				<CardWithImage cardImg={teamImg?.src} cardValue={cardWithSecondImgValue} isReversed={true} />
 			</div>

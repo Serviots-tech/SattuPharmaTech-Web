@@ -6,7 +6,7 @@ const AnimatedCard = ({ title, description }) => {
 
   return (
     <Card
-      className={`w-96 border-2 border-gray-300 rounded-lg overflow-hidden  
+      className={`border-2 border-gray-300 rounded-lg overflow-hidden  
         ${isHovered ? "border-2 border-[#4FB5B9] bg-[#EBFCFC] " : ""}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -22,14 +22,14 @@ const AnimatedCard = ({ title, description }) => {
       {/* Wrapper to control both title and description smoothly */}
       <div className="relative h-36 sm:44 overflow-hidden">
         <div
-          className={`absolute w-full p-3 pt-6 ps-8 font-semibold text-2xl font-poppins transition-transform duration-500 ${isHovered ? "-translate-y-full " : "translate-y-0 opacity-100"
+          className={`absolute w-full p-3 pt-6 ps-8 font-semibold text-2xl font-poppins transition-transform duration-500 ${isHovered ? "-translate-y-full " : "translate-y-0 "
             }`}
         >
           {title}
         </div>
 
         <div
-          className={`absolute w-full p-3 pt-6 ps-8 transition-transform duration-500 ${isHovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+          className={`absolute w-full p-3 pt-6 ps-8 transition-transform duration-500 ${isHovered ? "translate-y-0 " : "translate-y-full "
             }`}
         >
           <ul className="list-disc list-inside">
