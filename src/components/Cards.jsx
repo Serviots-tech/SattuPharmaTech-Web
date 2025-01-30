@@ -11,8 +11,8 @@ export function CardWithImage({ cardImg, cardValue, isReversed }) {
       </div>
 
       {/* Text Content (Changes Order Based on isReversed Prop) */}
-      <div className={`${isReversed ? "order-first" : "order-last "} lg:mb-2`}>
-        <h2 className={`text-2xl font-bold text-teal-600 pt-4 pb-2 md:font-semibold md:pt-2 font-poppins ${isReversed && "mt-24"} `}>
+      <div className={`${isReversed ? "order-first text-end" : "order-last "} lg:mb-2`}>
+        <h2 className={`text-2xl font-bold text-teal-600 pt-4 pb-2 md:font-semibold md:pt-2 font-poppins ${isReversed && "xl:mt-24 sm:mt-4"} `}>
           {cardValue?.title}
         </h2>
         <p className="mt-3 text-md md:font-normal md:text-md font-sans">
