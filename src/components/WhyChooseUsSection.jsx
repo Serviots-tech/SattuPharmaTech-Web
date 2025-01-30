@@ -1,66 +1,60 @@
 import React from "react";
+import { SpecialisedExpertsIcon } from '../app/helpers/svg'
+import { FreshPerspectiveIcon } from '../app/helpers/svg'
+import { StrategicGuidanceIcon } from '../app/helpers/svg'
+import { ImplementationSupportIcon } from '../app/helpers/svg'
 
 const WhyChooseUs = () => {
   return (
     <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
-      <h2 className="text-3xl font-bold text-right text-center mb-8">Why Choose Us?</h2>
+      <h2 className="text-3xl font-bold text-right mb-8">Why Choose Us?</h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[70%_30%] gap-6">
-        <div className="grid gap-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 border rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-              <div class="inline-block p-2 rounded-2xl border-2 border-[#E0E0E0]"><span className="text-3xl">📊</span></div>
-              </div>
-                <h3 className="text-xl font-semibold">Deep Market Insights</h3>
-              <p>
-                Showcase the IT company’s expertise in developing mobile applications for both
-                Android and iOS platforms.
-              </p>
+      <div className="grid gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+          <div className="p-6 border rounded-lg shadow-md bg-[#FCFCFC]">
+            <div className="flex items-center mb-4">
+              <div class="inline-block p-4 rounded-2xl border-2 border-[#E0E0E0]  bg-white"><span className="text-2xl "><SpecialisedExpertsIcon /></span></div>
             </div>
-
-            <div className="p-6 border rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-              <div class="inline-block p-2 rounded-2xl border-2 border-[#E0E0E0]"><span className="text-3xl">🏅</span></div>
-              </div>
-                <h3 className="text-xl font-semibold">Proven Track Record</h3>
-              <p>
-                With a history of successful projects, we have established ourselves as a trusted
-                partner for businesses aiming to bridge the gap between India and Africa.
-              </p>
-            </div>
+            <h3 className="text-xl font-semibold">Specialised Experts</h3>
+            <p className="pt-4">
+              Starting a pharmaceutical business in India or Africa requires expert help with industry knowledge, and we've experts who follow the best practices.
+            </p>
           </div>
 
-          <div className="p-6 border rounded-lg shadow-md bg-white">
+          <div className="p-6 border rounded-lg shadow-md bg-[#FCFCFC]">
             <div className="flex items-center mb-4">
-            <div class="inline-block p-2 rounded-2xl border-2 border-[#E0E0E0]"><span className="text-3xl">📊</span> </div>
+              <div class="inline-block p-4 rounded-2xl border-2 border-[#E0E0E0]  bg-white"><span className="text-2xl "><FreshPerspectiveIcon /></span></div>
             </div>
-              <h3 className="text-xl font-semibold">Deep Market Insights</h3>
-            <p>
-              Showcase the IT company’s expertise in developing mobile applications for both Android
-              and iOS platforms.
+            <h3 className="text-xl font-semibold">FreshPerspectiveIcon</h3>
+            <p className="pt-4">
+              We conduct SWOT analysis to understand strengths, weaknesses, opportunities, and threats and provide an unbiased view of your business.
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-6 border rounded-lg shadow-md bg-[#FCFCFC]">
+            <div className="flex items-center mb-4">
+              <div class="inline-block p-4 rounded-2xl border-2 border-[#E0E0E0]  bg-white"><span className="text-2xl "><StrategicGuidanceIcon /></span></div>
+            </div>
+            <h3 className="text-xl font-semibold">Implementation Support</h3>
+            <p className="pt-4">
+              We not only help you find opportunities and build solutions but also help you implement solutions, strategies, and initiatives.
+            </p>
+          </div>
+
+          <div className="p-6 border rounded-lg shadow-md bg-[#FCFCFC]">
+            <div className="flex items-center mb-4">
+              <div class="inline-block p-4 rounded-2xl border-2 border-[#E0E0E0]  bg-white"><span className="text-2xl "><ImplementationSupportIcon /></span></div>
+            </div>
+            <h3 className="text-xl font-semibold">Strategic Guidance</h3>
+            <p className="pt-4">
+              Helping businesses with comprehensive growth strategies, including finding the right opportunities, market expansion, business strategies, product development, & software consulting.
             </p>
           </div>
         </div>
 
-        {/* Right Column - 30% on large screens, full-width on small screens */}
-        {/* <div className="p-6 bg-[#FFF7E3] border-w-1 border-[#FDC446] rounded-lg text-center flex flex-col justify-center"> */}
-        <div className="p-6 bg-[#FFF7E3] border border-[#FDC446] border-1 rounded-lg text-center flex flex-col justify-center">
-          <div className="flex flex-col items-center">
-            <div class="inline-block p-2 rounded-2xl border-2 bg-white border-[#FDC446]">
-              <span class="text-4xl">🤝</span>
-            </div>
-            <h3 className="text-2xl font-semibold text-[#FDC446] mt-3">
-              Let’s Connect & Grow Together
-            </h3>
-          </div>
-          <p className="mt-3">Have questions or looking for strategic solutions in Pharmaceuticals & IT?</p>
-          <p className="font-bold">We’re here to help!</p>
-          <button className="mt-4 px-6 py-2 bg-[#FFD059] text-white font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition duration-300">
-            Get in Touch
-          </button>
-        </div>
       </div>
+
     </div>
   );
 };

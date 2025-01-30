@@ -18,9 +18,9 @@ export default function Home() {
 
       <ExpertiseSection />
 
-      <div className="">
+      {/* <div className="">
         <CarouselSlider />
-      </div>
+      </div> */}
 
 
       {/* Our case history */}
