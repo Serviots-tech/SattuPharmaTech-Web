@@ -10,32 +10,31 @@ import ExpertiseSection from '../components/ExpertiseSection';
 
 
 export default function Home() {
-	return (
-		<div className="w-full">
-			<MainImage title1={"Pharma Network "} title2={"Development Company"} description={"Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals, or healthcare providers to market your products."} ctaText={"Contact Us, Now"}/>
-    
+  return (
+    <div className="w-full">
+      <MainImage title1={"Pharma Network "} title2={"Development Company"} description={"Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals, or healthcare providers to market your products."} ctaText={"Contact Us, Now"} />
 
-			<ExpertiseSection />
+      <ExpertiseSection />
 
-			<div className="flex ">
-				<div>
+      <div className="flex ">
+        <div>
 
-				</div>
-			</div>
-			<CardWithImage cardImg={docImg?.src} cardValue={cardWithFirstImgValue} isReversed={false} />
+        </div>
+      </div>
+      <CardWithImage cardImg={docImg?.src} cardValue={cardWithFirstImgValue} isReversed={false} />
 
-			<div className='mt-10'>
-				<CardWithImage cardImg={teamImg?.src} cardValue={cardWithSecondImgValue} isReversed={true} />
-			</div>
+      <div className='mt-10'>
+        <CardWithImage cardImg={teamImg?.src} cardValue={cardWithSecondImgValue} isReversed={true} />
+      </div>
 
-			<div className="mt-20 mb-20">
-				<WhyChooseUs align={'left'} />
-			</div>
+      <div className="mt-20 mb-20">
+        <WhyChooseUs align={'left'} />
+      </div>
 
 
-			<ContactForm />
+      <ContactForm />
 
-		</div>
+    </div>
 
-	);
+  );
 }
