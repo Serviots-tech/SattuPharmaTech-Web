@@ -1,11 +1,14 @@
 import React from 'react';
 
-const ContactForm = ({title,description1,description2,align}) => {
+const ContactForm = ({title,description1,description2,align = "right"}) => {
+  const alignmentClass =
+  align === "center" ? "text-center" : align === "left" ? "text-left" : "text-right";
+
   return (
     <div className="pt-10 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
-      <h1 className={`text-4xl mb-4 text-${align ?? "right"} font-semibold font-poppins`}>{title ??  "Get in Touch"}</h1>
+      <h1 className={`text-4xl mb-4 font-semibold font-poppins ${alignmentClass}`}>{title ??  "Get in Touch"}</h1>
       
-      <div className={`text-gray-600 mb-8 text-${align ?? "right"}`}>
+      <div className={`text-gray-600 mb-8 ${alignmentClass}`}>
         <p>{description1 ??" Ready to explore new opportunities?"}</p>
         <p>{description2 ?? " Contact us today to learn how we can help your business thrive in the Indian and African markets."}</p>
       </div>

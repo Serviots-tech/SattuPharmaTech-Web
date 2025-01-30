@@ -2,12 +2,12 @@
 import React from "react";
 import "./index.css";
 
-const MainImage = () => {
+const MainImage = ({title1,title2, description,ctaText}) => {
   return (
     <>
         <div className="main-image relative flex flex-col items-center justify-center w-full">
           {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full max-w-screen-xl"> */}
-          <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
+          <div className="pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
               <div className="text-center md:text-left">
                 <div
                   className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold font-poppins"
@@ -17,21 +17,20 @@ const MainImage = () => {
                   }}
                 >
                   <p className="mt-4 sm:mt-10 text-black">
-                    Bridging Continents,
+                    {title1 ?? "Bridging Continents,"}
                   </p>
                   <p className="mt-2 text-black">
-                    Empowering Industries
+                    {title2 ?? "Empowering Industries"}
                   </p>
                 </div>
 
-                <p className="mt-4 text-lg text-black font-light max-w-lg mx-auto md:mx-0">
-                  Unlock new opportunities in Pharmaceuticals & IT with our
-                  strategic solutions connecting India & Africa.
+                <p className="mt-4 max-md:hidden text-lg text-black font-light max-w-screen-md mx-auto md:mx-0">
+                  {description ?? "Unlock new opportunities in Pharmaceuticals & IT with our strategic solutions connecting India & Africa."}
                 </p>
 
                 <div className="mt-8 flex justify-center md:justify-start">
                   <button className="w-full sm:w-auto bg-custom-bg font-medium font-poppins text-lg text-white py-2 px-6 rounded hover:bg-[#44ABB6]">
-                  Explore Our Services
+                  {ctaText ?? "Explore Our Services"}
                   </button>
                 </div>
               </div>
