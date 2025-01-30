@@ -4,7 +4,7 @@ const nextConfig = {
         domains: ['alexharkness.com'],
     },
     distDir: "build",
-    output: "export",
+    
 };
 
 export default nextConfig;

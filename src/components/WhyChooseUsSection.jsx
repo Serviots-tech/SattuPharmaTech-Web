@@ -19,7 +19,7 @@ const WhyChooseUs = ({align}) => {
             </div>
             <h3 className="text-xl font-semibold">Specialised Experts</h3>
             <p className="pt-4">
-              Starting a pharmaceutical business in India or Africa requires expert help with industry knowledge, and we've experts who follow the best practices.
+              Starting a pharmaceutical business in India or Africa requires expert help with industry knowledge, and we&apos;ve experts who follow the best practices.
             </p>
           </div>
 
