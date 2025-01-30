@@ -1,53 +1,41 @@
 'use client'
-import MainImage from "../components/MainImage"
-import ExpertiseSection from "../components/ExpertiseSection";
+import docImg from "../../public/assets/groupOfDoc.jpg";
+import teamImg from "../../public/assets/teamOfPrograms.jpg";
+import { CardWithImage } from '../components/Cards';
+import ContactForm from '../components/ContactForm';
+import MainImage from "../components/MainImage";
 import RequestCall from "../components/RequestCall";
 import WhyChooseUs from "../components/WhyChooseUsSection";
-import ContactForm from 'src/components/ContactForm'
-import CarouselSlider from 'src/components/CarouselSlider'
-import AnimatedCard from "../components/AnimatedCard";
+import { cardWithFirstImgValue, cardWithSecondImgValue } from './constants/constValues';
 
 export default function Home() {
 
-  return (
-    <div className="w-full">
-      < MainImage />
-
-      {/* <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
-        <CardWithImage cardImg={cardImg} />
-      </div>
-
-      <AnimatedCard/>
-
-      <ExpertiseSection />
-
-      {/* <div className="">
-        <CarouselSlider />
-      </div> */}
 
 
-      {/* Our case history */}
-      {/* <div className="mt-10">
-        <SoftwareCases />
-      </div> */}
+	return (
+		<div className="w-full">
+			< MainImage />
 
-      {/* Our Team Members */}
-      {/* <div className="pb-24 pt-10">
-        <TeamMembers />
-      </div> */}
-      <div className="mt-20 mb-20">
-        <WhyChooseUs />
-      </div>
-      <ContactForm/>
+			<div className="mt-20 mb-20">
+				<WhyChooseUs />
+			</div>
 
-      {/* Request Call */}
-      <div>
-        <RequestCall />
-      </div>
+			<CardWithImage cardImg={docImg?.src} cardValue={cardWithFirstImgValue} isReversed={false} />
 
-      {/* About Us */}
-      {/* <div><AboutUs /></div> */}
-    </div>
+			<div className='mt-10'>
+				<CardWithImage cardImg={teamImg?.src} cardValue={cardWithSecondImgValue} isReversed={true} />
+			</div>
 
-  );
+			<ContactForm />
+
+			{/* Request Call */}
+			<div>
+				<RequestCall />
+			</div>
+
+			{/* About Us */}
+			{/* <div><AboutUs /></div> */}
+		</div>
+
+	);
 }

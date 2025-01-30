@@ -1,8 +1,7 @@
 "use client";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 // import { CardWithImage } from "../../components/Cards";
 // import TeamMembers from "../../components/TeamMembers";
-import AboutUs from "../../components/AboutUs";
 import FounderCard from "src/components/WhyChooseUsSection";
 
 const About = () => {
@@ -43,15 +42,10 @@ const About = () => {
         </div>
       </Slide>
       <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
-        {/* <CardWithImage cardImg={cardImg} clientDiv={true} /> */}
-        <FounderCard/>
+        <FounderCard />
       </div>
-      {/* <div className="pb-10">
-        <TeamMembers />
-      </div> */}
-      <div>
-        {/* <AboutUs/> */}
-      </div>
+
+      <div></div>
       <style jsx>{`
         .triangle {
           position: relative;

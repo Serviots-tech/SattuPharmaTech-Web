@@ -39,14 +39,14 @@ const MainImage = () => {
         </div>
       <div className="flex justify-center">
         <div className=" z-20 w-[84vw] max-w-screen-xl mx-auto grid justify-center -mt-16 lg:py-10 bg-[#FFF7E3] rounded-lg shadow-lg p-4 space-x-4 md:space-x-8">
-        <div class="bg-[#FFF7E3]">
-            <div class="container mx-auto px-4">
-              <div class="flex flex-wrap justify-center items-center text-center gap-6 md:gap-10 lg:gap-32">
-                <h3 class="text-lg md:text-xl font-poppins font-light"><i> Expand Markets </i></h3>
-                <span class="hidden md:block text-xl text-gray font-thin">|</span>
-                <h3 class="text-lg md:text-xl font-poppins font-light"> <i>Navigate Regulations</i></h3>
-                <span class="hidden md:block text-xl text-gray font-thin">|</span>
-                <h3 class="text-lg md:text-xl font-poppins font-light"><i> Drive Innovation</i></h3>
+        <div className="bg-[#FFF7E3]">
+            <div className="container mx-auto px-4">
+              <div className="flex flex-wrap justify-center items-center text-center gap-6 md:gap-10 lg:gap-32">
+                <h3 className="text-lg md:text-xl font-poppins font-light"><i> Expand Markets </i></h3>
+                <span className="hidden md:block text-xl text-gray font-thin">|</span>
+                <h3 className="text-lg md:text-xl font-poppins font-light"> <i>Navigate Regulations</i></h3>
+                <span className="hidden md:block text-xl text-gray font-thin">|</span>
+                <h3 className="text-lg md:text-xl font-poppins font-light"><i> Drive Innovation</i></h3>
               </div>
             </div>
           </div>

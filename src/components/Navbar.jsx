@@ -42,7 +42,7 @@ const Navbar = () => {
             />
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse sm:mt-0 mt-4">
-            <button class="bg-[#4FB5B9] font-normal font-poppins text-white max-md:hidden  py-2 px-4 rounded hover:bg-[#44ABB6]">
+            <button className="bg-[#4FB5B9] font-normal font-poppins text-white max-md:hidden  py-2 px-4 rounded hover:bg-[#44ABB6]">
               Contact Us
             </button>
 
