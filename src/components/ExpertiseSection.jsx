@@ -1,12 +1,40 @@
 import React from "react";
+import AnimatedCard from "./AnimatedCard";
 
-const expertiseData = [
-  { title: "Bridging the Gap Between India and Africa" },
-  { title: "Assistance for New Indian Companies Entering the African Market" },
-  { title: "Data and Market Realization" },
-  { title: "Pharma Manufacturing and Hospitals" },
-  { title: "Team Knowledge" },
-  { title: "Main Objective" },
+const PharmaNetworkDevelopmentServicesData = [
+  { title: "Assistance for Market Entry", description: ["Company registration", "Fulfilling regulatory norms", "Connecting with distributors", "Marketing your products", "Joint Ventures"] },
+  {
+    title: "Pharma Manufacturing & Hospital Setup",
+    description: [
+      "Finding suitable locations",
+      "Assisting in manufacturing unit setup",
+      "Providing full-fledged assistance for hospital setup",
+      "Market research & product marketing",
+      "Joint Ventures",
+    ],
+  },
+  {
+    title: "Data Sheets & Market Research",
+    description: [
+      "Conduct marketing research",
+      "Conduct SWOT analysis",
+      "Create user persona",
+      "Understand market needs & challenges",
+      "Create solutions that solve problems",
+    ],
+  },
+];
+const SoftwareDevelopmentServicesData = [
+  {
+    title: "Services We Offer",
+    description: [
+      "AI and Data Science Solutions",
+      "ERP Solutions",
+      "Network Security Services",
+      "Mobile Application Development",
+      "IoT and Hardware Solutions",
+    ],
+  },
 ];
 
 const ExpertiseSection = () => {
@@ -14,35 +42,33 @@ const ExpertiseSection = () => {
     <section className="py-20">
       {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full "> */}
       <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
-      <div className="mx-auto text-left">
-        <h2 className="text-3xl font-bold text-black">Our Expertise</h2>
-        <p className="mt-4 text-gray-600">
-          Bridging India & Africa with Strategic Solutions in Pharmaceuticals & IT
-        </p>
-        <p className="mt-2 text-gray-600 md:max-w-[80%]">
-          At Satupharmtech, we specialise in connecting businesses across India and Africa, providing innovative solutions in Pharmaceuticals and IT. Our expertise lies in market entry strategies, regulatory compliance, digital transformation, and business expansion to help you thrive in these dynamic regions.
-        </p>
-      </div>
-      <div className="mx-auto text-left">
-      <div className="text-xl mt-10 text-[#4FB5B9] font-poppins font-bold">Pharma Expertise</div>
-      </div>
-      <div className="mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {expertiseData.map((item, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-md rounded-2xl p-6 border-t-4 border-teal-400"
-          >
-            <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-            <a href="#" className="mt-4 text-teal-600 font-medium flex items-center space-x-2">
-              <span>Learn More</span>
-              <span>&rarr;</span>
-            </a>
-          </div>
-        ))}
-      </div>
+        <div className="mx-auto text-left">
+          <h2 className="text-3xl font-bold text-black">Our Expertise</h2>
+          <p className="mt-4 text-gray-600 md:max-w-[80%]">
+            From helping you launch your pharmaceutical business in the African market, Manufacturing and Hospital Setup, and marketing your product/services to targeted customers to building smart and scalable software solutions, including web and mobile applications, Satu PhamTech is your reliable partner. Let's find out the services we offer.
+          </p>
+        </div>
+        <div className="mx-auto text-left">
+          <div className="text-xl mt-10 text-[#4FB5B9] font-poppins font-bold">Pharma Network Development Services</div>
+        </div>
+        <div className="mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {PharmaNetworkDevelopmentServicesData.map((item, index) => (
+            <AnimatedCard title={item?.title} description={item?.description} />
+          ))}
+        </div>
+
+        <div className="mx-auto text-left">
+          <div className="text-xl mt-10 text-[#4FB5B9] font-poppins font-bold">Software Development Services</div>
+        </div>
+        <div className="mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {SoftwareDevelopmentServicesData.map((item, index) => (
+            <AnimatedCard title={item?.title} description={item?.description} />
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
 export default ExpertiseSection;
+

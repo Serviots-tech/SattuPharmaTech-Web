@@ -4,8 +4,6 @@ import ExpertiseSection from "../components/ExpertiseSection";
 import RequestCall from "../components/RequestCall";
 import WhyChooseUs from "../components/WhyChooseUsSection";
 import ContactForm from 'src/components/ContactForm'
-import CarouselSlider from 'src/components/CarouselSlider'
-import AnimatedCard from "../components/AnimatedCard";
 
 export default function Home() {
 
@@ -13,11 +11,11 @@ export default function Home() {
     <div className="w-full">
       < MainImage />
 
-      {/* <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
+       {/* <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
         <CardWithImage cardImg={cardImg} />
-      </div>
+      </div> */}
 
-      <AnimatedCard/>
+      {/* <AnimatedCard/> */}
 
       <ExpertiseSection />
 

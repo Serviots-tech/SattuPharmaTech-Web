@@ -13,29 +13,32 @@ const AnimatedCard = ({ title, description }) => {
     >
       {/* Black bar */}
       <div
-        className={`h-12 p-6 flex items-center ${
-          isHovered ? "border-1 border-white " : ""
-        }`}
+        className={`h-12 p-6 flex items-center ${isHovered ? "border-1 border-white " : ""
+          }`}
       >
         <div className="h-1 w-14 bg-[#4FB5B9]" />
       </div>
 
       {/* Wrapper to control both title and description smoothly */}
-      <div className="relative h-28 overflow-hidden">
+      <div className="relative h-36 sm:44 overflow-hidden">
         <div
-          className={`absolute w-full p-3 pt-6 ps-8 font-sans font-bold text-2xl transition-transform duration-500 ${
-            isHovered ? "-translate-y-full " : "translate-y-0 opacity-100"
-          }`}
+          className={`absolute w-full p-3 pt-6 ps-8 font-sans font-bold text-2xl transition-transform duration-500 ${isHovered ? "-translate-y-full " : "translate-y-0 opacity-100"
+            }`}
         >
-         {title}
+          {title}
         </div>
 
         <div
-          className={`absolute w-full p-3 pt-6 ps-8 transition-transform duration-500 ${
-            isHovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-          }`}
+          className={`absolute w-full p-3 pt-6 ps-8 transition-transform duration-500 ${isHovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+            }`}
         >
-         {description}
+          <ul className="list-disc list-inside">
+            {Array.isArray(description) ? (
+              description.map((item, index) => <li key={index}>{item}</li>)
+            ) : (
+              <li>{description}</li>
+            )}
+          </ul>
         </div>
       </div>
 
