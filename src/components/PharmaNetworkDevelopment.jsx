@@ -16,19 +16,19 @@ export default function PharmaNetworkDevelopment() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="space-y-3">
+          <div className="space-y-5">
             <p className="font-normal font-poppins">Assistance for Market Entry</p>
             <p className="font-normal font-poppins">Pharma Manufacturing and Hospital Setup</p>
             <p className="font-normal font-poppins">Data Sheets and Market Research</p>
           </div>
 
-          <div className="space-y-3 border-l border-r px-6">
+          <div className="space-y-5 border-l border-r px-6">
             <p className="font-normal font-poppins">Regulatory affairs consulting</p>
             <p className="font-normal font-poppins">Local distributors and representative</p>
             <p className="font-normal font-poppins">Pending stakeholders and engagement</p>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-5">
             <p className="font-normal font-poppins">Finding suitable locations</p>
             <p className="font-normal font-poppins">Assisting in manufacturing unit setup</p>
             <p className="font-normal font-poppins">Providing full-fledged assistance for hospital setup</p>
