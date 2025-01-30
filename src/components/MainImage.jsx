@@ -1,11 +1,22 @@
 "use client";
 import React from "react";
 import "./index.css";
+import Link from "next/link";
 
-const MainImage = ({title1,title2, description,ctaText,isService=false}) => {
+const MainImage = ({
+  title1,
+  title2,
+  description,
+  ctaText,
+  isService = false,
+}) => {
   return (
     <>
-      <div className={`${isService? 'service-image' :'main-image'} relative flex flex-col items-center justify-center w-full`}>
+      <div
+        className={`${
+          isService ? "service-image" : "main-image"
+        } relative flex flex-col items-center justify-center w-full`}
+      >
         {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full max-w-screen-xl"> */}
         <div className="pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
           <div className="text-center md:text-left">
@@ -24,7 +35,9 @@ const MainImage = ({title1,title2, description,ctaText,isService=false}) => {
               </p>
             </div>
 
-            <div className={`h-12 mt-2 flex justify-center sm:justify-normal  items-center }`}>
+            <div
+              className={`h-12 mt-2 flex justify-center sm:justify-normal  items-center }`}
+            >
               <div className="h-1 w-14  bg-[#4FB5B9]" />
             </div>
 
@@ -34,9 +47,11 @@ const MainImage = ({title1,title2, description,ctaText,isService=false}) => {
             </p>
 
             <div className="mt-8 flex justify-center md:justify-start">
-              <button className=" sm:w-auto bg-custom-bg font-medium font-poppins text-lg text-white py-2 px-6 rounded hover:bg-[#44ABB6]">
-                {ctaText ?? "Explore Our Services"}
-              </button>
+              <Link href="/contact">
+                <button className=" sm:w-auto bg-custom-bg font-medium font-poppins text-lg text-white py-2 px-6 rounded hover:bg-[#44ABB6]">
+                  {ctaText ?? "Explore Our Services"}
+                </button>
+              </Link>
             </div>
           </div>
         </div>
