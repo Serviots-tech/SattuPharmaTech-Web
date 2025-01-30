@@ -1,9 +1,8 @@
 'use client'
 import MainImage from "../components/MainImage"
 import ExpertiseSection from "../components/ExpertiseSection";
-import RequestCall from "../components/RequestCall";
 import WhyChooseUs from "../components/WhyChooseUsSection";
-import ContactForm from 'src/components/ContactForm'
+import ContactForm from '../components/ContactForm'
 
 export default function Home() {
 
@@ -34,17 +33,18 @@ export default function Home() {
         <TeamMembers />
       </div> */}
       <div className="mt-20 mb-20">
-        <WhyChooseUs />
+        <WhyChooseUs  align={'left'}/>
       </div>
       <ContactForm/>
 
       {/* Request Call */}
-      <div>
+      {/* <div>
         <RequestCall />
-      </div>
+      </div> */}
 
       {/* About Us */}
       {/* <div><AboutUs /></div> */}
+      {/* <Footer/> */}
     </div>
 
   );

@@ -22,7 +22,7 @@ const AnimatedCard = ({ title, description }) => {
       {/* Wrapper to control both title and description smoothly */}
       <div className="relative h-36 sm:44 overflow-hidden">
         <div
-          className={`absolute w-full p-3 pt-6 ps-8 font-sans font-bold text-2xl transition-transform duration-500 ${isHovered ? "-translate-y-full " : "translate-y-0 opacity-100"
+          className={`absolute w-full p-3 pt-6 ps-8 font-semibold text-2xl font-poppins transition-transform duration-500 ${isHovered ? "-translate-y-full " : "translate-y-0 opacity-100"
             }`}
         >
           {title}
@@ -36,7 +36,7 @@ const AnimatedCard = ({ title, description }) => {
             {Array.isArray(description) ? (
               description.map((item, index) => <li key={index}>{item}</li>)
             ) : (
-              <li>{description}</li>
+              <li className="font-poppins font-normal">{description}</li>
             )}
           </ul>
         </div>
