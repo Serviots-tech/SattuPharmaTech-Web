@@ -4,10 +4,9 @@ import teamImg from "../../public/assets/teamOfPrograms.jpg";
 import { CardWithImage } from '../components/Cards';
 import ContactForm from '../components/ContactForm';
 import MainImage from "../components/MainImage";
-import RequestCall from "../components/RequestCall";
 import WhyChooseUs from "../components/WhyChooseUsSection";
 import { cardWithFirstImgValue, cardWithSecondImgValue } from './constants/constValues';
-
+import ContactForm from '../components/ContactForm'
 export default function Home() {
 
 
@@ -15,7 +14,11 @@ export default function Home() {
 	return (
 		<div className="w-full">
 			< MainImage />
+			<ExpertiseSection />
 
+			<div className="mt-20 mb-20">
+        <WhyChooseUs  align={'left'}/>
+      </div>
 			<div className="mt-20 mb-20">
 				<WhyChooseUs />
 			</div>
@@ -28,14 +31,15 @@ export default function Home() {
 
 			<ContactForm />
 
-			{/* Request Call */}
-			<div>
-				<RequestCall />
-			</div>
+      {/* Request Call */}
+      {/* <div>
+        <RequestCall />
+      </div> */}
 
-			{/* About Us */}
-			{/* <div><AboutUs /></div> */}
-		</div>
+      {/* About Us */}
+      {/* <div><AboutUs /></div> */}
+      {/* <Footer/> */}
+    </div>
 
 	);
 }

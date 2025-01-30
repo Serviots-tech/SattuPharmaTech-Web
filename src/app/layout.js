@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Inter, Poppins } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"], weight: ["100","200","300", "400","500","600","700", "800", "900"], variable: "--font-inter" });
-const poppins = Poppins({ subsets: ["latin"], weight: ["100","200","300", "400","500","600","700", "800", "900"], variable: "--font-poppins" });
+const inter = Inter({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], variable: "--font-inter" });
+const poppins = Poppins({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], variable: "--font-poppins" });
 
 
 export const metadata = {
@@ -28,14 +28,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  
+
   return (
     <html lang="en" >
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
-          <Navbar/>
-          {children}
-          <Footer/>
-        </body>
+        <Navbar />
+        {children}
+        <div className="border-t border-gray">
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
