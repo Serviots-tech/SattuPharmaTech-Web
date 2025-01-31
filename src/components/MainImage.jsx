@@ -57,7 +57,7 @@ const MainImage = ({
         </div>
       </div>
       <div className="flex justify-center">
-        <div className=" z-20 w-[84vw]  mx-auto grid justify-center xl:-mt-16 lg:-mt-12 md:-mt-10 -mt-16 lg:py-10 bg-[#FFF7E3] rounded-lg shadow-lg p-4 space-x-4 md:space-x-8">
+        <div className=" z-20 w-[84vw]  mx-auto grid justify-center xl:-mt-8 lg:-mt-12 md:-mt-10 -mt-16 lg:py-10 bg-[#FFF7E3] rounded-lg shadow-lg p-4 space-x-4 md:space-x-8">
           <div className="bg-[#FFF7E3]">
             <div className="container mx-auto px-4">
               <div className="flex flex-wrap justify-center items-center text-center gap-6 md:gap-4 ">

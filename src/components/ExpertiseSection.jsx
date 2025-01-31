@@ -43,7 +43,7 @@ const ExpertiseSection = ({align}) => {
       {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full "> */}
       <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
         <div className={`mx-auto text-${align ?? 'left'}`}>
-          <h2 className="text-3xl font-semibold text-black font-poppins">Our Expertise</h2>
+          <h2 className="text-3xl font-semibold text-black font-poppins">Our Pharma & Software Development Services</h2>
           <p className="mt-4 text-gray-600 md:max-w-[70%] font-poppins font-normal">
             From helping you launch your pharmaceutical business in the African market, Manufacturing and Hospital Setup, and marketing your product/services to targeted customers to building smart and scalable software solutions, including web and mobile applications, Satu PhamTech is your reliable partner. Let&apos;s find out the services we offer.
           </p>
