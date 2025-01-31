@@ -15,7 +15,7 @@ const ContactForm = ({
       : "text-right";
 
   return (
-    <div className="pt-10 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
+    <div className="pt-10 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
       <h1
         className={`text-4xl mb-4 font-semibold font-poppins ${alignmentClass}`}
       >

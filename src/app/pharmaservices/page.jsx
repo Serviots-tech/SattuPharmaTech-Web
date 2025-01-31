@@ -14,13 +14,13 @@ const Service = () => {
     <>
       <MainImage isService={true} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PhamTech helps you establish a pharmaceutical company or manufacturing unit or run a hospital by offering end-to-end business consulting services. "} ctaText={"Contact Us, Now"} />
       <PharmaNetworkDevelopment />
-      <div className="pt-10 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
+      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
         <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
-        <CardWithImage cardImg={docImg?.src} cardValue={cardWithThirdImgValue} isReversed={false} />
       </div>
+      <CardWithImage cardImg={docImg?.src} cardValue={cardWithThirdImgValue} isReversed={false} />
 
 
-      <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
+      <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
         <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Use Pharma Network Development Company</h2>
         <div className="grid gap-6 mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
@@ -77,9 +77,9 @@ const Service = () => {
           establish yourself as a reputed pharmaceutical company.
         </p>
         <Link href="/contact">
-        <button className="mt-6 bg-[#4FB5B9] px-20 text-white py-3 rounded-xl text-lg font-medium transition hover:bg-[#48A5A8]">
-       Let’s Connect
-        </button>
+          <button className="mt-6 bg-[#4FB5B9] px-20 text-white py-3 rounded-xl text-lg font-medium transition hover:bg-[#48A5A8]">
+            Let’s Connect
+          </button>
         </Link>
       </div>
     </>
