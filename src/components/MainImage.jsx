@@ -12,7 +12,7 @@ const MainImage = ({
 }) => {
   return (
     <>
-      {/* <div
+      <div
         className={`${
           // isService ? "pharmaservice-image" : "main-image" 
           backgroundImageClass
@@ -82,7 +82,7 @@ const MainImage = ({
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
 
       
