@@ -12,12 +12,11 @@ const MainImage = ({
 }) => {
   return (
     <>
-      <div
+      {/* <div
         className={`${
           isService ? "service-image" : "main-image"
         } relative flex flex-col items-center justify-center w-full`}
       >
-        {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full max-w-screen-xl"> */}
         <div className="pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
           <div className="text-center md:text-left">
             <div
@@ -55,8 +54,8 @@ const MainImage = ({
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center">
+      </div> */}
+      {/* <div className="flex justify-center">
         <div className=" z-20 w-[84vw] max-w-screen-xl mx-auto grid justify-center xl:-mt-16 lg:-mt-12 md:-mt-10 -mt-16 lg:py-10 bg-[#FFF7E3] rounded-lg shadow-lg p-4 space-x-4 md:space-x-8">
           <div className="bg-[#FFF7E3]">
             <div className="container mx-auto px-4">
@@ -81,7 +80,10 @@ const MainImage = ({
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+
+      
     </>
   );
 };
