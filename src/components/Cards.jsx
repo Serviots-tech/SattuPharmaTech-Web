@@ -5,7 +5,7 @@ import Image from "next/image";
 export function CardWithImage({ cardImg, cardValue, isReversed }) {
   return (
     <div
-      className={` mx-auto xl:px-10 bg-white rounded-xl px-6 md:px-[64px] grid ${
+      className={` mx-auto xl:px-20 bg-white rounded-xl px-6 md:px-[64px] grid ${
         isReversed ? "xl:grid-cols-[1fr,2fr]" : "xl:grid-cols-[2fr,1fr]"
       } grid-cols-1  gap-6`}
     >
