@@ -9,14 +9,26 @@ const Navbar = () => {
   let toggle;
   const [isMenuOpen, setIsMenuOpen] = useState(toggle);
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+  let timeoutId;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const handleMouseEnter = () => {
+    clearTimeout(timeoutId); 
+    setIsOpen(true);
+  };
 
-  const getLinkClass = (path) => {
-    return pathname === path
-      ? "text-[#4FB5B9] bg-gray-200"
+  const handleMouseLeave = () => {
+    timeoutId = setTimeout(() => {
+      setIsOpen(false);
+    }, 200); 
+  };
+
+  const getLinkClass = (path, path2) => {
+    return pathname === path || pathname === path2
+      ? "text-[#4FB5B9]"
       : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#4FB5B9] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent";
   };
 
@@ -43,7 +55,7 @@ const Navbar = () => {
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse sm:mt-0 mt-4">
             <button className="bg-[#4FB5B9] font-normal font-poppins text-white max-md:hidden  py-2 px-4 rounded hover:bg-[#44ABB6]">
-            <Link href="/contact"> Contact Us</Link>
+              <Link href="/contact"> Contact Us</Link>
             </button>
 
             {/* <ThemeToggle /> */}
@@ -100,26 +112,48 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-              <li>
+              <li
+                className="relative group"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <Link
-                  href="/pharmaservices"
+                  href="#"
                   className={`block py-2 px-3 rounded md:bg-transparent md:p-0 font-poppins font-normal ${getLinkClass(
-                    "/services"
+                    "/pharmaservices", "/softwareservices"
                   )}`}
                 >
-                  Services
+                  Our Services
                 </Link>
+
+                <ul
+                  className={`absolute z-30 left-0 mt-2 p-2 w-48 bg-white shadow-lg rounded-lg border border-gray-200 transition-opacity duration-200 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                    } `}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <li>
+                    <Link
+                      href="/pharmaservices"
+                      className={`block font-poppins text-sm font-light px-4 py-2 hover:bg-gray-100 ${getLinkClass(
+                        "/pharmaservices"
+                      )}`}
+                    >
+                      Pharma Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/softwareservices"
+                      className={`block px-4 py-2 text-sm font-poppins font-light hover:bg-gray-100 ${getLinkClass(
+                        "/softwareservices" 
+                      )}`}
+                    >
+                      Software Services
+                    </Link>
+                  </li>
+                </ul>
               </li>
-              {/* <li>
-                <Link
-                  href="/contactPage"
-                  className={`block py-2 px-3 rounded md:bg-transparent md:p-0 font-poppins font-normal ${getLinkClass(
-                    "/contactPage"
-                  )}`}
-                >
-                  Contact
-                </Link>
-              </li> */}
             </ul>
           </div>
         </div>
