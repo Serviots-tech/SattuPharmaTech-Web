@@ -78,7 +78,7 @@ const MainImgCarouselSlider = ({
       </AnimatePresence>
 
       {/* Content Overlay */}
-      <div className="absolute top-32 xl:left-10 pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full mx-auto">
+      <div className="absolute top-[18%] xl:left-10 pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full mx-auto">
         <div className="text-center md:text-left">
           <p className="mt-4 sm:mt-10 text-black text-4xl font-bold">
             {mainImgData[currentIndex]?.title}
@@ -103,7 +103,7 @@ const MainImgCarouselSlider = ({
         </div>
       </div>
 
-      <div className="absolute bottom-44 left-[50%] transform -translate-x-1/2  gap-10 md:hidden hidden lg:flex">
+      <div className="absolute bottom-[12%] left-[50%] transform -translate-x-1/2  gap-10 md:hidden hidden lg:flex">
         <button
           onClick={handlePrevSlide}
           className="p-[14%] px-[17%] rounded-[50%] border-4 border-[#4FB5B9] text-[#4FB5B9]"
