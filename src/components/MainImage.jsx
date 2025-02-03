@@ -8,16 +8,18 @@ const MainImage = ({
   title2,
   description,
   ctaText,
-  isService = false,
+  backgroundImageClass
 }) => {
   return (
     <>
       {/* <div
         className={`${
-          isService ? "service-image" : "main-image"
+          // isService ? "pharmaservice-image" : "main-image" 
+          backgroundImageClass
         } relative flex flex-col items-center justify-center w-full`}
       >
-        <div className="pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
+        {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full "> */}
+        <div className="pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
           <div className="text-center md:text-left">
             <div
               className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold font-poppins"
@@ -54,27 +56,27 @@ const MainImage = ({
             </div>
           </div>
         </div>
-      </div> */}
-      {/* <div className="flex justify-center">
-        <div className=" z-20 w-[84vw] max-w-screen-xl mx-auto grid justify-center xl:-mt-16 lg:-mt-12 md:-mt-10 -mt-16 lg:py-10 bg-[#FFF7E3] rounded-lg shadow-lg p-4 space-x-4 md:space-x-8">
+      </div>
+      <div className="flex justify-center">
+        <div className=" z-20 w-[84vw]  mx-auto grid justify-center xl:-mt-8 lg:-mt-12 md:-mt-10 -mt-16 lg:py-10 bg-[#FFF7E3] rounded-lg shadow-lg p-4 space-x-4 md:space-x-8">
           <div className="bg-[#FFF7E3]">
             <div className="container mx-auto px-4">
               <div className="flex flex-wrap justify-center items-center text-center gap-6 md:gap-4 ">
                 <h3 className="text-lg md:text-xl font-poppins font-light">
-                  <i> Expand Markets </i>
+                  <i>{backgroundImageClass==="pharmaservice-image" ? 'Manufacturing set up' : backgroundImageClass==="softwareservice-image"?  'Custom Software Solutions': 'Expand Markets' }</i>
                 </h3>
                 <span className="hidden md:block text-xl text-gray font-thin">
                   |
                 </span>
                 <h3 className="text-lg md:text-xl font-poppins font-light">
                   {" "}
-                  <i>Navigate Regulations</i>
+                  <i>{backgroundImageClass==="pharmaservice-image" ? 'Research and development' : backgroundImageClass==="softwareservice-image"?  'Native Mobile Applications' : 'Navigate Regulations'}</i>
                 </h3>
                 <span className="hidden md:block text-xl text-gray font-thin">
                   |
                 </span>
                 <h3 className="text-lg md:text-xl font-poppins font-light">
-                  <i> Drive Innovation</i>
+                  <i> {backgroundImageClass==="pharmaservice-image" ? 'Distribution' : backgroundImageClass==="softwareservice-image"?  'Web Applications' : 'Drive Innovation'}</i>
                 </h3>
               </div>
             </div>

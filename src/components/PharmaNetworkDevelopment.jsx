@@ -3,7 +3,7 @@ import React from "react";
 export default function PharmaNetworkDevelopment() {
   return (
     <section className="py-20">
-      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
+      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
         <h2 className="text-3xl font-semibold text-black font-poppins">
           Pharma Network Development Services We Provide
         </h2>

@@ -10,15 +10,15 @@ import ExpertiseSection from '../components/ExpertiseSection';
 
 
 export default function Home() {
-  return (
-    <div className="w-full">
-      <MainImage title1={"Pharma Network "} title2={"Development Company"} description={"Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals, or healthcare providers to market your products."} ctaText={"Contact Us, Now"} />
+	return (
+		<div className="w-full">
+			<MainImage title1={"Pharma Network "} backgroundImageClass={'main-image'} title2={"Development Company"} description={"Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals, or healthcare providers to market your products."} ctaText={"Contact Us, Now"} />
 
-      <ExpertiseSection />
+			<ExpertiseSection />
 
-			<div className="max-w-screen-xl mx-auto w-full flex justify-end px-6 md:px-[64px] xl:px-0">
+			<div className=" mx-auto w-full flex justify-end px-6 md:px-[64px] xl:px-10">
 				<div className="text-end font-bold text-2xl">
-				Who We Are 
+					Who We Are
 				</div>
 			</div>
 
@@ -29,14 +29,14 @@ export default function Home() {
 				<CardWithImage cardImg={teamImg?.src} cardValue={cardWithSecondImgValue} isReversed={false} />
 			</div>
 
-      <div className="mt-20 mb-20">
-        <WhyChooseUs align={'left'} />
-      </div>
+			<div className="mt-20 mb-20">
+				<WhyChooseUs align={'left'} />
+			</div>
 
 
-      <ContactForm />
+			<ContactForm />
 
-    </div>
+		</div>
 
-  );
+	);
 }

@@ -4,15 +4,15 @@ import Image from "next/image";
 export default function Footer() {
   return (
 
-    <div className="pt-10 pb-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-0 w-full max-w-screen-xl mx-auto">
+    <div className="pt-10 pb-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
       <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0">
         <div className="max-w-xl ">
           <div className="flex items-center mb-4">
             <Image
               src="/assets/BrandLogo.png"
               className="mr-2 h-12"
-              width={180}
-              height={100}
+              width={250}
+              height={200}
               alt="Logo"
               unoptimized={true}
             />
@@ -65,8 +65,8 @@ export default function Footer() {
       </div>
 
       {/* Footer */}
-      <div className="mt-16 pt-4 border-t border-gray-200">
-        <div className="flex space-x-6 text-sm text-gray-600">
+      <div className="mt-16 pt-4 border-t border-gray-200 text-center">
+        <div className="flex space-x-6 text-sm text-gray-600 text-center justify-center">
           <span className="cursor-pointer hover:text-gray-800 font-poppins font-light">Privacy Policy</span>
           <span className="cursor-pointer hover:text-gray-800 font-poppins font-light">Terms of Services</span>
         </div>
