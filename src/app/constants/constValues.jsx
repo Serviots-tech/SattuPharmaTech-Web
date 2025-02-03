@@ -17,3 +17,9 @@ export const cardWithThirdImgValue = {
     description: `Satu PhamTech is the industry leader in software development powered by the industry’s #1 software developers. We started with the aim to deliver Solutions that provide Taylor software that solves the specific problems of a Business. We understand that modern business needs out of the box solutions or something that can help them differentiate from their core competitors. We deliver unique solutions, irrespective of industry verticals. `,
     services: "Whether it is custom software or custom product development, we are the choice of 1000+ clients from all across the globe, including Africa and India. Connect with us today and discuss your project.",
 }
+
+export const cardWithFourthImgValue = {
+    title: "",
+    description: `Satu PharmTech was founded in 2025 by professionals to transform India and Africa's pharmaceutical and software development sector with their visionary approach. Our thought leaders often found startups and established pharmaceutical companies, healthcare providers, manufacturers, and other business dwellers striving to expand their reach, find new markets and customers, and make their businesses profitable in desired locations within these two countries. `,
+    services: "Given the understanding of the Indian and African healthcare market, strong network, and business brilliance, Trusha Gandhi, Akshat Gandhi, and Saurabh Nayak joined hands together to bridge a gap between business aspirants and the desired markets",
+}

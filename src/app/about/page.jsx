@@ -1,79 +1,56 @@
 "use client";
-import { Slide } from "react-awesome-reveal";
-// import { CardWithImage } from "../../components/Cards";
-// import TeamMembers from "../../components/TeamMembers";
-import FounderCard from "src/components/WhyChooseUsSection";
+import { CardWithImage } from "src/components/Cards";
+import docImg from "../../../public/assets/TeamAbout.png";
+import { cardWithFourthImgValue } from '../constants/constValues';
 
 const About = () => {
-  const cardImg = "/assets/abtUsPageImg1.jpg";
   return (
     <>
-      <Slide direction="up" duration={1000} fraction={0} triggerOnce={true}>
-        <div className="font-serif h-[90vh] bgImage" style={{ marginTop: "" }}>
-          <div className="z-20  sm:pt-40 pt-24 relative flex justify-center font-serif">
-            <div className="grid sm:grid-cols-2 grid-cols-1  relative z-10">
-              <div className="h-full">
-                <Slide direction="up" duration={900} fraction={0}>
-                  <h1 className=" md:text-7xl sm:text-4xl text-4xl text-center font-bold mb-8 text-white">
-                    About Us.
-                  </h1>
-                </Slide>
-                <Slide direction="up" duration={1000} fraction={0}>
-                  <p className="text-white max-w-lg mx-auto my-2 text-2xl text-center">
-                    Home{" "}
-                    <span className="text-orange-600 hover:text-white">::</span>{" "}
-                    About
-                  </p>
-                </Slide>
-              </div>
-            </div>
+     <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
+      <p className="text-3xl mb-10 font-semibold font-poppins text-center">About SatuPharmTech</p>
+      <CardWithImage cardImg={docImg?.src} cardValue={cardWithFourthImgValue} isReversed={false} />
+
+      <p className="text-3xl mb-10 font-semibold font-poppins text-left">Our Mission & Vision</p>
+      <div className="w-full max-w-6xl mx-auto py-12 px-4">
+      {/* Mission Section */}
+      <div className="flex flex-col md:flex-row items-center justify-between mb-16 bg-amber-50 rounded-3xl overflow-hidden">
+        <div className="p-8 md:w-1/2">
+          <h2 className="text-4xl font-bold mb-4">MISSION</h2>
+          <p className="text-xl leading-relaxed">
+            To help startups explore new opportunities in new markets and stay thriving!
+          </p>
+        </div>
+        <div className="md:w-1/2">
+          <div className="relative w-full aspect-square">
+            <img 
+              src="/api/placeholder/600/600"
+              alt="Team collaborating"
+              className="rounded-full object-cover"
+            />
           </div>
         </div>
-
-        <div className="relative z-10">
-          <div
-            className="triangle"
-            style={{
-              borderTop: "9rem solid transparent",
-              borderRight: "9rem solid #292929",
-              marginTop: "-9rem",
-            }}
-          ></div>
-        </div>
-      </Slide>
-      <div className="lg:m-40 md:m-40 sm:m-32 mt-20 m-4">
-        <FounderCard />
       </div>
 
-      <div></div>
-      <style jsx>{`
-        .triangle {
-          position: relative;
-        }
-        .triangle:before {
-          content: "";
-          position: absolute;
-          top: -150px; /* Positioning the shadow to match the triangle */
-          right: -8.7rem;
-          width: 0;
-          height: 0;
-          border-top: 9rem solid transparent;
-          border-right: 9rem solid #d44f1fc7;
-          box-shadow: inset -10px 0 10px -5px #9a3412;
-          z-index: -1;
-        }
-        .bgImage {
-          background: linear-gradient(
-              left,
-              rgba(7, 2, 0, 0.8),
-              rgb(169, 75, 40, 0.5)
-            ),
-            url("/assets/aboutPage.jpg");
-          background-size: cover;
-          background-position: left center; /* Adjust the image position for smaller devices */
-          height: 65vh;
-        }
-      `}</style>
+      {/* Vision Section */}
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between bg-sky-50 rounded-3xl overflow-hidden">
+        <div className="md:w-1/2">
+          <div className="relative w-full aspect-square">
+            <img 
+              src="/api/placeholder/600/600"
+              alt="Professional team"
+              className="rounded-full object-cover"
+            />
+          </div>
+        </div>
+        <div className="p-8 md:w-1/2">
+          <h2 className="text-4xl font-bold mb-4">VISION</h2>
+          <p className="text-xl leading-relaxed">
+            To become a leader that defines a new way to help businesses with 100% success surety.
+          </p>
+        </div>
+      </div>
+    </div>
+      </div>
     </>
   );
 };
