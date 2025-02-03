@@ -12,7 +12,7 @@ import ExpertiseSection from '../components/ExpertiseSection';
 export default function Home() {
 	return (
 		<div className="w-full">
-			<MainImage title1={"Pharma Network "} title2={"Development Company"} description={"Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals, or healthcare providers to market your products."} ctaText={"Contact Us, Now"} />
+			<MainImage title1={"Pharma Network "} backgroundImageClass={'main-image'} title2={"Development Company"} description={"Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals, or healthcare providers to market your products."} ctaText={"Contact Us, Now"} />
 
 			<ExpertiseSection />
 

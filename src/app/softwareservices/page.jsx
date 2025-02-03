@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import MainImage from "src/components/MainImage";
-import PharmaNetworkDevelopment from "src/components/PharmaNetworkDevelopment";
+import SoftwareNetworkDevelopment from "src/components/SoftwareDevelopmentNetwork";
 import docImg from "../../../public/assets/DocWithLaptop.png";
 import { cardWithThirdImgValue } from '../constants/constValues';
 import { CardWithImage } from "src/components/Cards";
@@ -12,8 +12,8 @@ const Service = () => {
 
   return (
     <>
-      <MainImage isService={true} backgroundImageClass={'pharmaservice-image'} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PhamTech helps you establish a pharmaceutical company or manufacturing unit or run a hospital by offering end-to-end business consulting services. "} ctaText={"Contact Us, Now"} />
-      <PharmaNetworkDevelopment />
+      <MainImage backgroundImageClass={'softwareservice-image'} title1={"Software Development & "} title2={"Consulting Services "} description={"Helping startups, entrepreneurs, and enterprises stay at the forefront of their industries with high-performing web and mobile applications and custom software solutions. We are offering cost effective services with uncompromised quality services."} ctaText={"Contact Us, Now"} />
+      <SoftwareNetworkDevelopment />
       <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
         <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
       </div>

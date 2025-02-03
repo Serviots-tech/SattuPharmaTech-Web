@@ -8,13 +8,14 @@ const MainImage = ({
   title2,
   description,
   ctaText,
-  isService = false,
+  backgroundImageClass
 }) => {
   return (
     <>
       <div
         className={`${
-          isService ? "service-image" : "main-image"
+          // isService ? "pharmaservice-image" : "main-image" 
+          backgroundImageClass
         } relative flex flex-col items-center justify-center w-full`}
       >
         {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full "> */}
@@ -62,20 +63,20 @@ const MainImage = ({
             <div className="container mx-auto px-4">
               <div className="flex flex-wrap justify-center items-center text-center gap-6 md:gap-4 ">
                 <h3 className="text-lg md:text-xl font-poppins font-light">
-                  <i> Expand Markets </i>
+                  <i>{backgroundImageClass==="pharmaservice-image" ? 'Manufacturing set up' : backgroundImageClass==="softwareservice-image"?  'Custom Software Solutions': 'Expand Markets' }</i>
                 </h3>
                 <span className="hidden md:block text-xl text-gray font-thin">
                   |
                 </span>
                 <h3 className="text-lg md:text-xl font-poppins font-light">
                   {" "}
-                  <i>Navigate Regulations</i>
+                  <i>{backgroundImageClass==="pharmaservice-image" ? 'Research and development' : backgroundImageClass==="softwareservice-image"?  'Native Mobile Applications' : 'Navigate Regulations'}</i>
                 </h3>
                 <span className="hidden md:block text-xl text-gray font-thin">
                   |
                 </span>
                 <h3 className="text-lg md:text-xl font-poppins font-light">
-                  <i> Drive Innovation</i>
+                  <i> {backgroundImageClass==="pharmaservice-image" ? 'Distribution' : backgroundImageClass==="softwareservice-image"?  'Web Applications' : 'Drive Innovation'}</i>
                 </h3>
               </div>
             </div>

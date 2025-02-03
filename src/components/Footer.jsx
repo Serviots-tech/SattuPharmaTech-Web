@@ -11,8 +11,8 @@ export default function Footer() {
             <Image
               src="/assets/BrandLogo.png"
               className="mr-2 h-12"
-              width={180}
-              height={100}
+              width={250}
+              height={200}
               alt="Logo"
               unoptimized={true}
             />
@@ -65,8 +65,8 @@ export default function Footer() {
       </div>
 
       {/* Footer */}
-      <div className="mt-16 pt-4 border-t border-gray-200">
-        <div className="flex space-x-6 text-sm text-gray-600">
+      <div className="mt-16 pt-4 border-t border-gray-200 text-center">
+        <div className="flex space-x-6 text-sm text-gray-600 text-center justify-center">
           <span className="cursor-pointer hover:text-gray-800 font-poppins font-light">Privacy Policy</span>
           <span className="cursor-pointer hover:text-gray-800 font-poppins font-light">Terms of Services</span>
         </div>
