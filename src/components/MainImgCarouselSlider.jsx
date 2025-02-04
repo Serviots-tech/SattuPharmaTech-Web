@@ -56,7 +56,10 @@ const MainImgCarouselSlider = ({
   return (
     <div className="relative w-full h-screen overflow-hidden">
       <AnimatePresence mode="wait">
-        <motion.div key={currentIndex} className="relative w-full h-[90vh] sm:h-[80vh] md:h-[88vh] lg:h-[90vh]">
+        <motion.div
+          key={currentIndex}
+          className="relative w-full h-[90vh] sm:h-[80vh] md:h-[88vh] lg:h-[90vh]"
+        >
           <motion.div
             animate={{ scale: [1, 1.15] }}
             transition={{
@@ -106,13 +109,13 @@ const MainImgCarouselSlider = ({
       <div className="absolute bottom-[12%] left-[50%] transform -translate-x-1/2  gap-10 md:hidden hidden lg:flex">
         <button
           onClick={handlePrevSlide}
-          className="p-[14%] px-[17%] rounded-[50%] border-4 border-[#4FB5B9] text-[#4FB5B9]"
+          className="p-[14%] px-[17%] rounded-[50%] border-4 border-[#167174] text-[#4FB5B9]"
           style={{
             borderColor: getButtonColor("prev"),
             color: getButtonColor("prev"),
           }}
         >
-          <ChevronIconRight />
+          <ChevronIconRight fill={getButtonColor("prev")} />
         </button>
         <button
           onClick={handleNextSlide}
@@ -122,7 +125,7 @@ const MainImgCarouselSlider = ({
             color: getButtonColor("next"),
           }}
         >
-          <ChevronIconLeft />
+          <ChevronIconLeft fill={getButtonColor("next")} />
         </button>
       </div>
     </div>

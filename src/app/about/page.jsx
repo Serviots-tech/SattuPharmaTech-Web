@@ -12,17 +12,17 @@ import Link from "next/link";
 const About = () => {
   return (
     <>
-      <div className="pt-10  px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
+      <div className="pt-10 lg:pt-12  px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <p className="text-3xl mb-10 font-semibold font-poppins text-center">About SatuPharmTech</p>
       </div>
       <CardWithImage cardImg={docImg?.src} cardValue={cardWithFourthImgValue} isReversed={false} />
 
-      <div className="pt-10  px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
+      <div className="pt-10 lg:pt-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <p className="text-3xl mb-10 font-semibold font-poppins text-left">Our Mission & Vision</p>
         <VisionMission youngConfident={youngConfident} Maskgroup={Maskgroup} />
       </div>
 
-      <div className="bg-[#4FB5B9] text-white p-8 mt-10 md:mt-16 xl:mt-20">
+      <div className="bg-[#4FB5B9]  text-white p-8 mt-10 md:mt-16 xl:mt-24">
         <div className="sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="space-y-5">
@@ -43,7 +43,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="pt-10  px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
+      <div className="pt-10  lg:pt-16 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <p className="text-3xl mb-10 font-semibold font-poppins text-right">What We Offer </p>
       </div>
       <div className="px-6 pb-20 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
