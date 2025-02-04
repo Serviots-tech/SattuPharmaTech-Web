@@ -12,15 +12,15 @@ const Service = () => {
 
   return (
     <>
-      <MainImage isService={true} backgroundImageClass={'pharmaservice-image'} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PhamTech helps you establish a pharmaceutical company or manufacturing unit or run a hospital by offering end-to-end business consulting services. "} ctaText={"Contact Us, Now"} />
+      <MainImage isService={true} backgroundImageClass={'pharmaservice-image'} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PhamTech helps you establish a pharmaceutical company from getting your business including molecule registration, factory registration, setting distribution channels and even marketing your products. "} ctaText={"Contact Us, Now"} />
       <PharmaNetworkDevelopment />
-      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
+      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
       </div>
       <CardWithImage cardImg={docImg?.src} cardValue={cardWithThirdImgValue} isReversed={true} />
 
 
-      <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
+      <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Use Pharma Network Development Company</h2>
         <div className="grid gap-6 mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
@@ -39,7 +39,7 @@ const Service = () => {
               </div>
               <h3 className="text-xl font-semibold">Establish local manufacturing facilities</h3>
               <p className="pt-4">
-                Consulting companies with expertise can help you find suitable locations and establish your business or set up a manufacturing unit.</p>
+                Consulting companies with expertise can help you find suitable locations and establish your business or set up a hospital.</p>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

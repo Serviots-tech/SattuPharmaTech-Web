@@ -14,13 +14,13 @@ const Service = () => {
     <>
       <MainImage backgroundImageClass={'softwareservice-image'} title1={"Software Development & "} title2={"Consulting Services "} description={"Helping startups, entrepreneurs, and enterprises stay at the forefront of their industries with high-performing web and mobile applications and custom software solutions. We are offering cost effective services with uncompromised quality services."} ctaText={"Contact Us, Now"} />
       <SoftwareNetworkDevelopment />
-      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
+      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
       </div>
       <CardWithImage cardImg={docImg?.src} cardValue={cardWithThirdImgValue} isReversed={true} />
 
 
-      <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
+      <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Partner with Satu PhamTech?</h2>
         <div className="grid gap-6 mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
