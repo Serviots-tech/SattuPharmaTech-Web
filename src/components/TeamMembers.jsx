@@ -1,83 +1,45 @@
-import React from "react";
-import "./index.css";
-import Image from "next/image";
-import { Fade, Slide } from "react-awesome-reveal";
+import React from 'react';
+import { FounderIcon,DirectorIcon } from 'src/app/helpers/svg';
 
-const TeamMembers = () => {
-  const data = [
-    {
-      img: "/assets/team1.jpg",
-      title: "Kimberlee Garris",
-      description: "Senior Consultant",
-    },
-    {
-      img: "/assets/team2.jpg",
-      title: "Winfred Locklear",
-      description: "Consulting Lawyer",
-    },
-    {
-      img: "/assets/team3.jpg",
-      title: "Alexia Galvez",
-      description: "Trainee Consultant",
-    },
-    {
-      img: "/assets/team4.jpg",
-      title: "Novella Shrader ",
-      description: "Mortgage Advisor",
-    },
-    {
-      img: "/assets/team5.jpg",
-      title: "Kayleen Colbert",
-      description: "Investment Advisor",
-    },
-  ];
+const TEAM_MEMBERS = [
+  {
+    name: 'Akshat Gandhi',
+    role: 'Co-Founder',
+    icon: <FounderIcon/>,
+  },
+  {
+    name: 'Trusha Gandhi',
+    role: 'Founder',
+    icon: <FounderIcon/>,
+  },
+  {
+    name: 'Saurabh Nayak',
+    role: 'Director (Operations)',
+    icon: <DirectorIcon/>,
+  }
+];
+
+export const TeamMembers = () => {
   return (
-    <>
-      <div className="pt-28  ">
-        <Slide direction="up" duration={1000} fraction={0}>
-          <p className=" relative lg:text-6xl md:text-6xl sm:text-4xl  text-2xl text-center font-bold">
-            Our Team Members
-          </p>
-        </Slide>
-        <Slide direction="up" duration={1000} fraction={0}>
-          <div className="flex justify-center ">
-            <p className="text-center max-w-[55vw] mt-4  ">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt labore et dolore magna aliqua.
-            </p>
-          </div>
-        </Slide>
-      </div>
-
-      <Fade direction="bottom" duration={800} fraction={0}>
-        <div className="w-full pt-10 lg:px-4 md:px-4 sm:px-3 px-2 grid md:grid-cols-5 sm:grid-cols-2 grid-cols-1 gap-4 pb-28 ">
-          {data?.map((item, index) => (
-            <div key={index} className="card">
-              <Slide direction="up" duration={1000} fraction={0}>
-                <div className="one w-full h-full">
-                  <Image
-                    className="rounded-lg"
-                    alt="cardImg"
-                    src={`${item.img}`}
-                    width={550}
-                    height={550}
-                    quality={100}
-
-                    unoptimized={true}
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-              </Slide>
-              <div className="card__content font-serif  ">
-                <p className="card__title ">{item?.title}</p>
-                <p className="card__description ">{item?.description}</p>
-              </div>
+    <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {TEAM_MEMBERS.map((member, index) => (
+          <div 
+            key={index} 
+            className="w-full bg-[#FFF7E3] rounded-lg p-6 relative shadow-sm border border-[#FFD059]"
+          >
+            <div className="absolute -top-8 p-4 left-1/2 -translate-x-1/2 bg-white rounded-lg border border-[#FFD059] shadow-sm">
+              {member.icon}
             </div>
-          ))}
-        </div>
-      </Fade>
-    </>
+            <div className="mt-6">
+              <div className="py-2 px-4 mb-1">
+                <p className="text-center text-lg font-semibold">{member.name}</p>
+              </div>
+              <p className="text-center text-gray-600 italic">{member.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
-
-export default TeamMembers;

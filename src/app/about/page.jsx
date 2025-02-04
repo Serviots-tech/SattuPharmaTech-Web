@@ -8,6 +8,7 @@ import Maskgroup from "../../../public/assets/Maskgroup.png";
 import VisionMission from "src/components/VisionMission";
 import { CustomSoftwareDevelopmentIcon, PharmaNetworkDevelopmentServicesIcon } from "../helpers/svg";
 import Link from "next/link";
+import { TeamMembers } from "src/components/TeamMembers";
 
 const About = () => {
   return (
@@ -21,7 +22,10 @@ const About = () => {
         <p className="text-3xl mb-10 font-semibold font-poppins text-left">Our Mission & Vision</p>
         <VisionMission youngConfident={youngConfident} Maskgroup={Maskgroup} />
       </div>
-
+      <div className="pt-10  px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
+        <p className="text-3xl mb-10 font-semibold font-poppins text-left">Our Leaders</p>
+      </div>
+      <TeamMembers/>
       <div className="bg-[#4FB5B9] text-white p-8 mt-10 md:mt-16 xl:mt-20">
         <div className="sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
