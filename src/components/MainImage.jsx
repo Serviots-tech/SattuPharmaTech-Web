@@ -21,7 +21,7 @@ const MainImage = ({
           <div
             className={`${backgroundImageClass} relative flex flex-col items-center justify-center w-full`}
           >
-            <div className="pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
+            <div className="pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
               <div className="text-center md:text-left">
                 <div
                   className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold font-poppins"
@@ -94,7 +94,7 @@ const MainImage = ({
                       <i>
                         {" "}
                         {backgroundImageClass === "pharmaservice-image"
-                          ? "Distribution"
+                          ? "Distribution Channel"
                           : backgroundImageClass === "softwareservice-image"
                           ? "Web Applications"
                           : "Drive Innovation"}
