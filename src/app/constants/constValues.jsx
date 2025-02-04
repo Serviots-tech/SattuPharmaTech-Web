@@ -14,7 +14,7 @@ export const cardWithSecondImgValue = {
 
 export const cardWithThirdImgValue = {
   title: "We are a Pharma Network Development Company",
-  description: `We are Africa's leading network development company that creates a comprehensive and easy-to-launch roadmap for pharmaceutical, healthcare, manufacturing, and hospitals to establish their footprint in the African market. Providing comprehensive networking services for pharma means helping pharma businesses. Enter India/Africa, explore the market, find suitable locations, and establish themselves as the highest-grossing company in the region..`,
+  description: `We are Africa's leading network development company that creates a comprehensive and easy-to-launch roadmap for pharmaceutical, healthcare, manufacturing, and hospitals to establish their footprint in the African market. Providing comprehensive networking services for pharma means helping pharma businesses. Enter India/Africa, explore the market, and establish themselves as the highest-grossing company in the region. `,
   services:
     "With a team of experts from various sectors, Satu PhamTech makes smooth entry to the regions. We have been doing this for more than a decade and understand every nitty-gritty of the pharma sector and can help STARTUP or even Enterprises make the best move.",
 };
@@ -23,7 +23,7 @@ export const mainImgData = [
   {
     title: "Pharma Network",
     subTitle: "Development Company",
-    description: `Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals, or healthcare providers to market your products.`,
+    description: `Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals setups, healthcare providers to market your products or building custom software for web and mobile platforms.`,
     ctaText:"Contact Us, Now"
   },
   {
