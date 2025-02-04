@@ -19,10 +19,10 @@ const About = () => {
 
       <div className="pt-10  px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <p className="text-3xl mb-10 font-semibold font-poppins text-left">Our Mission & Vision</p>
+        <VisionMission youngConfident={youngConfident} Maskgroup={Maskgroup} />
       </div>
 
-	  <VisionMission youngConfident={youngConfident} Maskgroup={Maskgroup}/>
-      <div className="bg-[#4FB5B9] text-white p-8">
+      <div className="bg-[#4FB5B9] text-white p-8 mt-10 md:mt-16 xl:mt-20">
         <div className="sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="space-y-5">
@@ -78,7 +78,7 @@ const About = () => {
 
       <div className="bg-[#EBFCFC] mb-10 md:mb-20 border-t border-b  border-[#4FB5B9] py-10 px-6 md:px-16 flex flex-col items-center text-center">
         <h2 className="text-2xl md:text-3xl font-semibold text-[#5ABFC3]">
-        Whether you want to register a new Pharma company in India/Africa, start a new venture, or build a custom software solution on top of cutting-edge technologies, we can be at your service. 
+          Whether you want to register a new Pharma company in India/Africa, start a new venture, or build a custom software solution on top of cutting-edge technologies, we can be at your service.
         </h2>
         <Link href="/contact">
           <button className="mt-6 bg-[#4FB5B9] px-20 text-white py-3 rounded-xl text-lg font-medium transition hover:bg-[#48A5A8]">
