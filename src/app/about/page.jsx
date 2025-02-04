@@ -12,7 +12,7 @@ import {
 } from "../helpers/svg";
 import Link from "next/link";
 import { TeamMembers } from "src/components/TeamMembers";
-import { Quote } from "../constants/svg";
+import { LowerQuote, Quote } from "../constants/svg";
 
 const About = () => {
   return (
@@ -122,6 +122,9 @@ const About = () => {
             software for digital transformation.
           </div>
         </div>
+        <span className="absolute right-32 bottom-5">
+          <LowerQuote />
+        </span>
       </div>
 
       <div className="bg-[#EBFCFC] mb-10 md:mb-20 border-t border-b  border-[#4FB5B9] py-10 px-6 md:px-16 flex flex-col items-center text-center">
