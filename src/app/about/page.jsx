@@ -36,11 +36,67 @@ const About = () => {
       </div>
       <div className="pt-10 lg:pt-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <p className="text-3xl mb-10 font-semibold font-poppins text-left">
-          Our Leaders
+        Our Thought Leadership
         </p>
       </div>
       <TeamMembers />
-      <div className="bg-[#4FB5B9] text-white p-8 mt-10 md:mt-16 xl:mt-20">
+      
+      <div className="relative mt-20 bg-[#4FB5B9] mb-10 sm:mb-10 md:mb-16 lg:mb-10 xl:mb-10 text-white flex justify-center items-center text-center min-h-[200px]">
+        <span className="absolute left-32 top-5">
+          <Quote />
+        </span>
+        <div className="w-full md:h-60 lg:pt-10 mx-auto">
+          <div className="sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full max-w-[80%] mx-auto font-poppins text-xl p-10">
+            Satu PhamTech stands tall as a leading platform that provides
+            comprehensive support, from crop to cup —help establish businesses,
+            connect with buyers, conduct research and market products and build
+            software for digital transformation.
+          </div>
+        </div>
+        <span className="absolute right-32 bottom-5">
+          <LowerQuote />
+        </span>
+      </div>
+
+
+      <div className="lg:pt-16 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
+        <p className="text-3xl mb-10 font-semibold font-poppins text-right">
+          What We Offer{" "}
+        </p>
+      </div>
+      <div className="px-6 pb-10 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
+        <div className="grid gap-6 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
+              <div className="flex items-center mb-4">
+                <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white">
+                  <span className="text-2xl ">
+                    <PharmaNetworkDevelopmentServicesIcon />
+                  </span>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold">
+                Pharma Network Development Services{" "}
+              </h3>
+            </div>
+
+            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
+              <div className="flex items-center mb-4">
+                <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white">
+                  <span className="text-2xl ">
+                    <CustomSoftwareDevelopmentIcon />
+                  </span>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold">
+                Custom Software Development{" "}
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#4FB5B9] text-white p-8 mt-10 md:mt-12 xl:mt-15">
         <div className="sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="space-y-5">
@@ -73,61 +129,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className="pt-10  lg:pt-16 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <p className="text-3xl mb-10 font-semibold font-poppins text-right">
-          What We Offer{" "}
-        </p>
-      </div>
-      <div className="px-6 pb-20 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <div className="grid gap-6 mt-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
-              <div className="flex items-center mb-4">
-                <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white">
-                  <span className="text-2xl ">
-                    <PharmaNetworkDevelopmentServicesIcon />
-                  </span>
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold">
-                Pharma Network Development Services{" "}
-              </h3>
-            </div>
+      
 
-            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
-              <div className="flex items-center mb-4">
-                <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white">
-                  <span className="text-2xl ">
-                    <CustomSoftwareDevelopmentIcon />
-                  </span>
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold">
-                Custom Software Development{" "}
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative bg-[#4FB5B9] mb-10 sm:mb-10 md:mb-16 lg:mb-20 xl:mb-20 text-white flex justify-center items-center text-center min-h-[200px]">
-        <span className="absolute left-32 top-5">
-          <Quote />
-        </span>
-        <div className="w-full md:h-60 lg:pt-10 mx-auto">
-          <div className="sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full max-w-[80%] mx-auto font-poppins text-xl p-10">
-            Satu PhamTech stands tall as a leading platform that provides
-            comprehensive support, from crop to cup —help establish businesses,
-            connect with buyers, conduct research and market products and build
-            software for digital transformation.
-          </div>
-        </div>
-        <span className="absolute right-32 bottom-5">
-          <LowerQuote />
-        </span>
-      </div>
-
-      <div className="bg-[#EBFCFC] mb-10 md:mb-20 border-t border-b  border-[#4FB5B9] py-10 px-6 md:px-16 flex flex-col items-center text-center">
+    
+      <div className="bg-[#EBFCFC] mt-20 mb-10 md:mb-20 border-t border-b  border-[#4FB5B9] py-10 px-6 md:px-16 flex flex-col items-center text-center">
         <h2 className="text-2xl md:text-3xl font-semibold text-[#5ABFC3]">
           Whether you want to register a new Pharma company in India/Africa,
           start a new venture, or build a custom software solution on top of

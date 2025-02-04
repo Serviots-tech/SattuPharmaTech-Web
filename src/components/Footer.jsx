@@ -45,7 +45,7 @@ export default function Footer() {
             <div className="flex flex-col lg:flex-row gap-12">
               <div>
                 <p className="font-poppins">
-                  <span className="text-gray-600 font-poppins font-light">Trusha Gandhi</span>
+                  <span className="text-gray-600 font-poppins font-normal">Trusha Gandhi</span>
                   <span className="text-gray-600 italic ml-2 font-light">(Founder)</span>
                 </p>
                 <p className="text-gray-600 font-poppins font-light">+91 8980161651</p>
@@ -53,7 +53,7 @@ export default function Footer() {
 
               <div>
                 <p className="font-poppins">
-                  <span className="font-poppins text-gray-600 font-light">Akshat Gandhi</span>
+                  <span className="font-poppins text-gray-600 font-normal">Akshat Gandhi</span>
                   <span className="text-gray-600 italic ml-2 font-poppins font-light">(Co-Founder)</span>
                 </p>
                 <p className="font-poppins text-gray-600 font-light">+91 9099019848</p>
@@ -61,7 +61,7 @@ export default function Footer() {
             </div>
             <div>
               <p className="font-poppins">
-                <span className="font-poppins text-gray-600 font-light">Saurabh Nayak</span>
+                <span className="font-poppins text-gray-600 font-normal">Saurabh Nayak</span>
                 <span className="font-poppins text-gray-600 font-light italic ml-2">- Director (Operations)</span>
               </p>
               <p className="font-poppins text-gray-600 font-light">+91 9426311821</p>
