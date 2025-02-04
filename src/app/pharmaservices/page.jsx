@@ -12,12 +12,12 @@ const Service = () => {
 
   return (
     <>
-      <MainImage isService={true} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PhamTech helps you establish a pharmaceutical company or manufacturing unit or run a hospital by offering end-to-end business consulting services. "} ctaText={"Contact Us, Now"} />
+      <MainImage isService={true} backgroundImageClass={'pharmaservice-image'} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PhamTech helps you establish a pharmaceutical company or manufacturing unit or run a hospital by offering end-to-end business consulting services. "} ctaText={"Contact Us, Now"} />
       <PharmaNetworkDevelopment />
       <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">
         <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
       </div>
-      <CardWithImage cardImg={docImg?.src} cardValue={cardWithThirdImgValue} isReversed={false} />
+      <CardWithImage cardImg={docImg?.src} cardValue={cardWithThirdImgValue} isReversed={true} />
 
 
       <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full  mx-auto">

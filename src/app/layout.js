@@ -9,8 +9,8 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["100", "200", "300", "400
 
 export const metadata = {
   title: "SPT - Best Pharma/IT Solutions",
-  description: "Satu Pharama Tech - Your trusted IT consultant.",
-  keywords: "Pharma Network Development Company, Custom software development company, Pharma network, Web development agency, Mobile app development company, Ai software development",
+  description: "Satu Pharma Tech - Your trusted IT consultant.",
+  keywords: "Pharma Network Development Company, Custom software development company, Pharma network, Web development agency, Mobile app development company, AI software development",
   openGraph: {
     title: "SPT - Best Pharma/IT Solutions",
     description: "Helping businesses start pharmaceutical, hospital, clinics in India/Africa and build software applications for web & mobile.",
@@ -24,13 +24,19 @@ export const metadata = {
       },
     ],
     type: "website",
-  }
+  },
+  icons: {
+    icon: "/favicon.png", 
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
 
   return (
     <html lang="en" >
+      <link rel="icon" type="image/png" href="/favicon.png" />
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
         <Navbar />
         {children}
