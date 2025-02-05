@@ -21,15 +21,15 @@ export const cardWithThirdImgValue = {
 
 export const mainImgData = [
   {
-    title: "Pharma Network",
-    subTitle: "Development Company",
-    description: `Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals setups, healthcare providers to market your products or building custom software for web and mobile platforms.`,
+    title: "Pharma Network Consulting ",
+    subTitle: "& Development Company",
+    description: `Helping pharmaceutical companies begin hassle-free business journeys through strong distribution networks and resources. We solve every barrier, whether getting your company registered, fulfilling regulatory norms, connecting with potential buyers, or finding pharmacies, hospitals setups, healthcare providers to market your products.`,
     ctaText:"Contact Us, Now"
   },
   {
-    title: "Custom Software Solutions",
-    subTitle: "Native Mobile Applications",
-    description: `With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PhamTech helps you establish a pharmaceutical company or manufacturing unit or run a hospital by offering end-to-end business consulting services.`,
+    title: "Custom Software ",
+    subTitle: "Development Company",
+    description: `Build high performing and scalable software for web and mobile powered by industry’s best engineers, designers, QAs, CTO and industry specific developers. Satu PharmTech is a leading software development company that helps you hire developers, build comprehensive software solutions and even help you manage and maintain your applications.`,
     ctaText:"Contact with Experts"
   },
 ];
