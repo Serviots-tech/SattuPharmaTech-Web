@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -21,7 +22,9 @@ export default function Footer() {
 
         <div className="flex-2 gap-12">
           <div>
-            <h2 className="text-gray-800 mb-2 font-poppins font-normal">About Us</h2>
+            <Link href="/about">
+              <h2 className="text-gray-800 mb-2 font-poppins font-normal">About Us</h2>
+            </Link>
             <ul className="space-y-1 text-sm">
               <li className="text-gray-600 font-poppins font-light">Team Members</li>
               <li className="text-gray-600 font-poppins font-light">Directors</li>
@@ -32,8 +35,12 @@ export default function Footer() {
           <div className="mt-5">
             <h2 className="text-gray-800 mb-2 font-poppins font-normal">Our Services</h2>
             <ul className="space-y-1 text-sm">
-              <li className="text-gray-600 font-poppins font-light">Pharma Services</li>
-              <li className="text-gray-600 font-poppins font-light">IT Services</li>
+              <Link href="/pharmaservices">
+                <li className="text-gray-600 font-poppins font-light">Pharma Services</li>
+              </Link>
+              <Link href="/softwareservices">
+                <li className="text-gray-600 font-poppins font-light">IT Services</li>
+              </Link>
             </ul>
           </div>
         </div>
