@@ -14,13 +14,11 @@ const PharmaNetworkDevelopmentServicesData = [
     ],
   },
   {
-    title: "Pharma Manufacturing & Hospital Setup",
+    title: "Pharma and Hospital Setup",
     description: [
-      "Finding suitable locations",
-      "Assisting in manufacturing unit setup",
-      "Providing full-fledged assistance for hospital setup",
-      "Market research & product marketing",
-      "Joint Ventures",
+      "Providing full-fledged assistance for hospital set up",
+      "Market research/product marketingAssisting in manufacturing unit setup",
+      "Joint Venture ",
     ],
   },
   {
@@ -95,6 +93,14 @@ const ExpertiseSection = ({ align }) => {
               description={item?.description}
             />
           ))}
+        </div>
+
+        <div className="mt-10  flex justify-center md:justify-start">
+          <Link href="/contact">
+            <button className=" sm:w-auto bg-custom-bg px-20 font-medium font-poppins text-lg text-white py-2  rounded hover:bg-[#44ABB6]">
+              {"Get in Touch"}
+            </button>
+          </Link>
         </div>
       </div>
     </section>

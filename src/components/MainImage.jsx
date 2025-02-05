@@ -68,7 +68,7 @@ const MainImage = ({
                     <h3 className="text-lg md:text-xl font-poppins font-light">
                       <i>
                         {backgroundImageClass === "pharmaservice-image"
-                          ? "Manufacturing set up"
+                          ? "Hospital set up"
                           : backgroundImageClass === "softwareservice-image"
                           ? "Custom Software Solutions"
                           : "Expand Markets"}
