@@ -17,7 +17,7 @@ const PharmaNetworkDevelopmentServicesData = [
     title: "Pharma and Hospital Setup",
     description: [
       "Providing full-fledged assistance for hospital set up",
-      "Market research/product marketingAssisting in manufacturing unit setup",
+      "Market research/product marketing",
       "Joint Venture ",
     ],
   },
