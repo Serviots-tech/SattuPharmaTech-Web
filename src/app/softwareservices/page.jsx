@@ -3,7 +3,7 @@ import React from "react";
 import MainImage from "src/components/MainImage";
 import SoftwareNetworkDevelopment from "src/components/SoftwareDevelopmentNetwork";
 import docImg from "../../../public/assets/SoftwareDevWhoWeAre.png";
-import { cardWithThirdImgValue } from '../constants/constValues';
+import { cardWithFifthImgValue } from '../constants/constValues';
 import { CardWithImage } from "src/components/Cards";
 import Link from "next/link";
 import { AgileSoftwareDevelopmentServicesIcon, QualityAssuranceIcon, ExpertDevelopmentTeamIcon, TransparencyIcon } from "../helpers/svg";
@@ -17,7 +17,7 @@ const Service = () => {
       <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
       </div>
-      <CardWithImage cardImg={docImg?.src} cardValue={cardWithThirdImgValue} isReversed={true} />
+      <CardWithImage cardImg={docImg?.src} cardValue={cardWithFifthImgValue} isReversed={true} />
 
 
       <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
