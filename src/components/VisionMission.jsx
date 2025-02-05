@@ -12,7 +12,7 @@ const VisionMission = ({youngConfident,Maskgroup}) => {
         <p className="absolute lg:top-10 md:top-5 sm:top-6 lg:right-60 md:right-[32%] top-5 right-[25%]  text-4xl font-semibold font-poppins">
           Mission
         </p>
-        <p className="absolute lg:ps-[6.4%] lg:top-[48%] md:top-[35%] md:ps-[18.4%] lg:right-60 md:right-[12%] top-[35%] text-lg font-poppins ">
+        <p className="absolute  lg:text-right lg:ps-[6.4%] lg:top-[48%] md:top-[35%] md:ps-[18.4%] lg:right-60 md:right-[12%] top-[35%] text-lg font-poppins ">
           To help startups explore new opportunities in new markets and stay
           thriving!
         </p>
