@@ -20,7 +20,7 @@ const AnimatedCard = ({ title, description }) => {
       </div>
 
       {/* Wrapper to control both title and description smoothly */}
-      <div className="relative h-36  overflow-hidden">
+      <div className="relative h-40  overflow-hidden">
         <div
           className={`absolute w-full p-3 pt-6 ps-6 font-semibold text-2xl font-poppins transition-transform duration-500 ${isHovered ? "-translate-y-full " : "translate-y-0 "
             }`}
@@ -29,7 +29,7 @@ const AnimatedCard = ({ title, description }) => {
         </div>
 
         <div
-          className={`absolute w-full p-3 pt-6 ps-6 transition-transform duration-500 ${isHovered ? "translate-y-0 " : "translate-y-full "
+          className={`absolute w-full p-3 pt-10 ps-6 transition-transform duration-500 ${isHovered ? "translate-y-0 " : "translate-y-full "
             }`}
         >
           <ul className="list-disc list-inside">

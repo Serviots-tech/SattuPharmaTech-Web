@@ -15,7 +15,7 @@ export default function Footer() {
               unoptimized={true}
             />
           </div>
-          <p className="text-gray-700 text-sm leading-relaxed font-poppins font-light mt-5">
+          <p className=" text-sm leading-relaxed font-poppins font-light mt-5">
             Satu PharmTech helps Indian and African pharma businesses expand by managing distribution, compliance, and market entry while delivering innovative tech solutions for growth.
           </p>
         </div>
@@ -53,24 +53,24 @@ export default function Footer() {
               <div>
                 <p className="font-poppins">
                   <span className="text-gray-600 font-poppins font-normal">Trusha Gandhi</span>
-                  <span className="text-gray-600 italic ml-2 font-light">(Founder)</span>
+                  <span className="text-gray-600 italic ml-2 font-light">- (Founder)</span>
                 </p>
-                <p className="text-gray-600 font-poppins font-light">+91 8980161651</p>
+                <p className="text-gray-600 font-poppins font-light"><a href="tel:+918980161651">+91 8980161651</a></p>
               </div>
 
               <div>
                 <p className="font-poppins">
                   <span className="font-poppins text-gray-600 font-normal">Akshat Gandhi</span>
-                  <span className="text-gray-600 italic ml-2 font-poppins font-light">(Co-Founder)</span>
+                  <span className="text-gray-600 italic ml-2 font-poppins font-light">- (Co-Founder)</span>
                 </p>
-                <p className="font-poppins text-gray-600 font-light">+91 9099019848</p>
+                <p className="font-poppins text-gray-600 font-light"><a href="tel:+919099019848">+91 9099019848</a></p>
               </div>
               <div>
               <p className="font-poppins">
                 <span className="font-poppins text-gray-600 font-normal">Saurabh Nayak</span>
                 <span className="font-poppins text-gray-600 font-light italic ml-2">- Director (Operations)</span>
               </p>
-              <p className="font-poppins text-gray-600 font-light">+91 9426311821</p>
+              <p className="font-poppins text-gray-600 font-light"> <a href="tel:+919426311821">+91 9426311821</a></p>
             </div>
             </div>
             
