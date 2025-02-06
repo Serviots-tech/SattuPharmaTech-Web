@@ -111,7 +111,7 @@ const MainImage = ({
           <MainImgCarouselSlider
             images={images}
             autoPlay={true}
-            interval={4000}
+            interval={18000}
             title1={title1}
             title2={title2}
             description={description}
