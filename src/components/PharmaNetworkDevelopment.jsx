@@ -21,7 +21,7 @@ export default function PharmaNetworkDevelopment() {
           <div className="space-y-5 border-l border-r px-6">
             <p className="font-normal font-poppins">Data Sheets and Market Research</p>
             <p className="font-normal font-poppins">Regulatory affairs consulting</p>
-            <p className="font-normal font-poppins">Local distributors and representative</p>
+            <p className="font-normal font-poppins">Local distributors and representatives</p>
           </div>
 
           <div className="space-y-5">

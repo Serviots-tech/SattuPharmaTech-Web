@@ -16,7 +16,7 @@ const PharmaNetworkDevelopmentServicesData = [
   {
     title: "Pharma and Hospital Setup",
     description: [
-      "Providing full-fledged assistance for hospital set up",
+      "Providing full-fledged assistance for hospital setup",
       "Market research/product marketing",
       "Joint Venture ",
     ],
@@ -59,7 +59,7 @@ const ExpertiseSection = ({ align }) => {
             market, Manufacturing and Hospital Setup, and marketing your
             product/services to targeted customers to building smart and
             scalable software solutions, including web and mobile applications,
-            Satu PhamTech is your reliable partner. Let&apos;s find out the
+            Satu PharmTech is your reliable partner. Let&apos;s find out the
             services we offer.
           </p>
         </div>

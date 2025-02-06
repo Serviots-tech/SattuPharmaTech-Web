@@ -7,9 +7,9 @@ import { ImplementationSupportIcon } from '../app/helpers/svg'
 const WhyChooseUs = ({align}) => {
   return (
     <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-      <h2 className={`text-3xl font-semibold text-${align ?? 'left'} mb-8 font-poppins`}>Why Partner with Satu PhamTech</h2>
+      <h2 className={`text-3xl font-semibold text-${align ?? 'left'} mb-8 font-poppins`}>Why Partner with Satu PharmTech</h2>
       <p className={`mt-4 text-gray-600 md:max-w-[100%] text-${align ?? 'left'}`}>
-      We offer strategic and comprehensive solutions to people from India who want to start a pharmaceutical business in Africa or vice versa. Satu PhamTech helps companies overcome internal blind spots and provides tailored solutions that assist in reaching goals.
+      We offer strategic and comprehensive solutions to people from India who want to start a pharmaceutical business in Africa or vice versa. Satu PharmTech helps companies overcome internal blind spots and provides tailored solutions that assist in reaching goals.
           </p>
       <div className="grid gap-6 mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
@@ -17,7 +17,7 @@ const WhyChooseUs = ({align}) => {
             <div className="flex items-center mb-4">
               <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><SpecialisedExpertsIcon /></span></div>
             </div>
-            <h3 className="text-xl font-semibold">Specialised Experts</h3>
+            <h3 className="text-xl font-semibold">Specialized Experts</h3>
             <p className="pt-4">
               Starting a pharmaceutical business in India or Africa requires expert help with industry knowledge, and we&apos;ve experts who follow the best practices.
             </p>

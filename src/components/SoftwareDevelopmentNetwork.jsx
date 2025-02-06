@@ -8,7 +8,7 @@ export default function SoftwareNetworkDevelopment() {
           Software Development Services We Provide
         </h2>
         <p className="text-gray-600 text-left mb-8 mt-5">
-        Satu PhamTech is the leading custom software development company offering comprehensive services for a wide range of platforms and frameworks.  Whether you are looking for a custom software application, Native mobile application,  web app or applications, cross-platform application or hybrid app, we efficiently turn your idea into a successful product. Here are some of the Top Services we offer.</p>
+        Satu PharmTech is the leading custom software development company offering comprehensive services for a wide range of platforms and frameworks.  Whether you are looking for a custom software application, Native mobile application,  web app or applications, cross-platform application or hybrid app, we efficiently turn your idea into a successful product. Here are some of the Top Services we offer.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="space-y-5">

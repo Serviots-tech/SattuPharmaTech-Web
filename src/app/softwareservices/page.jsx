@@ -21,7 +21,7 @@ const Service = () => {
 
 
       <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Partner with Satu PhamTech?</h2>
+        <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Partner with Satu PharmTech?</h2>
         <div className="grid gap-6 mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
@@ -30,7 +30,7 @@ const Service = () => {
               </div>
               <h3 className="text-xl font-semibold">Quality assurance</h3>
               <p className="pt-4">
-                We have export developers and hence deliver the best solutions following the process and using the right project management tools.</p>
+              We have expert developers and deliver the best solutions following the process and using the right project management tools.</p>
             </div>
 
             <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
@@ -39,7 +39,7 @@ const Service = () => {
               </div>
               <h3 className="text-xl font-semibold">Agile software development services</h3>
               <p className="pt-4">
-                Being a top-rated software development company, be understand how important it is to deliver quality projects on time; hence, agile remains in our process.</p>
+                Being a top-rated software development company, We understand how important it is to deliver quality projects on time; hence, agile remains in our process.</p>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -49,7 +49,7 @@ const Service = () => {
               </div>
               <h3 className="text-xl font-semibold">Expert development team</h3>
               <p className="pt-4">
-                Whether you want to develop a wave application, mobile application, custom software, or product, we have an expert team to handle your project.</p>
+              Whether you want to develop a web application, mobile application, custom software, or product, we have an expert team to handle your project.</p>
             </div>
 
             <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
@@ -69,7 +69,7 @@ const Service = () => {
           Want to Start a New Pharma Business or Build Hospitals?
         </h2>
         <p className="text-gray-800 mt-3 text-base md:text-lg max-w-2xl">
-          Connect with Africa and India’s Best team to help you explore, examine, &
+        Connect with Africa’s and India’s best team to help you explore, examine, &
           establish yourself as a reputed pharmaceutical company.
         </p>
         <Link href="/contact">
