@@ -61,9 +61,9 @@ const MainImgCarouselSlider = ({
           className="relative w-full h-[90vh] sm:h-[80vh] md:h-[88vh] lg:h-[90vh]"
         >
           <motion.div
-            animate={{ scale: [1, 1.15] }}
+            animate={{ scale: [1, 1.3] }}
             transition={{
-              duration: 4.5,
+              duration: 18,
               repeat: Infinity,
               repeatType: "mirror",
               ease: "easeOut",
