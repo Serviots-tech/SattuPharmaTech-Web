@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 const Navbar = () => {
 
@@ -16,14 +17,14 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const handleMouseEnter = () => {
-    clearTimeout(timeoutId); 
+    clearTimeout(timeoutId);
     setIsOpen(true);
   };
 
   const handleMouseLeave = () => {
     timeoutId = setTimeout(() => {
       setIsOpen(false);
-    }, 200); 
+    }, 200);
   };
 
   const getLinkClass = (path, path2) => {
@@ -117,13 +118,28 @@ const Navbar = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <Link
+                {/* <Link
                   href="#"
                   className={`block py-2 px-3 rounded md:bg-transparent md:p-0 font-poppins font-normal ${getLinkClass(
                     "/pharmaservices", "/softwareservices"
                   )}`}
                 >
                   Our Services
+                  <span className="ml-2">
+                    {isOpen ? <FiChevronUp /> : <FiChevronDown />}
+                  </span>
+                </Link> */}
+
+                <Link
+                  href="#"
+                  className={`py-2 px-3 rounded md:bg-transparent md:p-0 font-poppins font-normal flex items-center ${getLinkClass(
+                    "/pharmaservices", "/softwareservices"
+                  )}`}
+                >
+                  <span>Our Services</span>
+                  <span className="ml-2">
+                    {isOpen ? <FiChevronUp /> : <FiChevronDown />}
+                  </span>
                 </Link>
 
                 <ul
@@ -146,7 +162,7 @@ const Navbar = () => {
                     <Link
                       href="/softwareservices"
                       className={`block px-4 py-2 text-sm font-poppins font-light hover:bg-gray-100 ${getLinkClass(
-                        "/softwareservices" 
+                        "/softwareservices"
                       )}`}
                     >
                       Software Services
