@@ -12,7 +12,7 @@ const Service = () => {
 
   return (
     <>
-      <MainImage isService={true} backgroundImageClass={'pharmaservice-image'} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PhamTech helps you establish a pharmaceutical company, including business and molecule registration, factory registration, setting distribution channels and even marketing your products. We provide end-to-end business consulting services. "} ctaText={"Contact Us, Now"} />
+      <MainImage isService={true} backgroundImageClass={'pharmaservice-image'} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PharmTech helps you establish a pharmaceutical company, including business and molecule registration, factory registration, setting distribution channels and even marketing your products. We provide end-to-end business consulting services. "} ctaText={"Contact Us, Now"} />
       <PharmaNetworkDevelopment />
       <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
@@ -21,7 +21,7 @@ const Service = () => {
 
 
       <div className="pt-10 pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Use Pharma Network Development Company</h2>
+        <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Use a Pharma Network Development Company</h2>
         <div className="grid gap-6 mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 border rounded-lg bg-[#FFF7E3] border-[#FFD059]">
@@ -41,7 +41,7 @@ const Service = () => {
                   <span className="text-2xl"><LocalDistributorsAndRepresentativeIcon /></span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold">Local distributors and representative</h3>
+              <h3 className="text-xl font-semibold">Local distributors and representatives</h3>
               <p className="pt-4">
                 Starting a business needs networking. That means you need distributors and representatives who will represent your business in the local market.
               </p>
@@ -73,7 +73,7 @@ const Service = () => {
           Want to Start a New Pharma Business or Build Hospitals?
         </h2>
         <p className="text-gray-800 mt-3 text-base md:text-lg max-w-2xl">
-          Connect with Africa and India’s Best team to help you explore, examine, &
+        Connect with Africa’s and India’s best team to help you explore, examine, &
           establish yourself as a reputed pharmaceutical company.
         </p>
         <Link href="/contact">

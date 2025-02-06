@@ -2,7 +2,6 @@
 import { CardWithImage } from "src/components/Cards";
 import docImg from "../../../public/assets/TeamAbout.png";
 import { cardWithFourthImgValue } from "../constants/constValues";
-import Image from "next/image";
 import youngConfident from "../../../public/assets/youngConfident.png";
 import Maskgroup from "../../../public/assets/Maskgroup.png";
 import VisionMission from "src/components/VisionMission";
@@ -47,7 +46,7 @@ const About = () => {
         </span>
         <div className="w-full md:h-60 lg:pt-10 mx-auto">
           <div className="sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full max-w-[80%] mx-auto font-poppins text-xl p-10">
-            Satu PhamTech stands tall as a leading platform that provides
+            Satu PharmTech stands tall as a leading platform that provides
             comprehensive support, from crop to cup —help establish businesses,
             connect with buyers, conduct research and market products and build
             software for digital transformation.
