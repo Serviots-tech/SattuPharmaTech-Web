@@ -8,7 +8,7 @@ const WhyChooseUs = ({align}) => {
   return (
     <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
       <h2 className={`text-3xl font-semibold text-${align ?? 'left'} mb-8 font-poppins`}>Why Partner with Satu PharmTech</h2>
-      <p className={`mt-4 text-gray-600 md:max-w-[100%] text-${align ?? 'left'}`}>
+      <p className={`mt-4  md:max-w-[100%] text-${align ?? 'left'}`}>
       We offer strategic and comprehensive solutions to people from India who want to start a pharmaceutical business in Africa or vice versa. Satu PharmTech helps companies overcome internal blind spots and provides tailored solutions that assist in reaching goals.
           </p>
       <div className="grid gap-6 mt-10">

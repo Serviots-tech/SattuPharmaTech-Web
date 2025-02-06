@@ -22,7 +22,7 @@ const ContactForm = ({
         {title ?? "Get in Touch"}
       </h1>
 
-      <div className={`text-gray-600 mb-8 ${alignmentClass}`}>
+      <div className={`mb-8 ${alignmentClass}`}>
         <p>{description1 ?? " Ready to explore new opportunities?"}</p>
         <p>
           {description2 ??

@@ -54,7 +54,7 @@ const ExpertiseSection = ({ align }) => {
           <h2 className="text-3xl font-semibold text-black font-poppins">
             Our Pharma & Software Development Services
           </h2>
-          <p className="mt-4 text-gray-600 md:max-w-[70%] font-poppins font-normal">
+          <p className="mt-4 md:max-w-[70%] font-poppins font-normal">
             From helping you launch your pharmaceutical business in the African
             market, Manufacturing and Hospital Setup, and marketing your
             product/services to targeted customers to building smart and
@@ -64,13 +64,13 @@ const ExpertiseSection = ({ align }) => {
           </p>
         </div>
         <div className="mx-auto text-left">
-          <div className="text-xl mt-10 text-[#4FB5B9] font-poppins font-semibold">
+          <div className="text-2xl mt-10 text-[#4FB5B9] font-poppins font-semibold">
             <Link href={"/pharmaservices"}>
               Pharma Network Development Services
             </Link>
           </div>
         </div>
-        <div className="mx-auto mt-10 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  gap-6">
+        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  gap-6">
           {PharmaNetworkDevelopmentServicesData.map((item, index) => (
             <AnimatedCard
               key={index}
@@ -81,11 +81,11 @@ const ExpertiseSection = ({ align }) => {
         </div>
 
         <div className="mx-auto text-left">
-          <div className="text-xl mt-10 text-[#4FB5B9] font-poppins font-semibold">
+          <div className="text-2xl mt-10 text-[#4FB5B9] font-poppins font-semibold">
             <Link href={"/softwareservices"}>Software Development Services</Link>
           </div>
         </div>
-        <div className="mx-auto mt-10 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
+        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
           {SoftwareDevelopmentServicesData.map((item, index) => (
             <AnimatedCard
               key={index}

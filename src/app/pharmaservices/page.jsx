@@ -21,7 +21,7 @@ const Service = () => {
 
 
       <div className="pt-10 pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Use a Pharma Network Development Company</h2>
+        <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Use a Pharma Network Development Company?</h2>
         <div className="grid gap-6 mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 border rounded-lg bg-[#FFF7E3] border-[#FFD059]">
