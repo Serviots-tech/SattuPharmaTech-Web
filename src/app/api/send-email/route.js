@@ -1,5 +1,79 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { emailTemplatesSatuPharmtech } from 'src/lib/email-templates/emailTemplates';
+
+export async function POST(req) {
+    try {
+        const formData = await req.json();
+        const pageUrl = req.headers.get('referer') || 'Not available';
+
+        const { fullName, email, phone, company, message } = formData;
+
+        if (!fullName || !email || !phone || !company || !message) {
+            return NextResponse.json(
+                { message: 'Missing required fields' },
+                { status: 400 }
+            );
+        }
+
+        const transporter = nodemailer.createTransport({
+            // service: 'gmail',
+            // auth: {
+            //     user: process.env.EMAIL_USER,
+            //     pass: process.env.EMAIL_PASS,
+            // },
+            host: 'smtp.secureserver.net',
+            port: 587,
+            secure: false,
+            auth: {
+                user: "info@satupharmtech.com",
+                pass: "Trusha1234@",
+            },
+        });
+
+        // Email to send to admin
+        const adminMailOptions = {
+            from: `Website Contact <${process.env.EMAIL_USER}>`,
+            to: process.env.EMAIL_USER,
+            subject: 'New Contact Form Submission',
+            html: `
+                <p><strong>Full Name:</strong> ${fullName}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+                <p><strong>Company:</strong> ${company || 'Not provided'}</p>
+                <p><strong>Message:</strong> ${message}</p>
+                <p><strong>Submitted From:</strong> ${pageUrl}</p>
+            `
+        };
+
+        // Email to send to the user
+        const userMailOptions = {
+            from: `SatuPharmtech Team`,
+            to: "harishr@serviots.com",
+            subject: 'Thank You for Contacting Us',
+            // from: `SatuPharmtech Team <${process.env.EMAIL_USER}>`,
+            // to: email,
+            // subject: 'Thank You for Contacting Us',
+            html: emailTemplatesSatuPharmtech(),
+        };
+
+        // Send both emails
+        await transporter.sendMail(adminMailOptions);
+        await transporter.sendMail(userMailOptions);
+
+        return NextResponse.json({
+            success: true,
+            message: 'Email sent successfully!'
+        });
+    } catch (error) {
+        console.error('Error:', error);
+        return NextResponse.json(
+            { success: false, message: 'Failed to send email.' },
+            { status: 500 }
+        );
+    }
+}
+
 
 // export async function POST(req) {
 //     try {
@@ -10,7 +84,6 @@ import nodemailer from 'nodemailer';
 //         const isProjectInquiry = contentType.includes('multipart/form-data')
 //         ? formData.has('projectDetails') && formData.has('idea')
 //         : 'projectDetails' in formData && 'idea' in formData;
-
 
 //         const emailData = isProjectInquiry
 //             ? {
@@ -430,7 +503,7 @@ import nodemailer from 'nodemailer';
 //         const transporter = nodemailer.createTransport({
 //             host: 'smtp.secureserver.net',
 //             port: 587,
-//             secure: false, 
+//             secure: false,
 //             auth: {
 //                 user: "info@satupharmtech.com",
 //                 pass: "Trusha1234@",
@@ -453,59 +526,59 @@ import nodemailer from 'nodemailer';
 // }
 
 
-export default async function handler(req, res) {
-    if (req.method !== 'POST') {
-        return res.status(405).json({ message: 'Method Not Allowed' });
-    }
+// export default async function handler(req, res) {
+//     if (req.method !== 'POST') {
+//         return res.status(405).json({ message: 'Method Not Allowed' });
+//     }
 
-    const { fullName, email, phoneNumber, companyName,   } = req.body;
+//     const { fullName, email, phoneNumber, companyName,   } = req.body;
 
-    if (!fullName || !email || !message) {
-        return res.status(400).json({ message: 'Full Name, Email, and Message are required' });
-    }
+//     if (!fullName || !email || !message) {
+//         return res.status(400).json({ message: 'Full Name, Email, and Message are required' });
+//     }
 
-    const transporter = nodemailer.createTransport({
-        host: 'smtp.secureserver.net',
-        port: 587,
-        secure: false,
-        auth: {
-            user: "info@satupharmtech.com",
-            pass: "Trusha1234@",
-        },
-    });
+//     const transporter = nodemailer.createTransport({
+//         host: 'smtp.secureserver.net',
+//         port: 587,
+//         secure: false,
+//         auth: {
+//             user: "info@satupharmtech.com",
+//             pass: "Trusha1234@",
+//         },
+//     });
 
-    const adminMailOptions = {
-        from: email,
-        to: process.env.RECEIVER_EMAIL, 
-        subject: `New Contact Form Submission from ${fullName}`,
-        text: `
-        Name: ${fullName}
-        Email: ${email}
-        Phone Number: ${phoneNumber || 'N/A'}
-        Company Name: ${companyName || 'N/A'}
-        Message: ${message}
-        `,
-    };
+//     const adminMailOptions = {
+//         from: email,
+//         to: process.env.RECEIVER_EMAIL,
+//         subject: `New Contact Form Submission from ${fullName}`,
+//         text: `
+//         Name: ${fullName}
+//         Email: ${email}
+//         Phone Number: ${phoneNumber || 'N/A'}
+//         Company Name: ${companyName || 'N/A'}
+//         Message: ${message}
+//         `,
+//     };
 
-    const userMailOptions = {
-        from: process.env.EMAIL_USER,
-        to: email,
-        subject: 'Thank You for Contacting Us!',
-        text: `
-        Hi ${fullName},
+//     const userMailOptions = {
+//         from: process.env.EMAIL_USER,
+//         to: email,
+//         subject: 'Thank You for Contacting Us!',
+//         text: `
+//         Hi ${fullName},
 
-        Thank you for reaching out! We have received your message and will get back to you as soon as possible.
+//         Thank you for reaching out! We have received your message and will get back to you as soon as possible.
 
-        Best Regards,
-        Your Company Team
-        `,
-    };
+//         Best Regards,
+//         Your Company Team
+//         `,
+//     };
 
-    try {
-        await transporter.sendMail(adminMailOptions);
-        await transporter.sendMail(userMailOptions);
-        return res.status(200).json({ message: 'Emails sent successfully' });
-    } catch (error) {
-        return res.status(500).json({ message: 'Error sending email', error: error.message });
-    }
-}
+//     try {
+//         await transporter.sendMail(adminMailOptions);
+//         await transporter.sendMail(userMailOptions);
+//         return res.status(200).json({ message: 'Emails sent successfully' });
+//     } catch (error) {
+//         return res.status(500).json({ message: 'Error sending email', error: error.message });
+//     }
+// }
