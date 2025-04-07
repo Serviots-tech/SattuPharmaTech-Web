@@ -1,5 +1,6 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const ContactForm = ({
   title,
@@ -11,8 +12,67 @@ const ContactForm = ({
     align === "center"
       ? "text-center"
       : align === "left"
-      ? "text-left"
-      : "text-right";
+        ? "text-left"
+        : "text-right";
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: "",
+  });
+
+
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const validate = () => {
+    const requiredFields = ["fullName", "email", "phone", "company", "message"];
+    const newErrors = {};
+    requiredFields.forEach((field) => {
+      if (!formData[field].trim()) newErrors[field] = `${field.replace(/([A-Z])/g, ' $1')} is required`;
+    });
+    return newErrors;
+  };
+  
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    setErrors({});
+    setLoading(true);
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        toast.success("Message sent successfully!");
+        setFormData({ fullName: "", email: "", phone: "", company: "", message: "" });
+      } else {
+        toast.error(data.message || "Something went wrong.");
+      }
+    } catch (err) {
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
 
   return (
     <div className="pt-10 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
@@ -37,16 +97,26 @@ const ContactForm = ({
               <label className="block text-gray-700 mb-2">Full Name*</label>
               <input
                 type="text"
-                placeholder="Your Full Name"
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                placeholder={errors.fullName ? errors.fullName : "Full Name *"}
+                className={`w-full px-4 py-3 rounded-lg border ${errors.fullName ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
             <div>
               <label className="block text-gray-700 mb-2">Email Address*</label>
               <input
                 type="email"
-                placeholder="Your Email Address"
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                placeholder={errors.email ? errors.email : "Email Address *"}
+                className={`w-full px-4 py-3 rounded-lg border ${errors.email ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
           </div>
@@ -56,16 +126,26 @@ const ContactForm = ({
               <label className="block text-gray-700 mb-2">Phone Number</label>
               <input
                 type="tel"
-                placeholder="Your Phone Number"
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder={errors.phone ? errors.phone : "Phone Number *"}
+                className={`w-full px-4 py-3 rounded-lg border ${
+                  errors.phone ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
             <div>
               <label className="block text-gray-700 mb-2">Company Name</label>
               <input
                 type="text"
-                placeholder="Your Company Name"
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                name="company"
+                value={formData.company}
+                onChange={handleChange}
+                placeholder={errors.company ? errors.company : "Your Company Name *"}
+  className={`w-full px-4 py-3 rounded-lg border ${
+    errors.company ? "border-red-500 placeholder-red-500" : "border-gray-200"
+  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
           </div>
@@ -73,19 +153,25 @@ const ContactForm = ({
           <div>
             <label className="block text-gray-700 mb-2">Message*</label>
             <textarea
-              placeholder="Describe Your Project"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              placeholder={errors.message ? errors.message : "Describe Your Project *"}
               rows="4"
-              className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className={`w-full px-4 py-3 rounded-lg border ${errors.message ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                } focus:outline-none focus:ring-2 focus:ring-teal-500`}
             ></textarea>
           </div>
 
           <button
             type="submit"
+            onClick={handleSubmit}
             className="w-full bg-teal-500 text-white py-3 rounded-lg hover:bg-teal-600 transition-colors"
+            disabled={loading}
           >
-            Submit
+            {loading ? "Sending..." : "Submit"}
           </button>
-
           <p className="text-sm text-gray-500">
             By submitting this form, you agree to our{" "}
             <a href="#" className="text-teal-500 underline">

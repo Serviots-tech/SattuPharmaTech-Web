@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Inter, Poppins } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], variable: "--font-inter" });
 const poppins = Poppins({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], variable: "--font-poppins" });
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
     <html lang="en" >
       <link rel="icon" type="image/png" href="/favicon.png" />
       <body className={`${inter.variable} ${poppins.variable} font-sans`}>
+      <Toaster position="top-center" />
         <Navbar />
         {children}
         <div className="border-t border-gray">
