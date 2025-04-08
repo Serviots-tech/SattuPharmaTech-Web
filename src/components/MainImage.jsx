@@ -60,9 +60,67 @@ const MainImage = ({
             </div>
           </div>
 
-		  <div className="flex justify-center">
+          {/* <div className="hidden md:flex justify-center">
             <div className=" z-20 w-[84vw]  mx-auto grid justify-center xl:-mt-16 lg:-mt-14 md:-mt-14 -mt-32 lg:py-10 bg-[#FFF7E3] rounded-lg shadow-lg p-4 space-x-4 md:space-x-8">
               <div className="bg-[#FFF7E3]">
+                <div className="container mx-auto px-4">
+                  <div className="flex flex-wrap justify-center items-center text-center gap-6 md:gap-4 ">
+                    <h3 className="text-lg md:text-xl font-poppins font-light">
+                      <i>
+                        {backgroundImageClass === "pharmaservice-image"
+                          ? "Hospital setup"
+                          : backgroundImageClass === "softwareservice-image"
+                            ? "Custom Software Solutions"
+                            : "Expand Markets"}
+                      </i>
+                    </h3>
+                    <span className="hidden md:block text-xl text-gray font-thin">
+                      |
+                    </span>
+                    <h3 className="text-lg md:text-xl font-poppins font-light">
+                      {" "}
+                      <i>
+                        {backgroundImageClass === "pharmaservice-image"
+                          ? "Research and development"
+                          : backgroundImageClass === "softwareservice-image"
+                            ? "Native Mobile Applications"
+                            : "Navigate Regulations"}
+                      </i>
+                    </h3>
+                    <span className="hidden md:block text-xl text-gray font-thin">
+                      |
+                    </span>
+                    <h3 className="text-lg md:text-xl font-poppins font-light">
+                      <i>
+                        {" "}
+                        {backgroundImageClass === "pharmaservice-image"
+                          ? "Distribution Channel"
+                          : backgroundImageClass === "softwareservice-image"
+                            ? "Web Applications"
+                            : "Drive Innovation"}
+                      </i>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
+        </>
+      ) : (
+        <>
+          <MainImgCarouselSlider
+            images={images}
+            autoPlay={true}
+            interval={18000}
+            title1={title1}
+            title2={title2}
+            description={description}
+            ctaText={ctaText}
+            mainImgData={mainImgData}
+          />
+          {/* <div className="flex justify-center">
+            <div className=" z-20 w-[90vw]  mx-auto grid justify-center xl:-mt-20 lg:-mt-28 md:-mt-28 -mt-32 lg:py-10 bg-[#FEEDC6] rounded-lg shadow-lg p-4 space-x-4 md:space-x-8">
+              <div className="bg-[#FEEDC6]">
                 <div className="container mx-auto px-4">
                   <div className="flex flex-wrap justify-center items-center text-center gap-6 md:gap-4 ">
                     <h3 className="text-lg md:text-xl font-poppins font-light">
@@ -104,61 +162,53 @@ const MainImage = ({
                 </div>
               </div>
             </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <MainImgCarouselSlider
-            images={images}
-            autoPlay={true}
-            interval={18000}
-            title1={title1}
-            title2={title2}
-            description={description}
-            ctaText={ctaText}
-            mainImgData={mainImgData}
-          />
-
-          <div className="flex justify-center">
-            <div className=" z-20 w-[84vw]  mx-auto grid justify-center xl:-mt-16 lg:-mt-28 md:-mt-28 -mt-32 lg:py-10 bg-[#FFF7E3] rounded-lg shadow-lg p-4 space-x-4 md:space-x-8">
-              <div className="bg-[#FFF7E3]">
+          </div> */}
+          
+          <div className="hidden md:flex justify-center">
+            <div className="z-20 w-[90vw] mx-auto xl:-mt-20 lg:-mt-28 md:-mt-28 -mt-32 lg:py-10 bg-[#FEEDC6] rounded-[16px] shadow-lg p-4">
+              <div className="bg-[#FEEDC6]">
                 <div className="container mx-auto px-4">
-                  <div className="flex flex-wrap justify-center items-center text-center gap-6 md:gap-4 ">
-                    <h3 className="text-lg md:text-xl font-poppins font-light">
-                      <i>
-                        {backgroundImageClass === "pharmaservice-image"
-                          ? "Hospital setup"
-                          : backgroundImageClass === "softwareservice-image"
-                          ? "Custom Software Solutions"
-                          : "Expand Markets"}
-                      </i>
-                    </h3>
-                    <span className="hidden md:block text-xl text-gray font-thin">
-                      |
-                    </span>
-                    <h3 className="text-lg md:text-xl font-poppins font-light">
-                      {" "}
-                      <i>
-                        {backgroundImageClass === "pharmaservice-image"
-                          ? "Research and development"
-                          : backgroundImageClass === "softwareservice-image"
-                          ? "Native Mobile Applications"
-                          : "Navigate Regulations"}
-                      </i>
-                    </h3>
-                    <span className="hidden md:block text-xl text-gray font-thin">
-                      |
-                    </span>
-                    <h3 className="text-lg md:text-xl font-poppins font-light">
-                      <i>
-                        {" "}
-                        {backgroundImageClass === "pharmaservice-image"
-                          ? "Distribution Channel"
-                          : backgroundImageClass === "softwareservice-image"
-                          ? "Web Applications"
-                          : "Drive Innovation"}
-                      </i>
-                    </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 items-center text-center gap-4 md:gap-0 relative">
+
+                    {/* Left Text */}
+                    <div className="px-2">
+                      <h3 className="text-lg md:text-xl font-poppins font-light">
+                        <i>
+                          {backgroundImageClass === "pharmaservice-image"
+                            ? "Hospital setup"
+                            : backgroundImageClass === "softwareservice-image"
+                              ? "Custom Software Solutions"
+                              : "Expand Markets"}
+                        </i>
+                      </h3>
+                    </div>
+
+                    {/* Center Text */}
+                    <div className="px-2 md:border-x md:border-gray-400">
+                      <h3 className="text-lg md:text-xl font-poppins font-light">
+                        <i>
+                          {backgroundImageClass === "pharmaservice-image"
+                            ? "Research and development"
+                            : backgroundImageClass === "softwareservice-image"
+                              ? "Native Mobile Applications"
+                              : "Navigate Regulations"}
+                        </i>
+                      </h3>
+                    </div>
+
+                    {/* Right Text */}
+                    <div className="px-2">
+                      <h3 className="text-lg md:text-xl font-poppins font-light">
+                        <i>
+                          {backgroundImageClass === "pharmaservice-image"
+                            ? "Distribution Channel"
+                            : backgroundImageClass === "softwareservice-image"
+                              ? "Web Applications"
+                              : "Drive Innovation"}
+                        </i>
+                      </h3>
+                    </div>
+
                   </div>
                 </div>
               </div>

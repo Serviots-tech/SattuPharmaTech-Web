@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+// import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronIconLeft, ChevronIconRight } from "src/app/constants/svg";
@@ -83,16 +83,16 @@ const MainImgCarouselSlider = ({
       {/* Content Overlay */}
       <div className="absolute top-[18%] xl:left-10 pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full mx-auto">
         <div className="text-center md:text-left">
-          <p className="mt-4 sm:mt-10 text-black text-4xl font-bold">
+          <p className="mt-4 sm:mt-10 text-[#FFFFFF] text-4xl font-bold">
             {mainImgData[currentIndex]?.title}
           </p>
-          <p className="mt-2 text-black text-4xl font-bold">
+          <p className="mt-2 text-[#FFFFFF] text-4xl font-bold">
             {mainImgData[currentIndex]?.subTitle}
           </p>
           <div className="h-12 mt-2 flex justify-center sm:justify-normal items-center">
             <div className="h-1 w-12 bg-[#4FB5B9]" />
           </div>
-          <p className="mt-4 max-md:hidden text-lg text-black font-light max-w-screen-md mx-auto md:mx-0">
+          <p className="mt-4 max-md:hidden text-lg text-[#FFFFFF] font-light max-w-screen-md mx-auto md:mx-0">
             {mainImgData[currentIndex]?.description ??
               "Unlock new opportunities in Pharmaceuticals & IT with our strategic solutions connecting India & Africa."}
           </p>

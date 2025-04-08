@@ -47,14 +47,14 @@ const SoftwareDevelopmentServicesData = [
 
 const ExpertiseSection = ({ align }) => {
   return (
-    <section className="py-20">
+    <section className="py-20 px-2">
       {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full "> */}
-      <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <div className={`mx-auto text-${align ?? "left"}`}>
-          <h2 className="text-3xl font-semibold text-black font-poppins">
+      <div className="pt-10 px-2 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full mx-auto">
+        <div className={`mx-auto md:text-${align ?? "left"} text-center`}>
+          <h2 className="text-[24px] md:text-[36px] font-bold md:font-semibold text-[#000000] font-poppins leading-[120%]">
             Our Pharma & Software Development Services
           </h2>
-          <p className="mt-4 md:max-w-[70%] font-poppins font-normal">
+          <p className="mt-4 md:max-w-[80%] font-poppins font-normal text-base md:text-lg">
             From helping you launch your pharmaceutical business in the African
             market, Manufacturing and Hospital Setup, and marketing your
             product/services to targeted customers to building smart and
@@ -64,7 +64,7 @@ const ExpertiseSection = ({ align }) => {
           </p>
         </div>
         <div className="mx-auto text-left">
-          <div className="text-2xl mt-10 text-[#4FB5B9] font-poppins font-semibold">
+          <div className="text-[22px] md:text-[28px] mt-10 text-[#4FB5B9] font-poppins font-semibold">
             <Link href={"/pharmaservices"}>
               Pharma Network Development Services
             </Link>
@@ -81,7 +81,7 @@ const ExpertiseSection = ({ align }) => {
         </div>
 
         <div className="mx-auto text-left">
-          <div className="text-2xl mt-10 text-[#4FB5B9] font-poppins font-semibold">
+        <div className="text-[22px] md:text-[28px] mt-10 text-[#4FB5B9] font-poppins font-semibold">
             <Link href={"/softwareservices"}>Software Development Services</Link>
           </div>
         </div>
@@ -95,9 +95,9 @@ const ExpertiseSection = ({ align }) => {
           ))}
         </div>
 
-        <div className="mt-10  flex justify-center md:justify-start">
-          <Link href="/contact">
-            <button className=" sm:w-auto bg-custom-bg px-20 font-medium font-poppins text-lg text-white py-2  rounded hover:bg-[#44ABB6]">
+        <div className="mt-10 flex justify-center md:justify-start w-full md:w-auto">
+          <Link href="/contact" className="w-full md:w-auto">
+            <button className="w-full md:w-auto bg-custom-bg px-20 font-medium font-poppins text-lg text-white py-4  rounded-[8px] hover:bg-[#44ABB6]">
               {"Get in Touch"}
             </button>
           </Link>

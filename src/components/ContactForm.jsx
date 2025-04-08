@@ -104,12 +104,12 @@ const ContactForm = ({
   return (
     <div className="pt-5 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto lg:pt-[80px]">
       <h1
-        className={`text-4xl  text-center mb-4 text-[26px] font-semibold font-poppins ${alignmentClass} md:text-left lg:text-[52px]`}
+        className={`text-4xl mb-4 font-semibold font-poppins text-[#000000] text-center md:text-right`}
       >
         {title ?? "Get in Touch"}
       </h1>
 
-      <div className={`mb-8 text-center ${alignmentClass} md:text-left lg:text-[18px]`}>
+      <div className={`mb-8 text-center md:text-right text-[#000000] font-normal text-lg`}>
         <p>{description1 ?? " Ready to explore new opportunities?"}</p>
         <p>
           {description2 ??
