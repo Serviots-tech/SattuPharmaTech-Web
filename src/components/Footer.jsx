@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="pt-10 pb-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full mx-auto">
       <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 md:gap-10">
-        <div className="max-w-xl flex-1">
+        <div className="lg:max-w-[30%] flex-1">
           <div className="flex items-center mb-4">
             <Image
               src="/assets/Logo.png"
@@ -45,58 +45,32 @@ export default function Footer() {
           </div>
         </div> */}
 
-        <div className="flex-2">
-          <h2 className="text-gray-800 mb-2 font-poppins font-normal">Contact Us</h2>
 
-          <div className="space-y-10">
-            <div className="flex flex-col lg:flex-row gap-6">
-              <div>
-                <p className="font-poppins">
-                  <span className="text-gray-600 font-poppins font-normal">Trusha Gandhi</span>
-                  <span className="text-gray-600 italic ml-2 font-light">- (Founder)</span>
-                </p>
-                <p className="text-gray-600 font-poppins font-light"><a href="tel:+918980161651">+91 8980161651</a></p>
-              </div>
 
-              <div>
-                <p className="font-poppins">
-                  <span className="font-poppins text-gray-600 font-normal">Akshat Gandhi</span>
-                  <span className="text-gray-600 italic ml-2 font-poppins font-light">- (Co-Founder)</span>
-                </p>
-                <p className="font-poppins text-gray-600 font-light"><a href="tel:+919099019848">+91 9099019848</a></p>
-              </div>
-              <div>
-              <p className="font-poppins">
-                <span className="font-poppins text-gray-600 font-normal">Saurabh Nayak</span>
-                <span className="font-poppins text-gray-600 font-light italic ml-2">- Director (Operations)</span>
-              </p>
-              <p className="font-poppins text-gray-600 font-light"> <a href="tel:+919426311821">+91 9426311821</a></p>
-            </div>
-            </div>
-            
-            <div className="flex flex-col lg:flex-row gap-12 mt-6">
-              <div>
-                <p className="font-poppins mb-2">
-                  <span className="text-gray-800 mb-2 font-poppins font-normal">Email:</span>
-                </p>
-                <p className="font-poppins text-gray-600 font-light underline">
-                  <a href="mailto:info@satupharmtech.com">info@satupharmtech.com</a>
-                </p>
+        <div className=" mt-6 flex-1 justify-between">
+          <div>
+            <p className="font-poppins mb-2 lg:mt-7">
+              <span className="text-gray-800 mb-2 font-poppins font-normal">Email:</span>
+            </p>
+            <div className="lg:flex">
+            <p className="font-poppins text-gray-600 font-light underline mr-[10vw] xl:mr-[20vw]">
+              <a href="mailto:info@satupharmtech.com">info@satupharmtech.com</a>
+            </p>
 
-                <p className="font-poppins text-gray-600 font-light underline">
-                  <a href="mailto:business@satupharmtech.com">business@satupharmtech.com</a>
-                </p>
-              </div>
-              <div>
-                <p className="font-poppins mb-2">
-                  <span className="text-gray-800 mb-2 font-poppins font-normal">Address:</span>
-                </p>
-                <p className="font-poppins text-gray-600 font-light max-w-sm">
-                  49-Cosmovilla, Opp. Satyagrah Chavni, Near Amul Garden, Bodakdev, Ahmedabad-380054, Gujarat, India
-                </p>
-              </div>
+            <p className="font-poppins text-gray-600 font-light underline">
+              <a href="mailto:business@satupharmtech.com">business@satupharmtech.com</a>
+            </p>
             </div>
           </div>
+          <div>
+            <p className="font-poppins mb-2 mt-10">
+              <span className="text-gray-800 mb-2 font-poppins font-normal">Address:</span>
+            </p>
+            <p className="font-poppins text-gray-600 font-light">
+              49-Cosmovilla, Opp. Satyagrah Chavni, Near Amul Garden, Bodakdev, Ahmedabad-380054, Gujarat, India
+            </p>
+          </div>
+
         </div>
       </div>
 

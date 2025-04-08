@@ -18,7 +18,7 @@ const Service = () => {
         <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
       </div>
       <CardWithImage cardImg={docImg?.src} cardValue={cardWithFifthImgValue} isReversed={true} />
-
+      
 
       <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Partner with Satu PharmTech?</h2>
