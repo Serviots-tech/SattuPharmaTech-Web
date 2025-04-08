@@ -19,7 +19,7 @@ const MainImage = ({
       {!landingPage ? (
         <>
           <div
-            className={`${backgroundImageClass} relative flex flex-col items-center justify-center w-full`}
+            className={`${backgroundImageClass} relative flex flex-col items-center justify-center w-full color`}
           >
             <div className="pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
               <div className="text-center md:text-left">
@@ -30,10 +30,10 @@ const MainImage = ({
                     whiteSpace: "normal",
                   }}
                 >
-                  <p className="mt-4 sm:mt-10 text-black">
+                  <p className="mt-4 sm:mt-10 text-white">
                     {title1 ?? "Bridging Continents,"}
                   </p>
-                  <p className="mt-2 text-black">
+                  <p className="mt-2 text-white">
                     {title2 ?? "Empowering Industries"}
                   </p>
                 </div>
@@ -44,7 +44,7 @@ const MainImage = ({
                   <div className="h-1 w-14  bg-[#4FB5B9]" />
                 </div>
 
-                <p className="mt-4 max-md:hidden text-lg text-black font-light max-w-screen-md mx-auto md:mx-0">
+                <p className="mt-4 max-md:hidden text-lg text-white font-light max-w-screen-md mx-auto md:mx-0">
                   {description ??
                     "Unlock new opportunities in Pharmaceuticals & IT with our strategic solutions connecting India & Africa."}
                 </p>

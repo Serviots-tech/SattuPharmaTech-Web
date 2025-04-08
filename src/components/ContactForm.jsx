@@ -102,14 +102,14 @@ const ContactForm = ({
 
 
   return (
-    <div className="pt-10 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
+    <div className="pt-5 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto lg:pt-[80px]">
       <h1
-        className={`text-4xl mb-4 font-semibold font-poppins ${alignmentClass}`}
+        className={`text-4xl  text-center mb-4 text-[26px] font-semibold font-poppins ${alignmentClass} md:text-left lg:text-[52px]`}
       >
         {title ?? "Get in Touch"}
       </h1>
 
-      <div className={`mb-8 ${alignmentClass}`}>
+      <div className={`mb-8 text-center ${alignmentClass} md:text-left lg:text-[18px]`}>
         <p>{description1 ?? " Ready to explore new opportunities?"}</p>
         <p>
           {description2 ??
@@ -117,32 +117,42 @@ const ContactForm = ({
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8 p-10 border rounded-lg border-1 border-[#E0E0E0] bg-[#FCFCFC]">
+      <div className="lg:hidden mb-7">
+          <Image
+            src="/assets/contactForm.png"
+            alt="Handshake"
+            width={600}
+            height={500}
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+
+      <div className="grid p-4 py-8 lg:grid-cols-2 gap-8  sm:p-10 border rounded-lg border-1 border-[#E0E0E0] bg-[#FCFCFC]">
         <div className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-gray-700 mb-2">Full Name*</label>
+              <label className="text-[14px]  block text-[#696969] mb-2">Full Name*</label>
               <input
                 type="text"
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
                 // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                placeholder={errors.fullName ? errors.fullName : "Full Name *"}
-                className={`w-full px-4 py-3 rounded-lg border ${errors.fullName ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                placeholder={errors.fullName ? errors.fullName : "Your Full Name"}
+                className={`w-full px-4 py-3 rounded-lg border text-[#BFBFBFEE] h-[46px] ${errors.fullName ? "border-red-500 placeholder-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
             <div>
-              <label className="block text-gray-700 mb-2">Email Address*</label>
+              <label className="block text-[14px] text-[#696969] mb-2">Email Address*</label>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
                 // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                placeholder={errors.email ? errors.email : "Email Address *"}
-                className={`w-full px-4 py-3 rounded-lg border ${errors.email ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                placeholder={errors.email ? errors.email : "Your Email Address"}
+                className={`w-full px-4 py-3 rounded-lg border text-[#BFBFBFEE] h-[46px] ${errors.email ? "border-red-500 placeholder-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
@@ -150,41 +160,41 @@ const ContactForm = ({
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-gray-700 mb-2">Phone Number</label>
+              <label className="block text-[14px] text-[#696969]  mb-2">Phone Number</label>
               <input
                 type="tel"
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder={errors.phone ? errors.phone : "Phone Number *"}
-                className={`w-full px-4 py-3 rounded-lg border ${errors.phone ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                placeholder={errors.phone ? errors.phone : "Your Phone Number"}
+                className={`w-full px-4 py-3 h-[46px] rounded-lg text-[#BFBFBFEE] border ${errors.phone ? "border-red-500 placeholder-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
             <div>
-              <label className="block text-gray-700 mb-2">Company Name</label>
+              <label className="block text-[14px] text-[#696969] mb-2">Company Name</label>
               <input
                 type="text"
                 name="company"
                 value={formData.company}
                 onChange={handleChange}
-                placeholder={errors.company ? errors.company : "Your Company Name *"}
-                className={`w-full px-4 py-3 rounded-lg border ${errors.company ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                placeholder={errors.company ? errors.company : "Your Company Name"}
+                className={`w-full px-4 py-3 text-[#BFBFBFEE] h-[46px] rounded-lg border ${errors.company ? "border-red-500 placeholder-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-gray-700 mb-2">Message*</label>
+            <label className="block text-[14px] text-[#696969] mb-2">Message*</label>
             <textarea
               name="message"
               value={formData.message}
               onChange={handleChange}
               // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
-              placeholder={errors.message ? errors.message : "Describe Your Project *"}
+              placeholder={errors.message ? errors.message : "Describe Your Project"}
               rows="4"
-              className={`w-full px-4 py-3 rounded-lg border ${errors.message ? "border-red-500 placeholder-red-500" : "border-gray-200"
+              className={`w-full px-4 py-3 text-[#BFBFBFEE] rounded-lg border ${errors.message ? "border-red-500 placeholder-red-500" : "border-gray-200"
                 } focus:outline-none focus:ring-2 focus:ring-teal-500`}
             ></textarea>
           </div>
@@ -192,14 +202,14 @@ const ContactForm = ({
           <button
             type="submit"
             onClick={handleSubmit}
-            className="w-full bg-teal-500 text-white py-3 rounded-lg hover:bg-teal-600 transition-colors"
+            className="w-full bg-[#4FB5B9] text-white py-3 rounded-lg hover:bg-teal-600 transition-colors"
             disabled={loading}
           >
             {loading ? "Sending..." : "Submit"}
           </button>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-[#696969]">
             By submitting this form, you agree to our{" "}
-            <a href="#" className="text-teal-500 underline">
+            <a href="#" className="underline">
               Privacy Policy
             </a>
           </p>
