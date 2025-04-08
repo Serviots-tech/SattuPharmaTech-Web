@@ -17,17 +17,17 @@ export async function POST(req) {
         }
 
         const transporter = nodemailer.createTransport({
-            // service: 'gmail',
-            // auth: {
-            //     user: process.env.EMAIL_USER,
-            //     pass: process.env.EMAIL_PASS,
+            host: 'smtpout.secureserver.net',
+            secure: true,
+            // secureConnection: false,
+            // tls: {
+            //     ciphers: 'SSLv3'
             // },
-            host: 'smtp.secureserver.net',
-            port: 587,
-            secure: false,
+            // requireTLS: true,
+            port: 465,
             auth: {
-                user: "info@satupharmtech.com",
-                pass: "Trusha1234@",
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
             },
         });
 
@@ -48,12 +48,9 @@ export async function POST(req) {
 
         // Email to send to the user
         const userMailOptions = {
-            from: `SatuPharmtech Team`,
-            to: "harishr@serviots.com",
+            from: `SatuPharmtech Team <${process.env.EMAIL_USER}>`,
+            to: email,
             subject: 'Thank You for Contacting Us',
-            // from: `SatuPharmtech Team <${process.env.EMAIL_USER}>`,
-            // to: email,
-            // subject: 'Thank You for Contacting Us',
             html: emailTemplatesSatuPharmtech(),
         };
 

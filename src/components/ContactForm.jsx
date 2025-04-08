@@ -23,24 +23,51 @@ const ContactForm = ({
     message: "",
   });
 
-
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: sanitizeField(name, value),
+    }));
+  };
+
+  const sanitizeField = (name, value) => {
+    switch (name) {
+      case "phone":
+        return value.replace(/\D/g, "").slice(0, 15);
+      case "fullName":
+        return value.replace(/[^A-Za-z\s]/g, "");
+      default:
+        return value;
+    }
   };
 
   const validate = () => {
     const requiredFields = ["fullName", "email", "phone", "company", "message"];
     const newErrors = {};
-    requiredFields.forEach((field) => {
-      if (!formData[field].trim()) newErrors[field] = `${field.replace(/([A-Z])/g, ' $1')} is required`;
-    });
+
+    for (const field of requiredFields) {
+      const value = formData[field]?.trim();
+      if (!value) {
+        newErrors[field] = `${field.replace(/([A-Z])/g, " $1")} is required`;
+      }
+    }
+
+    if (formData.email?.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+    }
+
+    if (!/^\d{7,15}$/.test(formData.phone)) {
+      newErrors.phone = "Invalid phone number format";
+    }
+
     return newErrors;
   };
-  
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -130,9 +157,8 @@ const ContactForm = ({
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder={errors.phone ? errors.phone : "Phone Number *"}
-                className={`w-full px-4 py-3 rounded-lg border ${
-                  errors.phone ? "border-red-500 placeholder-red-500" : "border-gray-200"
-                } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                className={`w-full px-4 py-3 rounded-lg border ${errors.phone ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
             <div>
@@ -143,9 +169,8 @@ const ContactForm = ({
                 value={formData.company}
                 onChange={handleChange}
                 placeholder={errors.company ? errors.company : "Your Company Name *"}
-  className={`w-full px-4 py-3 rounded-lg border ${
-    errors.company ? "border-red-500 placeholder-red-500" : "border-gray-200"
-  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
+                className={`w-full px-4 py-3 rounded-lg border ${errors.company ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                  } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
           </div>
