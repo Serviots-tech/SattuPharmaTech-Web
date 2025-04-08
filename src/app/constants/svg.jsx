@@ -93,3 +93,21 @@ export const LowerQuote = () => {
     </svg>
   );
 };
+
+export const PlusIcon = () => {
+  return (
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect y="13" width="29.9999" height="3" rx="1" fill="#378992" />
+      <rect x="16" width="30" height="2.99998" rx="1" transform="rotate(90 16 0)" fill="#378992" />
+    </svg>
+  );
+};
+
+export const MinusIcon = () => {
+  return (
+    <svg width="30" height="3" viewBox="0 0 30 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="29.9999" height="3" rx="1" fill="white"/>
+<rect width="29.9999" height="3" rx="1" fill="white"/>
+</svg>
+  );
+};

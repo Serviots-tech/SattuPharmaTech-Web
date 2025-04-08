@@ -104,12 +104,12 @@ const ContactForm = ({
   return (
     <div className="pt-10 pb-10 md:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
       <h1
-        className={`text-4xl mb-4 font-semibold font-poppins ${alignmentClass}`}
+        className={`text-4xl mb-4 font-semibold font-poppins text-[#000000] text-center md:text-right`}
       >
         {title ?? "Get in Touch"}
       </h1>
 
-      <div className={`mb-8 ${alignmentClass}`}>
+      <div className={`mb-8 text-center md:text-right text-[#000000] font-normal text-lg`}>
         <p>{description1 ?? " Ready to explore new opportunities?"}</p>
         <p>
           {description2 ??
@@ -128,7 +128,7 @@ const ContactForm = ({
                 value={formData.fullName}
                 onChange={handleChange}
                 // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                placeholder={errors.fullName ? errors.fullName : "Full Name *"}
+                placeholder={errors.fullName ? errors.fullName : "Full Name"}
                 className={`w-full px-4 py-3 rounded-lg border ${errors.fullName ? "border-red-500 placeholder-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
@@ -141,7 +141,7 @@ const ContactForm = ({
                 value={formData.email}
                 onChange={handleChange}
                 // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
-                placeholder={errors.email ? errors.email : "Email Address *"}
+                placeholder={errors.email ? errors.email : "Email Address"}
                 className={`w-full px-4 py-3 rounded-lg border ${errors.email ? "border-red-500 placeholder-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
@@ -156,7 +156,7 @@ const ContactForm = ({
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder={errors.phone ? errors.phone : "Phone Number *"}
+                placeholder={errors.phone ? errors.phone : "Phone Number"}
                 className={`w-full px-4 py-3 rounded-lg border ${errors.phone ? "border-red-500 placeholder-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
@@ -168,7 +168,7 @@ const ContactForm = ({
                 name="company"
                 value={formData.company}
                 onChange={handleChange}
-                placeholder={errors.company ? errors.company : "Your Company Name *"}
+                placeholder={errors.company ? errors.company : "Your Company Name"}
                 className={`w-full px-4 py-3 rounded-lg border ${errors.company ? "border-red-500 placeholder-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
@@ -182,7 +182,7 @@ const ContactForm = ({
               value={formData.message}
               onChange={handleChange}
               // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
-              placeholder={errors.message ? errors.message : "Describe Your Project *"}
+              placeholder={errors.message ? errors.message : "Describe Your Project"}
               rows="4"
               className={`w-full px-4 py-3 rounded-lg border ${errors.message ? "border-red-500 placeholder-red-500" : "border-gray-200"
                 } focus:outline-none focus:ring-2 focus:ring-teal-500`}
