@@ -1,135 +1,146 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-// import { ChevronLeft, ChevronRight } from "lucide-react";
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronIconLeft, ChevronIconRight } from "src/app/constants/svg";
+import { useEffect, useState } from "react";
 
 const MainImgCarouselSlider = ({
   images,
+  mainImgData,
   autoPlay = true,
   interval = 3000,
-  mainImgData,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [slides, setSlides] = useState([
+    {
+      index: 0,
+      id: Date.now(),
+      isInitial: true,
+    },
+  ]);
+
+  // const isFirstRender = useRef(true);
 
   useEffect(() => {
-    if (!autoPlay || isAnimating) return;
+    if (!autoPlay) return;
 
-    const timer = setTimeout(() => {
-      handleNextSlide();
+    const timer = setInterval(() => {
+      addSlide();
     }, interval);
 
-    return () => clearTimeout(timer);
-  }, [currentIndex, autoPlay, interval, isAnimating]);
+    return () => clearInterval(timer);
+  }, [currentIndex, autoPlay, interval]);
 
-  const handleNextSlide = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setIsAnimating(false);
-    }, 500); // Sync with animation duration
+  const addSlide = () => {
+    const nextIndex = (currentIndex + 1) % images.length;
+
+    setSlides((prev) => [
+      ...prev,
+      {
+        index: nextIndex,
+        id: Date.now(),
+        isInitial: false,
+      },
+    ]);
+
+    setCurrentIndex(nextIndex);
   };
 
-  const handlePrevSlide = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      );
-      setIsAnimating(false);
-    }, 500);
-  };
-
-  const getButtonColor = (direction) => {
-    const isPrev = direction === "prev";
-    const color = "#4FB5B9"; // Default color for both buttons
-    const lightColor = "#4FB5B966"; // Light color for the button when active
-
-    return currentIndex === (isPrev ? 0 : images.length - 1)
-      ? lightColor
-      : color;
-  };
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentIndex}
-          className="relative w-full h-[90vh] sm:h-[80vh] md:h-[88vh] lg:h-[90vh]"
-        >
+      <div className="relative w-full  h-full">
+        {slides.map((slide, idx) => (
           <motion.div
-            animate={{ scale: [1, 1.3] }}
-            transition={{
-              duration: 18,
-              repeat: Infinity,
-              repeatType: "mirror",
-              ease: "easeOut",
+            key={slide.id}
+            initial={slide.isInitial ? false : { x: "100%" }}
+            animate={slide.isInitial ? {} : { x: "0%" }}
+            transition={
+              slide.isInitial
+                ? { duration: 0 }
+                : { duration: 1.2, ease: "easeInOut" }
+            }
+            onAnimationComplete={() => {
+              if (idx < slides.length - 1) {
+                setSlides((prev) => prev.slice(idx));
+              }
             }}
-            className="w-full h-full"
+            className="absolute inset-0 w-full h-full"
           >
             <Image
-              src={images[currentIndex]?.src}
-              alt="Slide Image"
-              layout="fill"
-              objectFit="cover"
+              src={images[slide.index].src}
+              alt="Image"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
             />
+            {renderOverlayContent(
+              mainImgData[slide.index],
+              interval,
+              currentIndex,
+              addSlide
+            )}
           </motion.div>
-        </motion.div>
-      </AnimatePresence>
-
-      {/* Content Overlay */}
-      <div className="absolute top-[18%] xl:left-10 pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full mx-auto">
-        <div className="text-center md:text-left">
-          <p className="mt-4 sm:mt-10 text-[#FFFFFF] text-4xl font-bold">
-            {mainImgData[currentIndex]?.title}
-          </p>
-          <p className="mt-2 text-[#FFFFFF] text-4xl font-bold">
-            {mainImgData[currentIndex]?.subTitle}
-          </p>
-          <div className="h-12 mt-2 flex justify-center sm:justify-normal items-center">
-            <div className="h-1 w-12 bg-[#4FB5B9]" />
-          </div>
-          <p className="mt-4 max-md:hidden text-lg text-[#FFFFFF] font-light max-w-screen-md mx-auto md:mx-0">
-            {mainImgData[currentIndex]?.description ??
-              "Unlock new opportunities in Pharmaceuticals & IT with our strategic solutions connecting India & Africa."}
-          </p>
-          <div className="mt-8 flex justify-center md:justify-start">
-            <Link href="/contact">
-              <button className="sm:w-auto bg-custom-bg font-medium text-lg text-white py-2 px-6 rounded hover:bg-[#44ABB6]">
-                {mainImgData[currentIndex]?.ctaText ?? "Explore Our Services"}
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="absolute bottom-[12%] left-[50%] transform -translate-x-1/2  gap-10 md:hidden hidden lg:flex">
-        <button
-          onClick={handlePrevSlide}
-          className="p-[14%] px-[17%] rounded-[50%] border-4 border-[#167174] text-[#4FB5B9]"
-          style={{
-            borderColor: getButtonColor("prev"),
-            color: getButtonColor("prev"),
-          }}
-        >
-          <ChevronIconRight fill={getButtonColor("prev")} />
-        </button>
-        <button
-          onClick={handleNextSlide}
-          className="px-[17%] rounded-full border-4 border-[#4FB5B9] text-[#4FB5B9]"
-          style={{
-            borderColor: getButtonColor("next"),
-            color: getButtonColor("next"),
-          }}
-        >
-          <ChevronIconLeft fill={getButtonColor("next")} />
-        </button>
+        ))}
       </div>
     </div>
   );
 };
+
+function renderOverlayContent(data, interval, currentIndex, addSlide) {
+  return (
+    <div className="absolute top-[18%] xl:left-10 pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full mx-auto">
+      <div className="text-center md:text-left">
+        <p className="mt-4 sm:mt-10 text-white text-4xl font-bold">
+          {data?.title}
+        </p>
+        <p className="mt-2 text-white text-4xl font-bold">{data?.subTitle}</p>
+        <div className="h-12 mt-2 flex justify-center sm:justify-normal items-center">
+          <div className="h-1 w-12 bg-[#4FB5B9]" />
+        </div>
+        <p className="mt-4 max-md:hidden text-lg text-white font-light max-w-screen-md mx-auto md:mx-0">
+          {data?.description ??
+            "Unlock new opportunities in Pharmaceuticals & IT with our strategic solutions connecting India & Africa."}
+        </p>
+
+        <div className="mt-8 flex flex-col gap-2 items-center md:items-start">
+          <Link href="/contact">
+            <button className="sm:w-auto bg-custom-bg font-medium text-lg text-white py-2 px-6 rounded hover:bg-[#44ABB6]">
+              {data?.ctaText ?? "Explore Our Services"}
+            </button>
+          </Link>
+
+          {/* Progress Bars */}
+          {/* Progress Bars */}
+          <div className="w-40 mt-3 flex items-center gap-2 cursor-pointer">
+            {[0, 1].map((barIndex) => (
+              <div
+                key={barIndex}
+                className="relative w-full h-1 bg-white  overflow-hidden"
+                onClick={() => {
+                  if (barIndex !== currentIndex) {
+                    addSlide(barIndex);
+                  }
+                }}
+              >
+                {barIndex === currentIndex && (
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "100%" }}
+                    transition={{
+                      duration: interval / 900,
+                      ease: "linear",
+                    }}
+                    className="absolute top-0 left-0 h-full bg-[#4FB5B9]"
+                  />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default MainImgCarouselSlider;
