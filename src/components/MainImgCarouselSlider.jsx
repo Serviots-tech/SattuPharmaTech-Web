@@ -61,14 +61,12 @@ const MainImgCarouselSlider = ({
           className="relative w-full h-[90vh] sm:h-[80vh] md:h-[88vh] lg:h-[90vh]"
         >
           <motion.div
-            animate={{ scale: [1, 1.3] }}
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}           
             transition={{
-              duration: 18,
-              repeat: Infinity,
-              repeatType: "mirror",
-              ease: "easeOut",
+            duration: 0.8,
             }}
-            className="w-full h-full"
+             className="absolute top-0 left-0 w-full h-full"
           >
             <Image
               src={images[currentIndex]?.src}
@@ -76,12 +74,7 @@ const MainImgCarouselSlider = ({
               layout="fill"
               objectFit="cover"
             />
-          </motion.div>
-        </motion.div>
-      </AnimatePresence>
-
-      {/* Content Overlay */}
-      <div className="absolute top-[18%] xl:left-10 pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full mx-auto">
+        <div className="absolute top-[18%] xl:left-10 pt-2 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-10 w-full mx-auto">
         <div className="text-center md:text-left">
           <p className="mt-4 sm:mt-10 text-[#FFFFFF] text-4xl font-bold">
             {mainImgData[currentIndex]?.title}
@@ -128,6 +121,12 @@ const MainImgCarouselSlider = ({
           <ChevronIconLeft fill={getButtonColor("next")} />
         </button>
       </div>
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Content Overlay */}
+      
     </div>
   );
 };
