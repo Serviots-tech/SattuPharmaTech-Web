@@ -14,14 +14,6 @@ const PharmaNetworkDevelopmentServicesData = [
     ],
   },
   {
-    title: "Pharma and Hospital Setup",
-    description: [
-      "Providing full-fledged assistance for hospital setup",
-      "Market research/product marketing",
-      "Joint Venture ",
-    ],
-  },
-  {
     title: "Data Sheets & Market Research",
     description: [
       "Conduct marketing research",
@@ -47,7 +39,7 @@ const SoftwareDevelopmentServicesData = [
 
 const ExpertiseSection = ({ align }) => {
   return (
-    <section className="py-20 px-2">
+    <section className=" py-10 px-2">
       {/* <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-32 w-full "> */}
       <div className="pt-10 px-2 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full mx-auto">
         <div className={`mx-auto md:text-${align ?? "left"} text-center`}>
@@ -70,7 +62,7 @@ const ExpertiseSection = ({ align }) => {
             </Link>
           </div>
         </div>
-        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2  gap-6">
+        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2  gap-6">
           {PharmaNetworkDevelopmentServicesData.map((item, index) => (
             <AnimatedCard
               key={index}
@@ -85,7 +77,7 @@ const ExpertiseSection = ({ align }) => {
             <Link href={"/softwareservices"}>Software Development Services</Link>
           </div>
         </div>
-        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
+        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
           {SoftwareDevelopmentServicesData.map((item, index) => (
             <AnimatedCard
               key={index}

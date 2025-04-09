@@ -128,7 +128,7 @@ function renderOverlayContent(data, interval, currentIndex, addSlide) {
                     initial={{ width: 0 }}
                     animate={{ width: "100%" }}
                     transition={{
-                      duration: interval / 900,
+                      duration: interval / 1000,
                       ease: "linear",
                     }}
                     className="absolute top-0 left-0 h-full bg-[#4FB5B9]"
