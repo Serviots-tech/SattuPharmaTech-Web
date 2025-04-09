@@ -12,28 +12,28 @@ const Service = () => {
 
   return (
     <>
-      <MainImage backgroundImageClass={'softwareservice-image'} title1={"Software Development & "} title2={"Consulting Services "} description={"Helping startups, entrepreneurs, and enterprises stay at the forefront of their industries with high-performing web and mobile applications and custom software solutions. We are offering cost effective services with uncompromised quality services."} ctaText={"Contact Us, Now"} />
+      <MainImage backgroundImageClass={'softwareservice-image'} title1={"Software Development & "} title2={"Consulting Services "} description={"Helping startups, entrepreneurs, and enterprises stay at the forefront of their industries with high-performing web and mobile applications and custom software solutions. We are offering cost effective services with uncompromised quality services."} ctaText={"Contact Us, Now"} mobileDescription={"Helping startups, entrepreneurs, and enterprises stay at the forefront of their industries with high-performing web and mobile applications and custom software solutions. We are offering cost effective services with uncompromised quality services. "} />
       <SoftwareNetworkDevelopment />
       <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
+        <h1 className={`text-3xl text-center mb-5 font-semibold font-poppins md:text-right`}>Who We Are </h1>
       </div>
-      <CardWithImage cardImg={docImg?.src} cardValue={cardWithFifthImgValue} isReversed={true} />
+      <CardWithImage cardImg={docImg?.src} cardValue={cardWithFifthImgValue} isReversed={true} isUnderlineForTitle={false} />
       
 
-      <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
+      <div className="pt-10 pb-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto text-center lg:text-left ">
         <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Partner with Satu PharmTech?</h2>
         <div className="grid gap-6 mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
+            <div className="p-6 border rounded-lg flex flex-col items-center bg-[#FEEDC6] border-[#FDC446] lg:block">
               <div className="flex items-center mb-4">
                 <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><QualityAssuranceIcon /></span></div>
               </div>
               <h3 className="text-xl font-semibold">Quality assurance</h3>
-              <p className="pt-4">
+              <p className="pt-4 ">
               We have expert developers and deliver the best solutions following the process and using the right project management tools.</p>
             </div>
 
-            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
+            <div className="p-6 border rounded-lg flex flex-col items-center bg-[#FEEDC6] border-[#FDC446] lg:block">
               <div className="flex items-center mb-4">
                 <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><AgileSoftwareDevelopmentServicesIcon /></span></div>
               </div>
@@ -43,7 +43,7 @@ const Service = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
+            <div className="p-6 border rounded-lg  bg-[#FEEDC6] border-[#FDC446] flex flex-col items-center lg:block">
               <div className="flex items-center mb-4">
                 <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><ExpertDevelopmentTeamIcon /></span></div>
               </div>
@@ -52,7 +52,7 @@ const Service = () => {
               Whether you want to develop a web application, mobile application, custom software, or product, we have an expert team to handle your project.</p>
             </div>
 
-            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
+            <div className="p-6 border rounded-lg bg-[#FEEDC6] border-[#FDC446] flex flex-col items-center lg:block">
               <div className="flex items-center mb-4">
                 <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white"><span className="text-2xl "><TransparencyIcon /></span></div>
               </div>

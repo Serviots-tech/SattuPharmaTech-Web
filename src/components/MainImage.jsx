@@ -13,6 +13,7 @@ const MainImage = ({
   images,
   mainImgData,
   landingPage,
+  mobileDescription,
 }) => {
   return (
     <>
@@ -43,6 +44,10 @@ const MainImage = ({
                 >
                   <div className="h-1 w-14  bg-[#4FB5B9]" />
                 </div>
+
+                <p className="text-white block md:hidden font-normal text-base">
+                  {mobileDescription}
+                </p>
 
                 <p className="mt-4 max-md:hidden text-lg text-white font-light max-w-screen-md mx-auto md:mx-0">
                   {description ??
@@ -111,7 +116,7 @@ const MainImage = ({
           <MainImgCarouselSlider
             images={images}
             autoPlay={true}
-            interval={8000}
+            interval={3000}
             title1={title1}
             title2={title2}
             description={description}

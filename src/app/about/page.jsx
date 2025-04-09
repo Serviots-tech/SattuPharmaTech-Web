@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
       <div className="pt-10 lg:pt-12  px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <p className="text-3xl mb-10 font-bold text-[26px] leading-[1.1] font-poppins text-center">
+        <p className="text-3xl mb-10 font-bold lg:font-semibold text-[26px] lg:text-[52px] leading-[1.1] font-poppins text-center">
           About SatuPharmTech
         </p>
       </div>
@@ -66,28 +66,28 @@ const About = () => {
       <div className="px-6 pb-10 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <div className="grid gap-6 mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
-              <div className="flex items-center mb-4">
-                <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white">
+            <div className="p-6 border rounded-lg  bg-[#FEEDC6] border-[#FDC446]">
+              <div className="flex items-center justify-center lg:justify-start mb-4">
+                <div className="inline-block p-4 rounded-2xl border-2 border-[#FDC446]  bg-white">
                   <span className="text-2xl ">
                     <PharmaNetworkDevelopmentServicesIcon />
                   </span>
                 </div>
               </div>
-              <h3 className="text-2xl font-semibold">
+              <h3 className="text-2xl font-semibold text-center lg:text-left">
                 Pharma Network Development Services{" "}
               </h3>
             </div>
 
-            <div className="p-6 border rounded-lg  bg-[#FFF7E3] border-[#FFD059]">
-              <div className="flex items-center mb-4">
-                <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059]  bg-white">
+            <div className="p-6 border rounded-lg  bg-[#FEEDC6] border-[#FDC446]">
+              <div className="flex items-center justify-center lg:justify-start mb-4">
+                <div className="inline-block p-4 rounded-2xl border-2 border-[#FDC446]  bg-white">
                   <span className="text-2xl ">
                     <CustomSoftwareDevelopmentIcon />
                   </span>
                 </div>
               </div>
-              <h3 className="text-2xl font-semibold">
+              <h3 className="text-2xl font-semibold text-center lg:text-left">
                 Custom Software Development{" "}
               </h3>
             </div>

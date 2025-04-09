@@ -12,7 +12,7 @@ const Service = () => {
 
   return (
     <>
-      <MainImage isService={true} backgroundImageClass={'pharmaservice-image'} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PharmTech helps you establish a pharmaceutical company, including business and molecule registration, factory registration, setting distribution channels and even marketing your products. We provide end-to-end business consulting services. "} ctaText={"Contact Us, Now"} />
+      <MainImage isService={true} backgroundImageClass={'pharmaservice-image'} title1={"Pharma Growth Consultant & "} title2={"Network Development Company"} description={"With $3.01 trillion in nominal terms and $8.74 trillion in purchasing power parity (PPP) terms, Africa brings you a lucrative opportunity to start a pharmaceutical business. Wondering how? Satu PharmTech helps you establish a pharmaceutical company, including business and molecule registration, factory registration, setting distribution channels and even marketing your products. We provide end-to-end business consulting services. "} ctaText={"Contact Us, Now"} mobileDescription={"Satu PhamTech helps bulk buyers, importers, and distributors establish a pharmaceutical company, including molecule/factory registration, setting distribution channels and even marketing your products."} />
       <PharmaNetworkDevelopment />
       <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
         <h1 className={`text-3xl mb-5 font-semibold font-poppins text-right`}>Who We Are </h1>
@@ -24,39 +24,39 @@ const Service = () => {
         <h2 className={`text-3xl font-semibold text-left mb-8 font-poppins`}>Why Use a Pharma Network Development Company?</h2>
         <div className="grid gap-6 mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 border rounded-lg bg-[#FFF7E3] border-[#FFD059]">
-              <div className="flex items-center mb-4">
-                <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059] bg-white">
+            <div className="p-6 border rounded-lg bg-[#FEEDC6] border-[#FDC446]">
+              <div className="flex items-center justify-center lg:justify-start mb-4">
+                <div className="inline-block p-4 rounded-2xl border-2 border-[#FDC446] bg-white">
                   <span className="text-2xl"><UnderstandingTheAfricanMarketLandscapeIcon /></span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold">Understanding the African market landscape</h3>
-              <p className="pt-4">
+              <h3 className="text-xl font-semibold text-center lg:text-left">Understanding the African market landscape</h3>
+              <p className="pt-4 text-center lg:text-left">
                 A pharma network development company helps you with experts who understand the local market, its needs, and challenges.
               </p>
             </div>
-            <div className="p-6 border rounded-lg bg-[#FFF7E3] border-[#FFD059]">
-              <div className="flex items-center mb-4">
-                <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059] bg-white">
+            <div className="p-6 border rounded-lg bg-[#FEEDC6] border-[#FDC446]">
+              <div className="flex items-center justify-center lg:justify-start mb-4">
+                <div className="inline-block p-4 rounded-2xl border-2 border-[#FDC446] bg-white">
                   <span className="text-2xl"><LocalDistributorsAndRepresentativeIcon /></span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold">Local distributors and representatives</h3>
-              <p className="pt-4">
+              <h3 className="text-xl font-semibold text-center lg:text-left">Local distributors and representatives</h3>
+              <p className="pt-4 text-center lg:text-left">
                 Starting a business needs networking. That means you need distributors and representatives who will represent your business in the local market.
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 gap-6">
-            <div className="p-6 border rounded-lg bg-[#FFF7E3] border-[#FFD059] mx-auto max-w-2xl">
-              <div className="flex items-center mb-4">
-                <div className="inline-block p-4 rounded-2xl border-2 border-[#FFD059] bg-white">
+            <div className="p-6 border rounded-lg bg-[#FEEDC6] border-[#FDC446] mx-auto max-w-2xl">
+              <div className="flex items-center justify-center lg:justify-start mb-4">
+                <div className="inline-block p-4 rounded-2xl border-2 border-[#FDC446] bg-white">
                   <span className="text-2xl"><RegulatoryAffairsConsultingIcon /></span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold">Regulatory affairs consulting</h3>
-              <p className="pt-4">
+              <h3 className="text-xl font-semibold text-center lg:text-left">Regulatory affairs consulting</h3>
+              <p className="pt-4 text-center lg:text-left">
                 You cannot expect a company unless you meet the local and state regulatory norms; a pharma network development company helps you fulfill the compliance.
               </p>
             </div>

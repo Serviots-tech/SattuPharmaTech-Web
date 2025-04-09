@@ -26,7 +26,7 @@ export const TeamMembers = () => {
         {TEAM_MEMBERS.map((member, index) => (
           <div 
             key={index} 
-            className="w-full bg-[#FFF7E3] rounded-lg p-6 relative shadow-sm border border-[#FFD059]"
+            className="w-full bg-[#FEEDC6] rounded-lg p-6 relative shadow-sm border border-[#FDC446]"
           >
             <div className="absolute -top-8 p-4 left-1/2 -translate-x-1/2 bg-white rounded-lg border border-[#FFD059] shadow-sm">
               {member.icon}
