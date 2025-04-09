@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
       <div className="pt-10 lg:pt-12  px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <p className="text-3xl mb-10 font-semibold font-poppins text-center">
+        <p className="text-3xl mb-10 font-bold text-[26px] leading-[1.1] font-poppins text-center">
           About SatuPharmTech
         </p>
       </div>
@@ -28,13 +28,13 @@ const About = () => {
       />
 
       <div className="pt-10 lg:pt-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <p className="text-3xl mb-10 font-semibold font-poppins text-left">
+        <p className="text-3xl mb-10 font-semibold font-poppins text-center lg:text-left">
           Our Mission & Vision
         </p>
         <VisionMission youngConfident={youngConfident} Maskgroup={Maskgroup} />
       </div>
       <div className="pt-10 lg:pt-20 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <p className="text-3xl mb-10 font-semibold font-poppins text-left">
+        <p className="text-2xl leading-[1.2] mb-10 font-bold font-poppins text-center md:text-left">
         Our Thought Leadership
         </p>
       </div>
@@ -45,7 +45,7 @@ const About = () => {
           <Quote />
         </span>
         <div className="w-full md:h-60 lg:pt-10 mx-auto">
-          <div className="sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full max-w-[80%] mx-auto font-poppins text-xl p-10">
+          <div className="px-0 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full max-w-[80%] mx-auto font-poppins text-xl p-10">
             Satu PharmTech stands tall as a leading platform that provides
             comprehensive support, from crop to cup —help establish businesses,
             connect with buyers, conduct research and market products and build
@@ -59,7 +59,7 @@ const About = () => {
 
 
       <div className="lg:pt-16 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <p className="text-3xl mb-10 font-semibold font-poppins text-right">
+        <p className="text-3xl mb-10 font-semibold font-poppins text-center md:text-right">
           What We Offer{" "}
         </p>
       </div>
@@ -107,7 +107,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="space-y-5 border-l border-r px-6">
+            <div className="space-y-5 border-t border-b md:border-t-0 md:border-b-0 py-6 md:border-l md:border-r px-6">
               <h2 className="text-5xl font-bold">78+</h2>
               <p className="text-lg">
                 Dedicated
