@@ -4,10 +4,10 @@ export default function PharmaNetworkDevelopment() {
   return (
     <section className="py-20">
       <div className="pt-10 px-6 sm:px-10 md:px-16 lg:px-20 xl:px-20 w-full  mx-auto">
-        <h2 className="text-3xl font-semibold text-black font-poppins">
+        <h2 className="text-3xl font-semibold text-black font-poppins text-center lg:text-left">
           Pharma Network Development Services We Provide
         </h2>
-        <p className="text-gray-600 text-left mb-8 mt-5">
+        <p className="text-gray-600 text-left mb-8 mt-5 text-center lg:text-left">
           Our pharma network development includes comprehensive network and consulting services. We have specifically designed the services to help startups or pharma enterprises who are looking to explore new markets in the new region within Africa. Or someone from Africa who wants to start a new pharmaceutical company or establish a profitable business in India. Here are the services we offer.
         </p>
 
