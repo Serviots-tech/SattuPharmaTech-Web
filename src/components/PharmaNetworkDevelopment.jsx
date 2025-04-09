@@ -11,7 +11,28 @@ export default function PharmaNetworkDevelopment() {
           Our pharma network development includes comprehensive network and consulting services. We have specifically designed the services to help startups or pharma enterprises who are looking to explore new markets in the new region within Africa. Or someone from Africa who wants to start a new pharmaceutical company or establish a profitable business in India. Here are the services we offer.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+        <div className=" font-inter text-left grid grid-cols-1 md:grid-cols-3 lg:gap-8 mx-4 font-medium md:text-center">
+          <ul className="space-y-5 list-disc md:list-none mt-5">
+            <li className="  "  >Assistance for Market Entry</li>
+            <li className=" ">Pharma Manufacturing and Hospital Setup</li>
+            <li className="">Pharmaceutical & Molecule Registration</li>
+          </ul>
+
+          <ul className="space-y-5 md:border-l md:border-r md:border-black md:px-6 list-disc md:list-none mt-5">
+            <li className="">Data Sheets and Market Research</li>
+            <li className="">Regulatory affairs consulting</li>
+            <li className=" ">Local distributors and representatives</li>
+          </ul>
+
+          <ul className="space-y-5 list-disc md:list-none mt-5">
+            <li className=" ">Pending stakeholders and engagement</li>
+            <li className=" ">Finding suitable locations</li>
+            <li className=" ">Providing full-fledged assistance for hospital setup</li>
+          </ul>
+        </div>
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="space-y-5">
             <p className="font-normal font-poppins">Assistance for Market Entry</p>
             <p className="font-normal font-poppins">Pharma Manufacturing and Hospital Setup</p>
@@ -29,7 +50,7 @@ export default function PharmaNetworkDevelopment() {
             <p className="font-normal font-poppins">Finding suitable locations </p>
             <p className="font-normal font-poppins">Providing full-fledged assistance for hospital setup</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
