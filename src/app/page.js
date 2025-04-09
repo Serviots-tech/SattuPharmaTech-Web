@@ -26,10 +26,10 @@ export default function Home() {
 			</div>
 
 			<div className='mt-6'>
-				<CardWithImage cardImg={docImg?.src} cardValue={cardWithFirstImgValue} isReversed={true} />
+				<CardWithImage cardImg={docImg?.src} cardValue={cardWithFirstImgValue} isReversed={true} isUnderlineForTitle={true} />
 			</div>
 			<div className='mt-10'>
-				<CardWithImage cardImg={teamImg?.src} cardValue={cardWithSecondImgValue} isReversed={false} />
+				<CardWithImage cardImg={teamImg?.src} cardValue={cardWithSecondImgValue} isReversed={false} isUnderlineForTitle={true} />
 			</div>
 
 			<div className="mt-10 md:mt-20 mb-10 md:mb-20">
