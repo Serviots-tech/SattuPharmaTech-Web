@@ -62,7 +62,7 @@ const ExpertiseSection = ({ align }) => {
             </Link>
           </div>
         </div>
-        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2  gap-6">
+        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1  gap-6">
           {PharmaNetworkDevelopmentServicesData.map((item, index) => (
             <AnimatedCard
               key={index}
@@ -77,7 +77,7 @@ const ExpertiseSection = ({ align }) => {
             <Link href={"/softwareservices"}>Software Development Services</Link>
           </div>
         </div>
-        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
+        <div className="mx-auto mt-6 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 gap-6">
           {SoftwareDevelopmentServicesData.map((item, index) => (
             <AnimatedCard
               key={index}
