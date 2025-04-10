@@ -38,7 +38,18 @@ const ContactForm = ({
   const sanitizeField = (name, value) => {
     switch (name) {
       case "phone":
-        return value.replace(/\D/g, "").slice(0, 15);
+        // return value.replace(/\D/g, "").slice(0, 15);
+        // Allow '+' only at the beginning
+        
+        let cleaned = value.replace(/[^\d+]/g, '');
+        if (cleaned.startsWith('+')) {
+          cleaned = '+' + cleaned.slice(1).replace(/\D/g, '');
+        } else {
+          cleaned = cleaned.replace(/\D/g, '');
+        }
+
+        const digitsOnly = cleaned.replace(/\D/g, '').slice(0, 15);
+        return cleaned.startsWith('+') ? '+' + digitsOnly : digitsOnly;
       case "fullName":
         return value.replace(/[^A-Za-z\s]/g, "");
       default:
@@ -61,7 +72,10 @@ const ContactForm = ({
       newErrors.email = "Invalid email format";
     }
 
-    if (!/^\d{7,15}$/.test(formData.phone)) {
+    // if (!/^\d{7,15}$/.test(formData.phone)) {
+    //   newErrors.phone = "Invalid phone number format";
+    // }
+    if (!/^\+?\d{7,15}$/.test(formData.phone)) {
       newErrors.phone = "Invalid phone number format";
     }
 
@@ -118,14 +132,14 @@ const ContactForm = ({
       </div>
 
       <div className="lg:hidden mb-7">
-          <Image
-            src="/assets/contactForm.png"
-            alt="Handshake"
-            width={600}
-            height={500}
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </div>
+        <Image
+          src="/assets/contactForm.png"
+          alt="Handshake"
+          width={600}
+          height={500}
+          className="w-full h-full object-cover rounded-lg"
+        />
+      </div>
 
       <div className="grid p-4 py-8 lg:grid-cols-2 gap-8  sm:p-10 border rounded-lg border-1 border-[#E0E0E0] bg-[#FCFCFC]">
         <div className="space-y-6">
@@ -139,7 +153,7 @@ const ContactForm = ({
                 onChange={handleChange}
                 // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
                 placeholder={errors.fullName ? errors.fullName : "Your Full Name"}
-                className={`w-full px-4 py-3 rounded-lg border text-[#BFBFBFEE] h-[46px] ${errors.fullName ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                className={`w-full px-4 py-3 rounded-lg border text-[#696969] placeholder:text-[#CDCDCD] h-[46px] ${errors.fullName ? "border-red-500 placeholder:text-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
@@ -152,7 +166,7 @@ const ContactForm = ({
                 onChange={handleChange}
                 // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
                 placeholder={errors.email ? errors.email : "Your Email Address"}
-                className={`w-full px-4 py-3 rounded-lg border text-[#BFBFBFEE] h-[46px] ${errors.email ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                className={`w-full px-4 py-3 rounded-lg border text-[#696969] placeholder:text-[#CDCDCD] h-[46px] ${errors.email ? "border-red-500 placeholder:text-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
@@ -167,7 +181,7 @@ const ContactForm = ({
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder={errors.phone ? errors.phone : "Your Phone Number"}
-                className={`w-full px-4 py-3 h-[46px] rounded-lg text-[#BFBFBFEE] border ${errors.phone ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                className={`w-full px-4 py-3 h-[46px] rounded-lg text-[#696969] placeholder:text-[#CDCDCD] border ${errors.phone ? "border-red-500 placeholder:text-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
@@ -179,7 +193,7 @@ const ContactForm = ({
                 value={formData.company}
                 onChange={handleChange}
                 placeholder={errors.company ? errors.company : "Your Company Name"}
-                className={`w-full px-4 py-3 text-[#BFBFBFEE] h-[46px] rounded-lg border ${errors.company ? "border-red-500 placeholder-red-500" : "border-gray-200"
+                className={`w-full px-4 py-3 text-[#696969] placeholder:text-[#CDCDCD] h-[46px] rounded-lg border ${errors.company ? "border-red-500 placeholder:text-red-500" : "border-gray-200"
                   } focus:outline-none focus:ring-2 focus:ring-teal-500`}
               />
             </div>
@@ -194,7 +208,7 @@ const ContactForm = ({
               // className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
               placeholder={errors.message ? errors.message : "Describe Your Project"}
               rows="4"
-              className={`w-full px-4 py-3 text-[#BFBFBFEE] rounded-lg border ${errors.message ? "border-red-500 placeholder-red-500" : "border-gray-200"
+              className={`w-full px-4 py-3 text-[#696969] placeholder:text-[#CDCDCD] rounded-lg border ${errors.message ? "border-red-500 placeholder:text-red-500" : "border-gray-200"
                 } focus:outline-none focus:ring-2 focus:ring-teal-500`}
             ></textarea>
           </div>
