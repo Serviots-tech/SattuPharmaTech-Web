@@ -35,8 +35,6 @@ export default function Home() {
 			<div className="mt-10 md:mt-20 mb-10 md:mb-20">
 				<WhyChooseUs align={'left'} />
 			</div>
-
-
 			<ContactForm />
 
 		</div>
