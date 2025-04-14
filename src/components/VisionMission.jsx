@@ -4,7 +4,7 @@ import React from "react";
 const VisionMission = ({ youngConfident, Maskgroup }) => {
   return (
     <>
-      <div className="w-[65%] 2xl:w-[60%] border-b-2 border-[#FDC446] relative items-center h-60 lg:h-48 p-4 bg-[#FEEDC6] font-poppins mt-[80px] mb-[120px]">
+      <div className="sm:w-[65%] 2xl:w-[60%] border-b-2 border-[#FDC446] relative items-center h-60 lg:h-48 p-4 bg-[#FEEDC6] font-poppins mt-[80px] mb-[120px]">
         <Image
           src={youngConfident}
           // className="absolute -right-14 -top-8 w-60 h-60 bg-red-500 rounded-[100%] md:hidden hidden lg:flex"
@@ -26,7 +26,7 @@ const VisionMission = ({ youngConfident, Maskgroup }) => {
         </p>
       </div>
 
-      <div className="w-[65%] 2xl:w-[65%] border-b-2 border-[#4FB5B9] mt-10 sm:mt-20 relative items-center h-72 sm:h-64 md:h-64 lg:h-48 p-4 bg-[#EBFCFC] sm:ml-auto">
+      <div className="sm:w-[65%] 2xl:w-[65%] border-b-2 border-[#4FB5B9] mt-10 sm:mt-20 relative items-center h-72 sm:h-64 md:h-64 lg:h-48 p-4 bg-[#EBFCFC] sm:ml-auto">
         <Image
           src={Maskgroup}
           // className="absolute -left-14 -top-8 w-60 h-60 bg-red-500 rounded-[100%]  md:hidden hidden lg:flex"

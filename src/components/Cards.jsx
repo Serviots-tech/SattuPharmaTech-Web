@@ -6,7 +6,7 @@ export function CardWithImage({ cardImg, cardValue, isReversed , isUnderlineForT
     <div
       className={` mx-auto xl:px-20 bg-white rounded-xl px-6 md:px-[64px] grid items-center ${
         isReversed ? "xl:grid-cols-[1fr,2fr]" : "xl:grid-cols-[2fr,1fr]"
-      } grid-cols-1 gap-6`}
+      } grid-cols-1  gap-6`}
     >
       {/* Image Section (Changes Order Based on isReversed Prop) */}
       <div className={`${isReversed ? "xl:order-last" : "xl:order-first"} order-first`}>
