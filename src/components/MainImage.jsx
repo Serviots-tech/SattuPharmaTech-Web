@@ -31,10 +31,10 @@ const MainImage = ({
                     whiteSpace: "normal",
                   }}
                 >
-                  <p className="mt-4 sm:mt-10 text-white">
+                  <p className="mt-4 sm:mt-10 text-white text-[26px] md:text-[52px] leading-[120%]">
                     {title1 ?? "Bridging Continents,"}
                   </p>
-                  <p className="mt-2 text-white">
+                  <p className="mt-2 text-white text-text-[26px] md:text-[52px] leading-[120%]">
                     {title2 ?? "Empowering Industries"}
                   </p>
                 </div>
@@ -70,7 +70,7 @@ const MainImage = ({
           <MainImgCarouselSlider
             images={images}
             autoPlay={true}
-            interval={6000}
+            interval={15000}
             title1={title1}
             title2={title2}
             description={description}
@@ -109,7 +109,6 @@ const MainImage = ({
                         </i>
                       </h3>
                     </div>
-
                     {/* Right Text */}
                     <div className="px-2">
                       <h3 className="text-lg md:text-xl font-poppins font-light">
