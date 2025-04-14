@@ -16,6 +16,7 @@ const VisionMission = ({ youngConfident, Maskgroup }) => {
           lg:w-60 lg:h-60
           lg:top-[-2rem] lg:right-[-3.5rem] lg:left-auto lg:translate-x-0
         "
+        alt="vision img"
         />
         <p className="absolute sm:top-18 md:top-[50%] lg:top-10 lg:right-60 md:right-[32%] top-20 right-[25%]  text-4xl font-semibold font-poppins">
           Mission
@@ -38,6 +39,7 @@ const VisionMission = ({ youngConfident, Maskgroup }) => {
                lg:w-60 lg:h-60
                lg:top-[-2rem] lg:left-[-3.5rem] lg:translate-x-0
                "
+               alt="comapny vision"
         />
         <p className="absolute top-[30%] sm:top-18 sm:top-[45%] lg:top-[25%] md:top-[45%] lg:left-[36%] md:left-[36%] left-[25%] text-4xl font-semibold font-poppins">
           Vision
