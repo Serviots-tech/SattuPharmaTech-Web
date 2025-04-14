@@ -1,14 +1,12 @@
 "use client";
-
-import { Underline } from "lucide-react";
 import Image from "next/image";
 
 export function CardWithImage({ cardImg, cardValue, isReversed , isUnderlineForTitle }) {
   return (
     <div
-      className={` mx-auto xl:px-20 bg-white rounded-xl px-6 md:px-[64px] grid ${
+      className={` mx-auto xl:px-20 bg-white rounded-xl px-6 md:px-[64px] grid items-center ${
         isReversed ? "xl:grid-cols-[1fr,2fr]" : "xl:grid-cols-[2fr,1fr]"
-      } grid-cols-1  gap-6`}
+      } grid-cols-1 gap-6`}
     >
       {/* Image Section (Changes Order Based on isReversed Prop) */}
       <div className={`${isReversed ? "xl:order-last" : "xl:order-first"} order-first`}>
@@ -24,7 +22,7 @@ export function CardWithImage({ cardImg, cardValue, isReversed , isUnderlineForT
 
       {/* Text Content (Changes Order Based on isReversed Prop) */}
       <div
-        className={`${
+        className={`flex flex-col justify-center h-full ${
           isReversed ? "xl:order-first xl:text-end" : "xl:order-last"
         } order-last lg:mb-2`}
       >
