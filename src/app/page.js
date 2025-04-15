@@ -8,7 +8,7 @@ import ContactForm from '../components/ContactForm';
 import MainImage from "../components/MainImage";
 import WhyChooseUs from "../components/WhyChooseUsSection";
 import { cardWithFirstImgValue, cardWithSecondImgValue, mainImgData } from './constants/constValues';
-import ExpertiseSection from "src/components/ExpertiseSection";
+import ExpertiseSection from "../components/ExpertiseSection";
 
 export default function Home() {
 	const images =[

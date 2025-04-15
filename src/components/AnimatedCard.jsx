@@ -29,6 +29,7 @@ const AnimatedCard = ({ title, description }) => {
       }`}
       onMouseEnter={() => !isMobile && setIsHovered(true)}
       onMouseLeave={() => !isMobile && setIsHovered(false)}
+      onClick={toggleOpen}
     >
       <div
         className={`h-8 p-0 flex items-center ${
