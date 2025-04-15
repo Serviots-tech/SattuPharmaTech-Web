@@ -28,7 +28,7 @@ export default function Page() {
             </h3>
             <div className="space-y-4">
                 <p>
-                    Welcome! Satu PharmTech, Inc. (“Satu PharmTech” or “us” or “we”) welcomes you to our website, satupharmtech.com/, join-Satu PharmTech-com.Satu PharmTech.com, Satu PharmTech.com, mySatuPharmTech.com and other related sub-domains (“websites”). We provide information about our products and services, and other features and services, through these websites (“Service”).
+                    Welcome! Satu PharmTech, Inc. (&ldquo;Satu PharmTech&rdquo; or &ldquo;us&rdquo; or &ldquo;we&rdquo;) welcomes you to our website, satupharmtech.com/, join-Satu PharmTech-com.Satu PharmTech.com, Satu PharmTech.com, mySatuPharmTech.com and other related sub-domains (&ldquo;websites&rdquo;). We provide information about our products and services, and other features and services, through these websites (&ldquo;Service&rdquo;).
                 </p>
                 <p>
                     By using or accessing any part of the Service, you are agreeing to these Terms of Service, our Privacy Policy and all other policies or notices posted by us on our websites.
@@ -83,7 +83,7 @@ export default function Page() {
                 </h3>
 
                 <p>
-                    You are solely responsible for any User Content you post to the Service, and the consequences of posting or publishing it. By “User Content”, we mean any Content you post to the Service. “Content” means information, data, text, software, music, sound, photos, graphics, videos, messages, tags, interactive features, or any other materials. When we say “post”, we include posting, uploading, sharing, submitting or otherwise providing User Content in any manner in connection with the Service.
+                    You are solely responsible for any User Content you post to the Service, and the consequences of posting or publishing it. By &ldquo;User Content&rdquo;, we mean any Content you post to the Service. &ldquo;Content&rdquo; means information, data, text, software, music, sound, photos, graphics, videos, messages, tags, interactive features, or any other materials. When we say &ldquo;post&rdquo;, we include posting, uploading, sharing, submitting or otherwise providing User Content in any manner in connection with the Service.
                 </p>
 
                 <p>
@@ -111,7 +111,7 @@ export default function Page() {
                         </li>
                         <li>impersonate anyone else or lie about your affiliation with another person or entity;
                         </li>
-                        <li>use meta tags or any other “hidden text” utilizing any of our or our suppliers&apos; product names or trademarks;
+                        <li>use meta tags or any other &ldquo;hidden text&rdquo; utilizing any of our or our suppliers&apos; product names or trademarks;
                         </li>
                         <li>
                             upload, launch, post, email or transmit any material (including any bot, worm, scripting exploit or computer virus) that is likely to harm or corrupt our Service, or harm or corrupt our or anyone else&apos;s computer systems, or data;
@@ -199,7 +199,7 @@ export default function Page() {
                     <b>16. Sale of products.</b>
                 </h3>
                 <p>
-                    Our Service may include the offer for sale of certain products (whether software, services, or other merchandise) (“Products”). Any offer for sale or purchase of such Products is subject to the terms of sale and warranty (if any) provisions of the vendor offering the particular Product through our Service (including through any shopping cart for the particular Product). We are not responsible for any such transactions or Products unless we are the vendor, in which case the terms of purchase we have posted for that Product shall apply.
+                    Our Service may include the offer for sale of certain products (whether software, services, or other merchandise) (&ldquo;Products&rdquo;). Any offer for sale or purchase of such Products is subject to the terms of sale and warranty (if any) provisions of the vendor offering the particular Product through our Service (including through any shopping cart for the particular Product). We are not responsible for any such transactions or Products unless we are the vendor, in which case the terms of purchase we have posted for that Product shall apply.
                 </p>
                 <h3>
                     <b>17. Third party website and content.</b>
@@ -213,7 +213,7 @@ export default function Page() {
                 <p>
                     While Satu PharmTech attempts to keep the information presented current, information and knowledge change quickly, and the Services should not be considered error-free or as a comprehensive source of all information on a particular topic. Although we make every effort to ensure the correctness of data, we disclaim responsibility for any errors or omission, including but not limited to, unintended inaccuracies or typographical errors in the materials.  Satu PharmTech is not, and cannot be, responsible to you for the results of any defects that may exist in the Service.
                 </p>
-                <p>USE OF THE SERVICE IS AT YOUR OWN RISK. THE SERVICE IS PROVIDED ON A “AS IS” AND “AS AVAILABLE” BASIS. Satu PharmTech AND ITS AFFILIATES, SUPPLIERS AND PARTNERS EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+                <p>USE OF THE SERVICE IS AT YOUR OWN RISK. THE SERVICE IS PROVIDED ON A &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS. Satu PharmTech AND ITS AFFILIATES, SUPPLIERS AND PARTNERS EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
                 </p>
                 <p>Satu PharmTech AND ITS AFFILIATES, SUPPLIERS AND PARTNERS MAKE NO WARRANTY THAT (i) THE SERVICE OR ANY PRODUCTS PURCHASED THROUGH THE SERVICE WILL MEET YOUR REQUIREMENTS; (ii) THE SERVICE WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE; OR (iii) THAT THERE WILL BE NO ERRORS IN THE SERVICE OR THAT Satu PharmTech WILL FIX ANY ERRORS. ANY MATERIALS OBTAINED THROUGH USE OF THE SERVICE ARE OBTAINED AT YOUR OWN DISCRETION AND RISK AND Satu PharmTech SHALL NOT BE RESPONSIBLE FOR ANY DAMAGE CAUSED TO YOUR COMPUTER OR DATA OR FOR ANY BUGS, VIRUSES, TROJAN HORSES, MALICIOUS CODE OR OTHER HARMFUL COMPONENTS, OTHER DESTRUCTIVE CODE RESULTING FROM USE OF THE SERVICE OR ANY CONTENT OBTAINED FROM THE SERVICE OR OTHERWISE WILL BE SECURE.  FURTHER, Satu PharmTech DOES NOT ENDORSE, WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE CORRECTNESS, ACCURACY, RELIABILITY OR ANY OTHER ASPECT OF ADVICE, OPINION, STATEMENT OR OTHER INFORMATION DISTRIBUTED THROUGH THE SERVICE.  WE ASSUME NO LIABILITY FOR ANY ACTION TAKEN BASED ON INFORMATION FOUND ON THE WEBSITE OR ANY OTHER WEBSITES LINKED TO IT, OR SERVICES PROVIDED BY Satu PharmTech AND ASSUME NO RESPONSIBILITY FOR ANY CONSEQUENCES RELATING DIRECTLY OR INDIRECTLY FOR ANY ACTION OR INACTION YOU TAKE BASED UPON THE INFORMATION AND MATERIAL PROVIDED.  YOUR USE OF THE WEBSITE IS SUBJECT TO THE ADDITIONAL DISCLAIMERS AND CAVEATS THAT MAY APPEAR THROUGHOUT THIS AGREEMENT AND THE WEBSITE. YOU ASSUME THE ENTIRE RISK OF LOSS IN USING THIS WEBSITE AND MATERIALS CONTAINED IN THE WEBSITE.
                 </p>

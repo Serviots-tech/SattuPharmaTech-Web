@@ -108,11 +108,11 @@ const Service = () => {
         Want to Build a Scalable Software for Web & Mobile?
         </h2>
         <p className="text-gray-800 mt-3 text-base md:text-lg max-w-2xl md:text-[20px]">
-        Connect with Satu PhamTech and actualize your dream projects powered by the industry’s #1% developers.
+        Connect with Satu PhamTech and actualize your dream projects powered by the industry&apos;s #1% developers.
         </p>
         <Link href="/contact">
           <button className="mt-6 bg-[#4FB5B9] px-20 text-white py-3 rounded-xl text-lg font-medium transition hover:bg-[#48A5A8]">
-            Let’s Connect
+            Let&apos;s Connect
           </button>
         </Link>
       </div>

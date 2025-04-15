@@ -112,12 +112,12 @@ const Service = () => {
           Want to Start a New Pharma Business or Build Hospitals?
         </h2>
         <p className="text-gray-800 mt-3 text-base md:text-lg max-w-2xl">
-        Connect with Africa’s and India’s best team to help you explore, examine, &
+        Connect with Africa&apos;s and India&apos;s best team to help you explore, examine, &
           establish yourself as a reputed pharmaceutical company.
         </p>
         <Link href="/contact">
           <button className="mt-6 bg-[#4FB5B9] px-20 text-white py-3 rounded-xl text-lg font-medium transition hover:bg-[#48A5A8]">
-            Let’s Connect
+            Let&apos;s Connect
           </button>
         </Link>
       </div>
