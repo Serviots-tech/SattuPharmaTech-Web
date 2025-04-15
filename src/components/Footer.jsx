@@ -127,14 +127,14 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        </div>
-        <div className="mt-10 pt-4 border-t border-gray-200 text-center">
-          <div className="flex flex-wrap justify-center space-x-6 text-sm text-gray-600">
-            <span className="cursor-pointer hover:text-gray-800 font-poppins font-light">Privacy Policy</span>
-            <span className="cursor-pointer hover:text-gray-800 font-poppins font-light">Terms of Services</span>
-          </div>
-        </div>
-      
       </div>
-      );
+      <div className="mt-10 pt-4 border-t border-gray-200 text-center">
+        <div className="flex flex-wrap justify-center space-x-6 text-sm text-gray-600">
+          <Link href="/privacy-policy"><span className="cursor-pointer hover:text-gray-800 font-poppins font-light">Privacy Policy</span></Link>
+          <Link href="/terms-and-conditions"> <span className="cursor-pointer hover:text-gray-800 font-poppins font-light">Terms of Services</span> </Link>
+        </div>
+      </div>
+
+    </div>
+  );
 }
