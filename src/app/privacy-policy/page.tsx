@@ -83,7 +83,7 @@ export default function Page() {
                 <p>
                     Engaging in communications with visitors such as through telephone, email, web chat, SMS messaging, social media and other means when initiated or requested by visitors.
                     Evaluating visitors who have applied for career opportunities or other Human Resources activities, such as by submitting information to the Satu PharmTech Careers portion of its site.
-                    Evaluation, qualification, and certification of visitors who have applied to become a Satu PharmTech independent agent, such as by submitting information to the Satu PharmTech's &ldquo;Become an Agent&rdquo; portion of its site.
+                    Evaluation, qualification, and certification of visitors who have applied to become a Satu PharmTech independent agent, such as by submitting information to the Satu PharmTech&apos;s &ldquo;Become an Agent&rdquo; portion of its site.
                 </p>
                 <p>Conducting user surveys and other market research on visitors and Satu PharmTech products and services.</p>
                 <p>Gaining a better understanding of how the sites and our products and services perform and how they are used in order to maintain and improve them.</p>

@@ -228,7 +228,7 @@ export default function Page() {
                     YOU ACKNOWLEDGE AND AGREE THAT THE LIMITATIONS SET FORTH HEREIN ARE FUNDAMENTAL ELEMENTS OF THIS AGREEMENT AND THE SERVICES WOULD NOT BE PROVIDED TO YOU ABSENT SUCH LIMITATIONS.
 
                 </p>
-                <p>NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, Satu PharmTech's LIABILITY AND THE LIABILITY OF EACH OF ITS OFFICERS, DIRECTORS, INVESTORS, EMPLOYEES, AGENTS, ADVERTISERS, LICENSORS, SUPPLIERS, SERVICE PROVIDERS AND OTHER CONTRACTORS TO YOU OR ANY THIRD PARTIES UNDER ANY CIRCUMSTANCE IS LIMITED TO A MAXIMUM AMOUNT OF $100.  THE PROVISIONS OF THIS PARAGRAPH SHALL SURVIVE THE TERMINATION OF THESE TERMS OF SERVICE AND YOUR USE OF THE SERVICE.</p>
+                <p>NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, Satu PharmTech&apos;s LIABILITY AND THE LIABILITY OF EACH OF ITS OFFICERS, DIRECTORS, INVESTORS, EMPLOYEES, AGENTS, ADVERTISERS, LICENSORS, SUPPLIERS, SERVICE PROVIDERS AND OTHER CONTRACTORS TO YOU OR ANY THIRD PARTIES UNDER ANY CIRCUMSTANCE IS LIMITED TO A MAXIMUM AMOUNT OF $100.  THE PROVISIONS OF THIS PARAGRAPH SHALL SURVIVE THE TERMINATION OF THESE TERMS OF SERVICE AND YOUR USE OF THE SERVICE.</p>
                 <h3>
                     <b>20. Indemnity.
                     </b>
@@ -283,7 +283,7 @@ export default function Page() {
                     <b>26. Notice.</b>
                 </h3>
                 <p>
-                    Satu PharmTech may provide notice to you hereunder by sending you an e-mail at the last e-mail address that you provided Satu PharmTech and/or by prominently posting notice on the Website.  Any such notice will be effective upon the earlier of five (5) calendar days following Satu PharmTech's dispatch of an e-mail notice to you or ten (10) calendar days following Satu PharmTech's posting of such notice on the Website.  Please note that, at all times, you are responsible for updating your personal information to provide Satu PharmTech your current e-mail address.  In the event that the last e-mail address that you have provided Satu PharmTech's is not valid, or for any other reason is not capable of delivering a notice to you, Satu PharmTech's dispatch of the e-mail containing such notice will nonetheless constitute effective notice.
+                    Satu PharmTech may provide notice to you hereunder by sending you an e-mail at the last e-mail address that you provided Satu PharmTech and/or by prominently posting notice on the Website.  Any such notice will be effective upon the earlier of five (5) calendar days following Satu PharmTech&apos;s dispatch of an e-mail notice to you or ten (10) calendar days following Satu PharmTech&apos;s posting of such notice on the Website.  Please note that, at all times, you are responsible for updating your personal information to provide Satu PharmTech your current e-mail address.  In the event that the last e-mail address that you have provided Satu PharmTech&apos;s is not valid, or for any other reason is not capable of delivering a notice to you, Satu PharmTech&apos;s dispatch of the e-mail containing such notice will nonetheless constitute effective notice.
                 </p>
 
                 <p>Thank you for your cooperation.  We hope you find our Service informative and convenient to use.
