@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 
@@ -40,7 +41,7 @@ const ContactForm = ({
       case "phone":
         // return value.replace(/\D/g, "").slice(0, 15);
         // Allow '+' only at the beginning
-        
+
         let cleaned = value.replace(/[^\d+]/g, '');
         if (cleaned.startsWith('+')) {
           cleaned = '+' + cleaned.slice(1).replace(/\D/g, '');
@@ -216,16 +217,27 @@ const ContactForm = ({
           <button
             type="submit"
             onClick={handleSubmit}
-            className="w-full bg-[#4FB5B9] text-white py-3 rounded-lg hover:bg-teal-600 transition-colors"
+            className="w-full bg-[#4FB5B9] text-white py-3 rounded-lg hover:bg-teal-600 transition-colors flex justify-center items-center"
             disabled={loading}
           >
-            {loading ? "Sending..." : "Submit"}
+            {/* {loading ? "Sending..." : "Submit"} */}
+            {loading ? (
+              <Image
+                width={50}
+                height={50}
+                src="/satupharm_loader.gif"
+                alt="Loading..."
+                className="h-6 w-6"
+              />
+            ) : (
+              "Submit"
+            )}
           </button>
           <p className="text-sm text-[#696969]">
             By submitting this form, you agree to our{" "}
-            <a href="#" className="underline">
+            <Link href="/privacy-policy" className="underline">
               Privacy Policy
-            </a>
+            </Link>
           </p>
         </div>
 

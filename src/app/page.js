@@ -19,7 +19,7 @@ export default function Home() {
 		<div className="w-full">
 			<MainImage landingPage={true} images={images}  mainImgData={mainImgData} />
 			<ExpertiseSection />
-			<div className=" mx-auto w-full flex justify-center md:justify-end px-6 md:px-[64px] xl:px-20">
+			<div className="mx-auto w-full flex justify-center md:justify-end px-6 md:px-[64px] xl:px-20">
 				<div className="text-center md:text-end font-semibold text-[24px] md:text-[36px] text-[#000000] leading-[120%]">
 					Who We Are
 				</div>
