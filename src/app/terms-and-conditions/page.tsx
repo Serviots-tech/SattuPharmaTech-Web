@@ -302,8 +302,6 @@ export default function Page() {
                 </p>
                     <p>49-Cosmovilla, Opp. Satyagrah Chavni,</p>
                     <p>Near Amul Garden, Bodakdev,</p>
-                    <p>Motera,
-                    </p>
                     <p>Ahmedabad &ndash; Gujarat.</p>
                     <b>Copyright 2025 SatuPharmTech©   All Rights Reserved.</b></p>
             </div>
