@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import { emailTemplatesSatuPharmtech } from 'src/lib/email-templates/emailTemplates';
+import { emailTemplatesSatuPharmtech } from '../../../lib/email-templates/emailTemplates';
+import { FormEmailTemplates } from '../../../lib/email-templates/FormEmailTemplates';
 
 export async function POST(req) {
     try {
@@ -36,14 +37,22 @@ export async function POST(req) {
             from: `Website Contact <${process.env.EMAIL_USER}>`,
             to: process.env.EMAIL_USER,
             subject: 'New Contact Form Submission',
-            html: `
-                <p><strong>Full Name:</strong> ${fullName}</p>
-                <p><strong>Email:</strong> ${email}</p>
-                <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-                <p><strong>Company:</strong> ${company || 'Not provided'}</p>
-                <p><strong>Message:</strong> ${message}</p>
-                <p><strong>Submitted From:</strong> ${pageUrl}</p>
-            `
+            html: FormEmailTemplates({
+                fullName,
+                email,
+                phone,
+                company,
+                message,
+                pageUrl,
+            }),
+            // `
+            //     <p><strong>Full Name:</strong> ${fullName}</p>
+            //     <p><strong>Email:</strong> ${email}</p>
+            //     <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+            //     <p><strong>Company:</strong> ${company || 'Not provided'}</p>
+            //     <p><strong>Message:</strong> ${message}</p>
+            //     <p><strong>Submitted From:</strong> ${pageUrl}</p>
+            // `
         };
 
         // Email to send to the user
